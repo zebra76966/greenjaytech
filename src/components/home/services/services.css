@@ -1,0 +1,136 @@
+.services-section {
+  background: var(--dark-color);
+  min-height: 100vh;
+  padding: 8rem 0;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: 240px 1fr;
+  gap: 4rem;
+  width: 90%;
+  margin: auto;
+}
+
+/* LEFT */
+.services-nav {
+  position: sticky;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  align-self: start;
+}
+
+.services-eyebrow {
+  letter-spacing: 0.8em;
+  background-color: var(--dark-color);
+  color: var(--primary-color);
+}
+
+.service-index {
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+  min-width: 5dvw;
+}
+
+.index-number {
+  font-size: 10dvh;
+  font-weight: 700;
+  line-height: 1;
+
+  color: transparent;
+  -webkit-text-stroke: 2px var(--secondary-color);
+}
+
+.index-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.35em;
+}
+
+.service-index.active .index-number {
+  color: var(--primary-color);
+  opacity: 1;
+  -webkit-text-stroke: 0px var(--secondary-color);
+}
+
+/* RIGHT */
+.services-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+/* CARD */
+.service-card {
+  position: relative;
+  min-height: 70dvh;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #000;
+}
+
+.service-card {
+  transition: filter 0.6s ease, transform 0.6s ease;
+}
+
+.service-card:not(.active) {
+  filter: brightness(0.7);
+}
+
+.card-bg-image {
+  position: absolute;
+  inset: 0;
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  background-position: left top;
+  filter: brightness(0.7);
+  z-index: 2;
+}
+
+.card-ripple {
+  position: absolute;
+  inset: 0;
+  opacity: 0.3;
+  z-index: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 2;
+  max-width: 90%;
+  padding: 4rem;
+}
+
+.card-content h3 {
+  color: var(--primary-color);
+}
+
+.card-content p {
+  color: var(--secondary-color);
+  max-width: 80%;
+}
+
+.card-cta {
+  margin-top: 2rem;
+  background: none;
+  border: none;
+  color: var(--primary-color);
+  display: flex;
+  gap: 0.8rem;
+  letter-spacing: 0.3em;
+  cursor: pointer;
+}
+
+.card-index {
+  font-size: 20dvh;
+  color: transparent;
+  -webkit-text-stroke: 2px var(--secondary-color);
+  z-index: 9999;
+}

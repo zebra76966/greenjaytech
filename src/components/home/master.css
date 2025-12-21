@@ -1,0 +1,128 @@
+:root {
+  --primary-color: #dba45a;
+  --secondary-color: #e8d0b2;
+  /*--success-color: #28a745;
+  --danger-color: #dc3545;*/
+  --warning-color: #a65d2b;
+  /*--info-color: #17a2b8; */
+  --light-color: #d9dee5;
+  --dark-color: #000000;
+  --grey-color: #101010;
+}
+
+.ch-100 {
+  min-height: 100dvh;
+}
+
+.text-warning-color {
+  color: var(--warning-color) !important;
+}
+
+.text-primary-color {
+  color: var(--primary-color) !important;
+}
+.border-primary-color {
+  border-color: var(--primary-color) !important;
+}
+
+.border-secondary-color {
+  border-color: var(--secondary-color) !important;
+}
+
+.border-primary-color {
+  border-color: var(--primary-color) !important;
+}
+
+.text-secondary-color {
+  color: var(--secondary-color) !important;
+}
+
+.bg-primary-color {
+  background-color: var(--primary-color) !important;
+}
+
+.bg-secondary-color {
+  background-color: var(--secondary-color) !important;
+}
+
+.bg-color-dark {
+  background-color: var(--dark-color) !important;
+}
+.bg-gray-color {
+  background-color: var(--grey-color) !important;
+}
+
+/* Scroll  */
+
+#after-fullpage {
+  position: relative;
+  z-index: 100;
+}
+.bg-dlight {
+  background-color: #f8f8f6 !important;
+}
+
+/* Container: NO CSS scroll-snap (JS handles snapping) */
+.fullpage-container {
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-behavior: smooth; /* smooth when we call scrollTo */
+  -webkit-overflow-scrolling: touch; /* better momentum on iOS */
+  position: relative; /* ensures offsetTop of pages is relative */
+}
+
+.page-section {
+  overflow-x: hidden;
+}
+
+.page {
+  height: 100dvh;
+  min-height: 100dvh;
+  display: block;
+  box-sizing: border-box;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 2s cubic-bezier(0.22, 0.9, 0.3, 1);
+}
+
+/* visible page — animated in by IntersectionObserver */
+.page.visible {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+*::-webkit-scrollbar {
+  width: 6px; /* thin width */
+  height: 6px; /* for horizontal scrollbar */
+}
+
+*::-webkit-scrollbar-track {
+  background: #181818; /* or use a subtle color */
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* scrollbar color */
+  border-radius: 10px; /* round edges */
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color); /* darker on hover */
+}
+
+.hideScroll::-webkit-scrollbar {
+  width: 6px; /* thin width */
+  height: 6px; /* for horizontal scrollbar */
+}
+
+.hideScroll::-webkit-scrollbar-track {
+  background: #181818; /* or use a subtle color */
+}
+
+.hideScroll::-webkit-scrollbar-thumb {
+  background-color: var(--primary-color); /* scrollbar color */
+  border-radius: 10px; /* round edges */
+}
+
+.hideScroll::-webkit-scrollbar-thumb:hover {
+  background-color: var(--primary-color); /* darker on hover */
+}

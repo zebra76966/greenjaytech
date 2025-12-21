@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
+* {
+  font-family: "Poppins", sans-serif;
+}
+html,
+body,
+#root {
+  background: var(--dark-color);
+  margin: 0;
+  padding: 0;
+  height: 100%;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: "ProsaGT";
+  src: url("../public/fonts/ProsaGT.otf") format("opentype");
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "ProsaGT", sans-serif;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+p {
+  font-family: "Poppins", sans-serif;
 }
 
-.App-link {
-  color: #61dafb;
+.hFont {
+  font-family: "ProsaGT", sans-serif !important;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.pFont {
+  font-family: "Poppins", sans-serif !important;
 }

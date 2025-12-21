@@ -1,0 +1,356 @@
+.hero-section {
+  background: var(--dark-color);
+  color: var(--primary-color);
+  position: relative;
+  overflow: hidden;
+}
+
+/* LEFT */
+.hero-left {
+  z-index: 3;
+}
+
+.hero-eyebrow {
+  letter-spacing: 1em;
+  font-size: 1.1rem;
+
+  display: block;
+}
+
+.hero-title {
+  font-size: 13dvh;
+  font-weight: 800;
+  line-height: 0.95;
+}
+
+.hero-title span {
+  font-size: 11.5dvh;
+  display: block;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--secondary-color);
+}
+
+.hero-description {
+  max-width: 80%;
+  letter-spacing: 0.2em;
+  line-height: 1.5em;
+  margin-top: 1.5rem;
+}
+
+/* BUTTONS */
+.btn-enquire-advanced {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  background: none;
+  border: none;
+  color: var(--secondary-color);
+  font-size: 1rem;
+  letter-spacing: 0.35em;
+  cursor: pointer;
+  padding: 0;
+}
+
+.arrow-wrapper {
+  position: relative;
+  width: 5em;
+  height: 5em;
+  border: 2px solid var(--secondary-color);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  /* overflow: hidden; */
+}
+
+.arrow-wrapper svg {
+  z-index: 2;
+}
+
+/* Ripple pulse */
+.arrow-wrapper .ripple {
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 4px solid var(--secondary-color);
+  animation: ripplePulse 2.4s infinite;
+  opacity: 0.8;
+}
+
+.delay-1 {
+  animation-delay: 0s;
+}
+.delay-2 {
+  animation-delay: 1.2s;
+}
+
+@keyframes ripplePulse {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  70% {
+    transform: scale(1.8);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.btn-enquire-advanced:hover .arrow-wrapper {
+  background: var(--secondary-color);
+}
+
+.btn-enquire-advanced:hover svg {
+  color: #000;
+}
+
+.btn-text {
+  margin-top: 2px;
+}
+.btn-hire-pattern {
+  position: relative;
+  padding: 0.2rem 4rem;
+  border-radius: 999px;
+  border: 2px solid var(--primary-color);
+  background: #000;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+  letter-spacing: 0.35em;
+  cursor: pointer;
+  overflow: hidden; /* 🔥 CLIPS SVG */
+  isolation: isolate; /* prevents blend bugs */
+}
+
+/* SVG container */
+.btn-pattern-bg {
+  position: absolute;
+  inset: -50%; /* allow animation movement */
+  scale: 0.5;
+  z-index: 0;
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+/* Ensure SVG fills area */
+.btn-pattern-bg svg {
+  width: 100%;
+  height: 100%;
+}
+
+/* Text stays on top */
+.btn-label {
+  position: relative;
+  z-index: 2;
+}
+
+/* Gold inner glow */
+.btn-hire-pattern::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  box-shadow: inset 0 0 30px rgba(212, 175, 55, 0.18);
+  z-index: 1;
+  pointer-events: none;
+}
+
+/* Hover polish */
+.btn-hire-pattern:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 40px rgba(212, 175, 55, 0.25);
+}
+
+/* RIGHT */
+.hero-right {
+  position: relative;
+  height: 100dvh;
+}
+
+.visual-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 520px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Ripple SVG layer */
+.ripple-layer {
+  position: absolute;
+  inset: 0;
+  opacity: 1;
+  z-index: 1;
+}
+
+/* Gold ring */
+.gold-ring {
+  position: absolute;
+  width: 700px;
+  height: 700px;
+  border-radius: 50%;
+  right: 50px;
+  margin-left: auto;
+  border: 80px solid var(--primary-color);
+  z-index: 2;
+  background-color: var(--dark-color);
+
+  filter: drop-shadow(0 0 20px rgba(212, 175, 55, 0.4)) drop-shadow(0 0 60px rgba(212, 175, 55, 0.25)) drop-shadow(0 0 100px rgba(212, 175, 55, 0.15));
+}
+
+/* Inner energy glow */
+.gold-ring::after {
+  content: "";
+  position: absolute;
+  inset: -80px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 80px rgba(212, 175, 55, 0.2);
+  pointer-events: none;
+}
+
+/* Main image */
+.hero-image {
+  position: relative;
+  max-height: 90%;
+  z-index: 3;
+  right: -100px;
+  margin-left: auto;
+  filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.7));
+}
+
+.gold-ring {
+  animation: slowSpin 40s linear infinite;
+}
+
+@keyframes slowSpin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.consult-btn {
+  cursor: pointer;
+  padding: 0.9rem 2rem;
+  letter-spacing: 0.3em;
+}
+
+/* Scroll indicator container */
+.scroll-indicator {
+  position: absolute;
+  bottom: 28px;
+  left: 50%;
+  padding-right: 1em;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  z-index: 6;
+  pointer-events: none;
+}
+
+/* Mouse wrapper */
+.mouse-icon-wrapper {
+  position: relative;
+  width: 28px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  scale: 1.5;
+}
+
+/* Mouse icon */
+.mouse-icon {
+  font-size: 28px;
+  color: var(--primary-color);
+  opacity: 0.9;
+}
+
+/* Animated dot inside mouse */
+.scroll-dot {
+  position: absolute;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  background: var(--primary-color);
+  border-radius: 50%;
+}
+
+/* Arrow icon */
+.scroll-arrow {
+  font-size: 14px;
+  color: var(--primary-color);
+  opacity: 0.75;
+}
+
+/* TOP RIGHT ACTIONS */
+.hero-top-actions {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  z-index: 10;
+}
+
+/* SEARCH BAR */
+.hero-search {
+  display: flex;
+  align-items: center;
+  background: #0b0b0b;
+  border-radius: 999px;
+  padding: 0.45rem 0.75rem;
+  /* border: 1px solid var(--primary-color); */
+  gap: 0.5rem;
+  min-width: 200px;
+}
+
+.hero-search input {
+  background: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary-color);
+
+  letter-spacing: 0.15em;
+  width: 100%;
+}
+
+.hero-search input::placeholder {
+  color: var(--primary-color);
+}
+
+.search-divider {
+  width: 1px;
+  height: 18px;
+  background: var(--primary-color);
+}
+
+.search-icon {
+  color: var(--primary-color);
+
+  cursor: pointer;
+}
+
+/* ICON BUTTONS */
+.hero-icon-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: #0b0b0b;
+  border: 1px solid transparent;
+  color: var(--primary-color);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+.hero-icon-btn:hover {
+  background: var(--primary-color);
+  color: #000;
+  box-shadow: 0 0 18px rgba(212, 175, 55, 0.45);
+}
