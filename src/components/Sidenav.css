@@ -49,10 +49,12 @@
   cursor: pointer;
   font-size: 0.75rem;
   letter-spacing: 0.3em;
+  text-decoration: none;
 }
 
 .nav-item .icon {
   font-size: 1.1rem;
+  margin-right: 0.5em;
 }
 
 .nav-item.active {

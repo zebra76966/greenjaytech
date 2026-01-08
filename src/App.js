@@ -2,15 +2,21 @@ import logo from "./logo.svg";
 import { useState, useEffect } from "react";
 import "./App.css";
 import Main from "./components/home/main";
+import ServicsMain from "./components/home/ServicesMain/ServicesMain";
 import SideNav from "./components/SideNav";
 import Lenis from "@studio-freight/lenis";
 import Footer from "./components/footer";
 import IntroLoader from "./components/IntroLoader";
 
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ServiceDetailHero from "./components/home/ServicesMain/servicesOverview/ServiceDetailHero";
+import ScrollToTop from "./components/scrolltotop";
+
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
+
   useEffect(() => {
-    // if (!isLoading && location.pathname !== "/create-blog") {
     const lenis = new Lenis({
       duration: 1.2,
       easing: (t) => Math.min(1, 1.001 - Math.pow(2, -10 * t)),
@@ -29,10 +35,6 @@ function App() {
       lenis.destroy();
     };
   }, []);
-  // }
-  // }, [isLoading, location.pathname]);
-
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2800);
@@ -40,20 +42,27 @@ function App() {
   }, []);
 
   return (
-    <>
+    <Router>
       <IntroLoader show={loading} />
 
+      <ScrollToTop />
+
       {!loading && (
-        <div className="bg-color-dark ">
+        <div className="bg-color-dark">
           <SideNav setIsNavOpen={(e) => setIsNavOpen(e)} />
 
-          <main className={`app-content  bg-color-dark ${isNavOpen ? "shifted" : ""}`}>
-            <Main />
+          <main className={`app-content bg-color-dark ${isNavOpen ? "shifted" : ""}`}>
+            <Routes>
+              <Route path="/" element={<Main />} />
+              <Route path="/services" element={<ServicsMain />} />
+              <Route path="/service/:id" element={<ServiceDetailHero />} />
+            </Routes>
+
             <Footer />
           </main>
         </div>
       )}
-    </>
+    </Router>
   );
 }
 

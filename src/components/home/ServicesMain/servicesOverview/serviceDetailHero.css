@@ -1,0 +1,149 @@
+.overviewdet-service-detail-hero {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  min-height: 100vh;
+  background: #000;
+  color: var(--primary-color);
+  overflow: hidden;
+  position: relative;
+}
+
+/* LEFT */
+.overviewdet-service-detail-left {
+  position: relative;
+  padding: 80px 50px;
+  background: linear-gradient(to right, rgba(0, 0, 0, 0.2) 10%, rgba(0, 0, 0, 0.5) 90%);
+  backdrop-filter: blur(12px);
+  z-index: 2;
+  border-right: 1px solid var(--primary-color);
+  box-shadow: 10px 0 15px rgba(0, 0, 0, 0.5);
+}
+
+.go-back-btn {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: none;
+  border: none;
+
+  letter-spacing: 2px;
+  font-size: 12px;
+  margin-bottom: 60px;
+  cursor: pointer;
+}
+
+.overviewdet-service-eyebrow {
+  font-size: 12px;
+  letter-spacing: 4px;
+  opacity: 0.7;
+}
+
+.overviewdet-service-title {
+  font-size: 72px;
+  line-height: 1;
+  margin: 30px 0;
+  border-bottom: 1px double var(--primary-color);
+}
+
+.overviewdet-service-title span {
+  display: block;
+  font-weight: 300;
+  letter-spacing: 3px;
+  opacity: 0.9;
+}
+
+.overviewdet-service-description p {
+  max-width: 480px;
+  line-height: 1.8;
+
+  color: var(--secondary-color);
+  margin-bottom: 18px;
+}
+
+.overviewdet-service-tags {
+  display: flex;
+  gap: 12px;
+  margin: 30px 0 50px;
+}
+
+.overviewdet-service-tags span {
+  border: 1px solid rgba(212, 168, 92, 0.6);
+  padding: 6px 14px;
+  border-radius: 50px;
+  font-size: 11px;
+}
+
+.overviewdet-service-actions {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+/* BUTTONS */
+.btn-outline-gold {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  background: none;
+  border: none;
+  color: #d4a85c;
+  letter-spacing: 2px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.btn-outline-gold .circle {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  border: 1px solid rgba(212, 168, 92, 0.6);
+  display: grid;
+  place-items: center;
+}
+
+/* RIGHT */
+
+.overviewdet-service-detail-bg-wrapper {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  padding-right: 4rem;
+}
+
+.overviewdet-service-detail-bg {
+  height: 90dvh;
+}
+
+.overviewdet-service-detail-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 2em;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .overviewdet-service-detail-hero {
+    grid-template-columns: 1fr;
+  }
+
+  .overviewdet-service-detail-right {
+    height: 50vh;
+  }
+}
+
+.overviewdet-service-detail-hero {
+  animation: depthFade 1.2s ease forwards;
+}
+
+@keyframes depthFade {
+  from {
+    filter: blur(10px);
+    transform: translateZ(-200px);
+  }
+  to {
+    filter: blur(0);
+    transform: translateZ(0);
+  }
+}
