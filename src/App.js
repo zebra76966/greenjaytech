@@ -15,7 +15,7 @@ import DoctrinesViewer from "./components/home/Doctrines/DoctrinesViewer";
 import SignUp from "./components/auth/SignUp";
 
 function App() {
-  const [isNavOpen, setIsNavOpen] = useState(false);
+  const [isNavOpen, setIsNavOpen] = useState(true);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {

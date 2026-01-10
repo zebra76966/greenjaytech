@@ -16,7 +16,7 @@ const navItems = [
 ];
 
 export default function SideNav({ setIsNavOpen }) {
-  const [open, setOpen] = useState(false);
+  const [open, setOpen] = useState(true);
 
   useEffect(() => {
     setIsNavOpen(open);

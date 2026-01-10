@@ -6,7 +6,7 @@ import FluidBackground from "./animtion2";
 
 const GlobalOperations = () => {
   return (
-    <div className="ch-100 d-flex align-items-center">
+    <div className="ch-100 d-flex align-items-center" style={{ overflowX: "hidden" }}>
       <Container fluid>
         <Row className="align-items-center">
           <Col lg={7}>
