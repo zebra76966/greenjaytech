@@ -1,0 +1,83 @@
+.overview-doctrine-card {
+  position: relative;
+  background: #050505;
+  border-radius: 24px;
+  border: 1px solid var(--primary-color);
+  overflow: hidden;
+  color: var(--primary-color);
+  height: 100%;
+  min-height: 350px;
+}
+
+.doctrine-icon {
+  position: absolute;
+  top: -10%;
+  background: #050505;
+  border-radius: 100%;
+  border: 1px solid var(--primary-color);
+  padding: 1em;
+  left: 50%;
+  z-index: 999;
+  transform: translateX(-50%);
+  box-shadow: 0 0 5px 10px rgba(212, 168, 92, 0.5);
+}
+
+.overview-doctrine-image-wrapper {
+  position: relative;
+  height: 280px;
+  overflow: hidden;
+  transition: all 0.5s ease-in-out;
+}
+
+.overview-doctrine-image-wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: relative;
+  z-index: 999;
+}
+
+.overview-doctrine-hover-bg {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0.9;
+}
+
+.overview-doctrine-content {
+  position: relative;
+  z-index: 2;
+  padding: 24px;
+}
+
+.overview-doctrine-content h3 {
+  font-size: 28px;
+  letter-spacing: 1px;
+  margin-bottom: 12px;
+}
+
+.overview-doctrine-content p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: var(--secondary-color);
+}
+
+.overview-doctrine-tags {
+  display: flex;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.overview-doctrine-tags span {
+  border: 1px solid rgba(212, 168, 92, 0.5);
+  padding: 4px 10px;
+  border-radius: 50px;
+  font-size: 11px;
+}
+
+.overview-doctrine-footer {
+  margin-top: 28px;
+  scale: 0.7;
+  transform-origin: right bottom;
+}

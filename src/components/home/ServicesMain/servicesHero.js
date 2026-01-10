@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col, Button } from "react-bootstrap";
 import { motion } from "framer-motion";
-import { FiArrowRight } from "react-icons/fi";
+import { FiArrowRight, FiUser } from "react-icons/fi";
 import "./servicesHero.css";
 import FluidBackgroundZoom from "../animtion3";
 import FluidBackground from "../animtion2";
@@ -11,6 +11,7 @@ import { CiDesktopMouse2 } from "react-icons/ci";
 import { IoChevronDownOutline } from "react-icons/io5";
 import { FiPhone, FiMail } from "react-icons/fi";
 import { FaMagnifyingGlass } from "react-icons/fa6";
+import { useNavigate } from "react-router-dom";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -26,6 +27,8 @@ const fadeUp = {
 };
 
 export default function ServicesHero() {
+  const navigate = useNavigate();
+
   return (
     <section className="services-hero-section bg-color-dark">
       <Container fluid>
@@ -45,6 +48,9 @@ export default function ServicesHero() {
 
               <button className="hero-icon-btn">
                 <FiMail className="fs-5" />
+              </button>
+              <button className="hero-icon-btn" onClick={() => navigate("/signup")}>
+                <FiUser className="fs-5" />
               </button>
             </div>
             <div className="w-100 h-100 position-relative " style={{ zIndex: 99 }}>

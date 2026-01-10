@@ -11,6 +11,8 @@ import IntroLoader from "./components/IntroLoader";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import ServiceDetailHero from "./components/home/ServicesMain/servicesOverview/ServiceDetailHero";
 import ScrollToTop from "./components/scrolltotop";
+import DoctrinesViewer from "./components/home/Doctrines/DoctrinesViewer";
+import SignUp from "./components/auth/SignUp";
 
 function App() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -56,6 +58,8 @@ function App() {
               <Route path="/" element={<Main />} />
               <Route path="/services" element={<ServicsMain />} />
               <Route path="/service/:id" element={<ServiceDetailHero />} />
+              <Route path="/doctrine/:id" element={<DoctrinesViewer />} />
+              <Route path="/signup" element={<SignUp />} />
             </Routes>
 
             <Footer />

@@ -1,0 +1,121 @@
+[
+  {
+    "id": 1,
+    "title": "Advance Protection - The Quiet Standard",
+    "pdf": "/assets/pdfs/Advance_Protection_The_Quiet_Standard.pdf",
+    "icon": "RiShieldStarLine",
+    "description": "Defines the philosophy and standards behind quiet, proactive protection."
+  },
+  {
+    "id": 2,
+    "title": "Architecture of Certainty",
+    "pdf": "/assets/pdfs/Architecture_of_Certainty.pdf",
+    "icon": "RiBuildingLine",
+    "description": "Explores how systems and structures create confidence and predictability."
+  },
+  {
+    "id": 3,
+    "title": "Bios",
+    "pdf": "/assets/pdfs/Bios.pdf",
+    "icon": "RiUserStarLine",
+    "description": "Profiles and background information on key people and entities."
+  },
+  {
+    "id": 4,
+    "title": "Continuity & Response",
+    "pdf": "/assets/pdfs/Continuity_and_Response.pdf",
+    "icon": "RiRefreshLine",
+    "description": "Outlines continuity planning and rapid response strategies."
+  },
+  {
+    "id": 5,
+    "title": "Digital Domain Protection - Governing",
+    "pdf": "/assets/pdfs/Digital_Domain_Protection_Governing_UHNW_Lifestyle.pdf",
+    "icon": "RiGlobalLine",
+    "description": "Framework for governing and securing digital domains."
+  },
+  {
+    "id": 6,
+    "title": "Engineering a Protected Life",
+    "pdf": "/assets/pdfs/Engineering_A_Protected_Life.pdf",
+    "icon": "RiToolsLine",
+    "description": "A guide to designing life systems around safety and resilience."
+  },
+  {
+    "id": 7,
+    "title": "Engineering Quiet Confidence",
+    "pdf": "/assets/pdfs/Engineering_Quiet_Confidence.pdf",
+    "icon": "RiMindMap",
+    "description": "How confidence is built through thoughtful engineering and design."
+  },
+  {
+    "id": 8,
+    "title": "Family Office Stewardship",
+    "pdf": "/assets/pdfs/Family_Office_Stewardship.pdf",
+    "icon": "RiHomeHeartLine",
+    "description": "Principles for managing and protecting family offices."
+  },
+  {
+    "id": 9,
+    "title": "Global Operations Accountability",
+    "pdf": "/assets/pdfs/Global_Operations_Accountability.pdf",
+    "icon": "RiEarthLine",
+    "description": "Defines responsibility and oversight across global operations."
+  },
+  {
+    "id": 10,
+    "title": "A Single Standard of Continuity",
+    "pdf": "/assets/pdfs/GreenJay_A_Single_Standard_of_Continuity.pdf",
+    "icon": "RiInfinityLine",
+    "description": "A unified approach to long-term continuity and stability."
+  },
+  {
+    "id": 11,
+    "title": "Doctrine: Securing Privacy",
+    "pdf": "/assets/pdfs/GreenJay_Doctrine_Securing_Privacy.pdf",
+    "icon": "RiLockLine",
+    "description": "Core doctrine on privacy, discretion, and data protection."
+  },
+  {
+    "id": 12,
+    "title": "Protective Group - Engineered Certainty",
+    "pdf": "/assets/pdfs/Greenjay_Protective_Group_Engineered_Certainty.pdf",
+    "icon": "RiTeamLine",
+    "description": "How protective teams are structured for certainty and trust."
+  },
+  {
+    "id": 13,
+    "title": "Integrated Protection Sovereignty",
+    "pdf": "/assets/pdfs/Integrated_Protection_Sovereignty_Final.pdf",
+    "icon": "RiShieldKeyholeLine",
+    "description": "A comprehensive model for sovereign, integrated protection."
+  },
+  {
+    "id": 14,
+    "title": "Quiet Confidence - Engineered",
+    "pdf": "/assets/pdfs/Quiet_Confidence_Engineered.pdf",
+    "icon": "RiLightbulbFlashLine",
+    "description": "Engineering principles that translate into calm, silent confidence."
+  },
+  {
+    "id": 15,
+    "title": "The Architecture of Advance Protection",
+    "pdf": "/assets/pdfs/The_Architecture_of_Advance_Protection.pdf",
+    "icon": "RiLayoutLine",
+    "description": "Structural blueprint for modern, advance protection systems."
+  },
+  {
+    "id": 16,
+    "title": "The Global Services Model",
+    "pdf": "/assets/pdfs/The_Global_Services.pdf",
+    "icon": "RiServiceLine",
+    "description": "Overview of global service design and delivery."
+  },
+  {
+    "id": 17,
+    "title": "The Governed Domain Standard",
+    "pdf": "/assets/pdfs/The_Governed_Domain_Standard.pdf",
+    "icon": "RiSettings3Line",
+    "description": "Defines standards for governance across protected domains."
+  }
+]

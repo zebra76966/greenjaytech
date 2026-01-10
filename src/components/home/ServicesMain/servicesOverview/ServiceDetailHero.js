@@ -6,6 +6,7 @@ import FluidBackground from "../../animtion2";
 import services from "../servicesData.json";
 import { useNavigate, useParams } from "react-router-dom";
 import ServicesOverview from "./servicesOverviewMain";
+import ContactMain from "../../contact/contactMain";
 
 export default function ServiceDetailHero({ tags = ["tag1", "tag1", "tag1"] }) {
   const params = useParams();
@@ -94,6 +95,7 @@ export default function ServiceDetailHero({ tags = ["tag1", "tag1", "tag1"] }) {
       </motion.section>
 
       <ServicesOverview headertxt={"OTHER SERVICES."} />
+      <ContactMain />
     </>
   );
 }
