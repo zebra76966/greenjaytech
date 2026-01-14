@@ -1,0 +1,1091 @@
+[
+  {
+    "slug": "tscm-confidentiality-assurance",
+    "sections": [
+      {
+        "type": "doctrine",
+        "eyebrow": "THE MODERN THREAT LANDSCAPE",
+        "title": "WHY TSCM NOW: PRIVACY IS LEVERAGE",
+        "body": [
+          "In the modern threat landscape, surveillance risks have migrated from dramatic intrusions to subtle exploitations of everyday environments such as staffed residences, executive offices, and luxury travel venues...",
+          "Operational security is the foundation upon which your leverage and negotiation power rest."
+        ],
+        "images": ["TSCM15.png"]
+      },
+      {
+        "type": "doctrine",
+        "theme": "green",
+        "eyebrow": "THE GREENJAY ADVANTAGE",
+        "title": "SPECIAL FORCES ELECTRONIC WARFARE EXPERTISE",
+        "body": ["GreenJay's TSCM capability is led by a retired U.S. Army Special Forces operator with over a decade of direct experience in RF spectrum analysis..."],
+        "columns": [
+          {
+            "title": "RF & Spectrum Expertise",
+            "text": "Direct operational experience with advanced spectrum analysis equipment in contested environments..."
+          },
+          {
+            "title": "Counter-Surveillance Tradecraft",
+            "text": "Special Forces counter-surveillance operations require detecting hostile observation before it becomes actionable intelligence..."
+          },
+          {
+            "title": "Engineering Competence",
+            "text": "An MS in Computer Engineering combined with tactical communications expertise closes the seam between physical and cyber TSCM..."
+          }
+        ]
+      },
+      {
+        "type": "method",
+        "eyebrow": "DOCTRINE-DRIVEN PROCESS",
+        "title": "THE GREENJAY METHOD: THREAT → VERIFY → HARDEN → CONTROL → SUSTAIN",
+        "body": ["GreenJay's TSCM methodology differs from a one-off sweep by treating privacy assurance as a continuous cycle..."],
+        "steps": [
+          { "key": "Threat", "label": "Design Scope" },
+          { "key": "Verify", "label": "Detection" },
+          { "key": "Harden", "label": "Remediation" },
+          { "key": "Control", "label": "Integrity" },
+          { "key": "Sustain", "label": "Cadence" }
+        ],
+        "images": ["TSCM9.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "DECISION-MAKING SPACES",
+        "title": "EXECUTIVE OFFICE & BOARDROOM CONFIDENTIALITY ASSURANCE",
+        "purpose": "GreenJay performs a comprehensive physical and technical inspection of decision-making spaces to detect illicit audio, video, and data transmission devices.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "This capability is designed specifically for executives, boards of directors, and deal teams who require absolute confidence in the sanctity of their discussions."
+          },
+          {
+            "type": "paragraph",
+            "text": "While we significantly reduce the probability of compromise, we remind clients that meeting integrity relies equally on access control and physical security protocols after our team departs."
+          },
+          { "type": "titled", "title": "Physical Sweep", "text": "Systematic inspection of furniture, fixtures, ceilings, HVAC, and AV equipment for concealed devices." },
+          { "type": "titled", "title": "Technical Inspection", "text": "RF analysis and wired-infrastructure inspection to detect transmitters and data exfiltration paths." }
+        ],
+        "images": ["TSCM8.png", "TSCM14.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "THE SANCTUARY",
+        "title": "UHNW RESIDENCE & ESTATE CONFIDENTIALITY ASSURANCE",
+        "purpose": "Ensure the private home remains a sanctuary free from surveillance.",
+        "content": [
+          { "type": "paragraph", "text": "Residences are the softest targets for intelligence gathering. We execute discreet yet thorough sweeps of high-value living spaces." },
+          { "type": "paragraph", "text": "We work with estate managers to establish protocols that preserve integrity after inspection." },
+          { "type": "titled", "title": "Thermal Imaging & Physical Search", "text": "Detect powered devices concealed within walls, furniture, and fixtures." },
+          { "type": "titled", "title": "Staff & Vendor Considerations", "text": "Access governance and vetting to prevent reintroduction of devices." }
+        ],
+        "images": ["TSCM16.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "UNCONTROLLED ENVIRONMENTS",
+        "title": "OFF-SITE MEETING SWEEPS",
+        "purpose": "Rapid verification for hotels, venues, and temporary spaces.",
+        "content": [
+          { "type": "paragraph", "text": "Hotels and venues are inherently uncontrolled. We provide time-bound assurance for sensitive negotiations." },
+          { "type": "titled", "title": "Rapid Deployment", "text": "Teams arrive ahead of meetings to sanitize environments under tight windows." },
+          { "type": "titled", "title": "Time-Bound Validity", "text": "Assurance expires once access control is lost." }
+        ],
+        "images": ["TSCM17.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "SIGNAL INTELLIGENCE",
+        "title": "RF SPECTRUM ANALYSIS & SIGNAL LOCALIZATION",
+        "purpose": "Identify and localize suspicious RF transmissions.",
+        "content": [
+          { "type": "paragraph", "text": "Modern devices use burst and low-power transmissions to evade detection." },
+          { "type": "titled", "title": "Spectrum Mapping", "text": "Baseline legitimate signals and identify anomalies." },
+          { "type": "titled", "title": "Signal Localization", "text": "Direction-finding to physically locate transmitters." }
+        ],
+        "images": ["TSCM18.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "ACTIVE PROTECTION",
+        "title": "IN-CONFERENCE REAL-TIME MONITORING",
+        "purpose": "Continuous RF monitoring during critical sessions.",
+        "content": [
+          { "type": "paragraph", "text": "Pre-meeting sweeps cannot prevent devices activated mid-session." },
+          { "type": "titled", "title": "Live Spectrum Surveillance", "text": "Operators monitor RF in real-time for anomalies." },
+          { "type": "titled", "title": "Psychological Deterrent", "text": "Visible monitoring discourages insider compromise." }
+        ],
+        "images": ["TSCM19.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 6,
+        "eyebrow": "DIGITAL INFRASTRUCTURE",
+        "title": "CYBER TSCM & CONNECTED ENVIRONMENT ANALYSIS",
+        "purpose": "Identify risks in Wi-Fi, Bluetooth, and IoT ecosystems.",
+        "content": [
+          { "type": "paragraph", "text": "Smart devices bridge physical privacy and digital exposure." },
+          { "type": "titled", "title": "Wi-Fi & Network Analysis", "text": "Identify rogue access points and weak encryption." },
+          { "type": "titled", "title": "IoT Device Audit", "text": "Enumerate and assess connected devices." }
+        ],
+        "images": ["TSCM20.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 7,
+        "eyebrow": "FORENSIC INSPECTION",
+        "title": "ADVANCED DETECTION SUPPORT (NLJD & THERMAL)",
+        "purpose": "Locate powered-off or deeply concealed electronics.",
+        "content": [
+          { "type": "paragraph", "text": "Sophisticated adversaries deploy dormant or deeply embedded devices." },
+          { "type": "titled", "title": "NLJD", "text": "Detect semiconductor junctions regardless of power state." },
+          { "type": "titled", "title": "Thermal Imaging", "text": "Reveal concealed electronics via heat signatures." }
+        ],
+        "images": ["TSCM21.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 8,
+        "eyebrow": "MOBILE SECURITY",
+        "title": "VEHICLE & MOBILITY PRIVACY ASSURANCE",
+        "purpose": "Protect executive and family mobility from tracking.",
+        "content": [
+          { "type": "paragraph", "text": "Vehicles are mobile conference rooms and pattern-of-life beacons." },
+          { "type": "titled", "title": "GPS Tracker Detection", "text": "Inspect wheel wells, undercarriage, OBD ports, and RF emissions." },
+          { "type": "titled", "title": "Regular Cadence", "text": "Monthly or quarterly sweeps based on risk profile." }
+        ],
+        "images": ["TSCM22.png"]
+      }
+    ],
+
+    "includes": [
+      "executive office & boardroom sweeps",
+      "UHNW residence & estate inspections",
+      "off-site meeting verification",
+      "RF spectrum analysis & signal localization",
+      "in-conference real-time monitoring",
+      "cyber TSCM & connected environment analysis",
+      "advanced detection support (NLJD, thermal)",
+      "vehicle & mobility privacy assurance",
+      "routine cadence programs",
+      "event-driven deployments",
+      "emergency response capability",
+      "executive summary reports",
+      "technical documentation",
+      "hardening recommendations",
+      "access governance guidance",
+      "vendor vetting protocols",
+      "post-inspection integrity briefings"
+    ]
+  },
+  {
+    "slug": "digital-executive-protection",
+    "sections": [
+      {
+        "type": "doctrine",
+        "eyebrow": "THE FRAMEWORK",
+        "title": "THE PROTECTION DOCTRINE",
+        "body": [
+          "We translate assessment into an engineered plan with measurable outcomes at each stage. This is not IT support; this is a bespoke security environment built around your life.",
+          "Our five-phase methodology ensures nothing is left to chance—every control is designed, implemented, validated, and maintained with the same rigor applied to protecting classified systems.",
+          "We don't just install tools; we build an architecture that evolves with your threat landscape."
+        ],
+        "images": ["DP17.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "FOUNDATION",
+        "title": "THREAT & EXPOSURE ASSESSMENT",
+        "purpose": "We treat your personal digital life like operational terrain—mapping assets against exposure signals adversaries use to target you and your family.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We begin by mapping your personal digital life as operational terrain—identifying the assets that matter most and the exposure signals that adversaries exploit. This is a comprehensive intelligence assessment that reveals how you appear to threat actors."
+          },
+          {
+            "type": "paragraph",
+            "text": "We map attack paths, recovery chains, and trust relationships where one weak link becomes a gateway to everything else."
+          },
+          {
+            "type": "titled",
+            "title": "Adversary Paths",
+            "text": "We don't just look for misconfigurations; we look for how a minor breach could pivot into total compromise."
+          }
+        ],
+        "images": ["DP3.png", "DP18.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "SUPPRESSION",
+        "title": "PRIVACY EXPOSURE REDUCTION",
+        "purpose": "Materially degrade an adversary's ability to target you by suppressing public data signals before they become attack vectors.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Your information is scattered across hundreds of data brokers and public aggregators. Each listing is a potential starting point for hostile research."
+          },
+          {
+            "type": "titled",
+            "title": "Data Broker Suppression",
+            "text": "We remove your data, verify removal, and maintain suppression over time."
+          },
+          {
+            "type": "titled",
+            "title": "Metadata Cleanup",
+            "text": "We address location-revealing data embedded in photos and documents."
+          },
+          {
+            "type": "titled",
+            "title": "Ongoing Maintenance",
+            "text": "Exposure drifts back over time. We monitor and correct continuously."
+          }
+        ],
+        "images": ["DP4.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "HARDENING",
+        "title": "ACCOUNT & IDENTITY PROTECTION",
+        "purpose": "Secure the root identities that serve as the keys to your entire digital life.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We apply a tiered identity architecture that contains compromise and limits blast radius."
+          },
+          {
+            "type": "titled",
+            "title": "Phishing-Resistant Access",
+            "text": "Hardware-backed authentication and elimination of weak MFA."
+          },
+          {
+            "type": "titled",
+            "title": "Root vs. Branch Architecture",
+            "text": "Root accounts receive maximum protection and isolation."
+          },
+          {
+            "type": "titled",
+            "title": "Vault Hygiene",
+            "text": "Credential discipline with secure sharing and recovery paths."
+          }
+        ],
+        "images": ["DP5.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "ENDPOINTS",
+        "title": "DEVICE HARDENING",
+        "purpose": "Assume adversarial pressure on every device you carry.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Your phones and laptops are where most compromises occur. We establish a hardened baseline across all endpoints."
+          },
+          {
+            "type": "titled",
+            "title": "Posture Assessment",
+            "text": "We identify risky configurations and outdated components."
+          },
+          {
+            "type": "titled",
+            "title": "Lock Down",
+            "text": "Secure recovery paths and prevent physical loss from becoming digital compromise."
+          },
+          {
+            "type": "titled",
+            "title": "Lifecycle Management",
+            "text": "Secure onboarding and decommissioning of devices."
+          }
+        ],
+        "images": ["DP6.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "FINANCIAL DEFENSE",
+        "title": "EMAIL & FINANCIAL PROTECTION",
+        "purpose": "Email is the primary attack surface for fraud. We harden it accordingly.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Business email compromise starts in the inbox. We close these paths before they can be exploited."
+          },
+          {
+            "type": "titled",
+            "title": "Silent Compromise Checks",
+            "text": "We detect hidden forwarding rules and delegated access."
+          },
+          {
+            "type": "titled",
+            "title": "Financial Hardening",
+            "text": "Out-of-band verification for high-risk transactions."
+          },
+          {
+            "type": "titled",
+            "title": "Verify-and-Contain Doctrine",
+            "text": "Contain first, investigate second."
+          }
+        ],
+        "images": ["DP7.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 6,
+        "eyebrow": "INFRASTRUCTURE",
+        "title": "HOME NETWORK ENGINEERING",
+        "purpose": "Consumer networks cannot handle enterprise-grade risk.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We engineer your residence like a secure facility with zones and containment."
+          },
+          {
+            "type": "titled",
+            "title": "Network Segmentation",
+            "text": "IoT, Guest, and Admin zones with explicit controls."
+          },
+          {
+            "type": "titled",
+            "title": "Controlled Administrative Access",
+            "text": "Governed change and access discipline."
+          }
+        ],
+        "images": ["DP8.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 7,
+        "eyebrow": "PERIMETER",
+        "title": "SECURE WI-FI & SIGNAL CONTAINMENT",
+        "purpose": "Wi-Fi is often the softest edge of your perimeter.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Wireless signals don’t respect property lines. We contain them."
+          },
+          {
+            "type": "titled",
+            "title": "Leakage Control",
+            "text": "Prevent signal spill beyond your perimeter."
+          },
+          {
+            "type": "titled",
+            "title": "Rogue Defense",
+            "text": "Detect evil twin and impersonation networks."
+          },
+          {
+            "type": "titled",
+            "title": "Role Design",
+            "text": "Guest, Staff, and Admin segregation."
+          }
+        ],
+        "images": ["DP9.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 8,
+        "eyebrow": "MOBILE SECURITY",
+        "title": "TRAVEL & MOBILE CONNECTIVITY",
+        "purpose": "Travel is hostile terrain for digital security.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We enforce secure posture regardless of the network you’re on."
+          },
+          {
+            "type": "titled",
+            "title": "Private Connectivity",
+            "text": "Dedicated tunnels and enforced encryption."
+          },
+          {
+            "type": "titled",
+            "title": "Hostile Network Safeguards",
+            "text": "Defense against rogue infrastructure."
+          },
+          {
+            "type": "titled",
+            "title": "Reduced Friction",
+            "text": "Security without cognitive load."
+          }
+        ],
+        "images": ["DP10.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 9,
+        "eyebrow": "ACTIVE DEFENSE",
+        "title": "INTELLIGENCE & COUNTER-SURVEILLANCE",
+        "purpose": "Detect threats before they materialize.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We monitor the same sources attackers use."
+          },
+          {
+            "type": "titled",
+            "title": "Early Detection",
+            "text": "Surface, deep, and dark web monitoring."
+          },
+          {
+            "type": "titled",
+            "title": "Impersonation Takedowns",
+            "text": "Rapid removal of malicious infrastructure."
+          },
+          {
+            "type": "titled",
+            "title": "Targeting Intent",
+            "text": "Indicators of hostile research."
+          }
+        ],
+        "images": ["DP11.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 10,
+        "eyebrow": "EXTENDED PROTECTION",
+        "title": "THE WHOLE-MAN CONCEPT: FAMILY COVERAGE",
+        "purpose": "Adversaries target the softest entry point: the family.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We extend protection to the entire household."
+          },
+          {
+            "type": "titled",
+            "title": "Compartmentation",
+            "text": "Family compromise cannot pivot to executive access."
+          },
+          {
+            "type": "titled",
+            "title": "Anti-Fraud Protocols",
+            "text": "Livable verification procedures."
+          },
+          {
+            "type": "titled",
+            "title": "Separation",
+            "text": "Isolation by role and risk."
+          }
+        ],
+        "images": ["DP12.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 11,
+        "eyebrow": "VALIDATION",
+        "title": "PENETRATION TESTING & VALIDATION",
+        "purpose": "Protection without validation is hope.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We test the system the way real attackers would."
+          },
+          {
+            "type": "titled",
+            "title": "Real Attack Paths",
+            "text": "Prove segmentation and containment."
+          },
+          {
+            "type": "titled",
+            "title": "Identity Resilience",
+            "text": "Test social engineering resistance."
+          },
+          {
+            "type": "titled",
+            "title": "Outcome",
+            "text": "Measured resilience, not theory."
+          }
+        ],
+        "images": ["DP13.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 12,
+        "eyebrow": "RESPONSE",
+        "title": "24/7 RESPONSE & GOVERNANCE",
+        "purpose": "Digital attacks don’t follow business hours.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Immediate human response, day or night."
+          },
+          {
+            "type": "paragraph",
+            "text": "Detect → Verify → Contain → Remediate → Document"
+          },
+          {
+            "type": "titled",
+            "title": "Governance",
+            "text": "Documented baselines and drift control."
+          },
+          {
+            "type": "titled",
+            "title": "Support",
+            "text": "Just-in-time access with auditability."
+          }
+        ],
+        "images": ["DP14.png"]
+      },
+
+      {
+        "type": "doctrine",
+        "eyebrow": "THE APPROACH",
+        "title": "OPERATIONAL ARCHITECTURE, NOT JUST TOOLS",
+        "body": [
+          "We deliver a doctrine-first digital protection program—not a stack of products hoping to work together.",
+          "Every component is selected, configured, and validated as part of a coherent system."
+        ],
+        "images": ["DP2.png"]
+      }
+    ],
+
+    "includes": [
+      "comprehensive digital threat assessment",
+      "privacy exposure review and remediation",
+      "data broker suppression with monitoring",
+      "credential leak monitoring",
+      "phishing-resistant authentication",
+      "device posture hardening",
+      "home network engineering",
+      "secure Wi-Fi design",
+      "travel and mobile safeguards",
+      "family digital protection",
+      "dark web monitoring",
+      "impersonation takedowns",
+      "penetration testing",
+      "continuous monitoring",
+      "24/7 incident response",
+      "governance baselines",
+      "prioritized mitigation roadmap"
+    ]
+  },
+  {
+    "slug": "digital-domain-command",
+    "sections": [
+      {
+        "type": "doctrine",
+        "theme": "green",
+        "eyebrow": "THE GREENJAY DIFFERENCE",
+        "title": "BUILT BY OPERATORS WHO HAVE LIVED THE MISSION",
+        "body": [
+          "Digital Domain Command isn't a repackaged commercial product. It was built by a U.S. Army Special Forces communications specialist who deployed tactical systems in real-world combat environments—where communications security was the difference between mission success and catastrophic compromise.",
+          "With over 15 years of military communications experience, including electronic warfare and tactical RF deployment, our founder understands how adversaries exploit standard mobile networks.",
+          "This fusion of academic rigor and operational expertise now serves principals who demand the highest standard of communications security."
+        ]
+      },
+
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "THE PROBLEM",
+        "title": "THE COMMUNICATIONS SECURITY GAP",
+        "purpose": "Why standard mobile networks fail high-consequence operations.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Standard mobile networks were engineered for consumer convenience—not executive protection. Every connection broadcasts identifying information that can be captured using inexpensive equipment."
+          },
+          {
+            "type": "paragraph",
+            "text": "IMSI-catchers are deployed by criminal groups, intelligence services, and private investigators worldwide. Pattern-of-life analysis enables targeting even when content is encrypted."
+          }
+        ],
+        "images": ["digi1.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "WHY IT MATTERS",
+        "title": "OPERATIONAL RISK IMPLICATIONS",
+        "purpose": "The correlation between connectivity and physical exposure.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Technical vulnerabilities translate directly into physical and reputational risk. A compromised device becomes a real-time beacon broadcasting location."
+          },
+          {
+            "type": "paragraph",
+            "text": "During international travel, risk compounds through foreign carrier access, compromised Wi-Fi, and invisible interception."
+          }
+        ],
+        "images": ["digi2.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "THE SOLUTION",
+        "title": "DIGITAL DOMAIN COMMAND",
+        "purpose": "A sovereign private network architecture.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Devices authenticate through GreenJay’s private core rather than public carriers—establishing a sovereign communications pathway."
+          },
+          {
+            "type": "paragraph",
+            "text": "Think of it as operating your own private cellular carrier with global reach."
+          }
+        ],
+        "images": ["digi3.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "DEVICE SECURITY",
+        "title": "IDENTITY & LOCATION CONTROL",
+        "purpose": "Device-level authentication and restrictions.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "IMEI locking ensures SIMs cannot function in unauthorized devices."
+          },
+          {
+            "type": "paragraph",
+            "text": "Geo-fencing enforces policy based on physical location."
+          }
+        ],
+        "images": ["digi8.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "ARCHITECTURE FOUNDATION",
+        "title": "FOUR PILLARS OF PROTECTION",
+        "purpose": "The strategic foundation of the network.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The architecture is built on four non-negotiable standards learned in hostile environments."
+          }
+        ],
+        "images": ["digi5.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 6,
+        "eyebrow": "HOW IT WORKS",
+        "title": "TECHNICAL ARCHITECTURE",
+        "purpose": "Data flow from device to secure endpoint.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Traffic is aggregated across 750+ carriers and routed through secure edge infrastructure."
+          },
+          {
+            "type": "paragraph",
+            "text": "Segmented routing ensures isolation and resilience."
+          }
+        ],
+        "images": ["digi6.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 7,
+        "eyebrow": "COMMAND & CONTROL",
+        "title": "CLOUDCORE MANAGEMENT PORTAL",
+        "purpose": "Real-time command and control.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Security teams gain MNO-level control through an intuitive portal."
+          },
+          {
+            "type": "paragraph",
+            "text": "SIMs, users, and permissions can be managed in real-time."
+          }
+        ],
+        "images": ["digi7.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 8,
+        "eyebrow": "USE CASE",
+        "title": "EXECUTIVE PROTECTION OPERATIONS",
+        "purpose": "Tactical communications for mobile teams.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Secure EUDs and mobile backhaul provide protected communications for principals and EP teams."
+          }
+        ],
+        "images": ["digi9.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 9,
+        "eyebrow": "USE CASE",
+        "title": "ESTATE & RESIDENTIAL SECURITY",
+        "purpose": "Private backhaul for static assets.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Surveillance and access systems route through the private LTE/5G network."
+          }
+        ],
+        "images": ["digi10.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 10,
+        "eyebrow": "USE CASE",
+        "title": "TRAVEL SECURITY",
+        "purpose": "Bridging untrusted environments.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "The private network extends into hostile travel environments."
+          }
+        ],
+        "images": ["digi11.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 11,
+        "eyebrow": "GETTING STARTED",
+        "title": "ENGAGEMENT PROCESS",
+        "purpose": "From assessment to sustainment.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Delivered as a managed capability with concierge-level support."
+          }
+        ],
+        "images": ["digi12.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 12,
+        "eyebrow": "SCALE & REACH",
+        "title": "GLOBAL OPERATIONAL FOOTPRINT",
+        "purpose": "Scale and redundancy.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "245+ countries, 750+ carriers, and multi-core redundancy."
+          }
+        ],
+        "images": ["digi13.png"]
+      }
+    ],
+
+    "includes": [
+      "communications security assessment",
+      "custom architecture design",
+      "private APN routing",
+      "static IP enablement",
+      "deep packet inspection",
+      "TLS SIM authentication",
+      "IMEI locking & geo-fencing",
+      "multi-IMSI profiles",
+      "carrier aggregation",
+      "Zero Trust architecture",
+      "private core routing",
+      "secure edge delivery",
+      "VPN and cloud integration",
+      "CloudCore portal access",
+      "SIM & user management",
+      "tactical EUD deployment",
+      "mobile router backhaul",
+      "estate surveillance backhaul",
+      "travel security bridging",
+      "concierge support",
+      "continuous optimization"
+    ]
+  },
+  {
+    "slug": "estate-security-architecture",
+    "sections": [
+      {
+        "type": "doctrine",
+        "eyebrow": "THE DOCTRINE",
+        "title": "WHAT “ESTATE ARCHITECTURE” MEANS IN GREENJAY DOCTRINE",
+        "body": [
+          "We start with the threat, not the product catalog. We treat the estate like terrain: how people approach it, how they move through it, where blind spots exist, and what failure costs.",
+          "Architecture means the unglamorous work is done right—network segmentation, secure remote access, power protection, redundancy, credential governance, commissioning, acceptance testing, and ongoing validation.",
+          "If you want a system that looks refined and performs under real-world pressure, this is what we do."
+        ]
+      },
+
+      {
+        "type": "doctrine",
+        "eyebrow": "THE GREENJAY ROADMAP",
+        "title": "DOCTRINE-FIRST SECURITY ARCHITECTURE FOR UHNW ESTATES",
+        "body": [
+          "We don’t sell a stack. We deliver an operating picture—engineered, validated, and sustained.",
+          "GreenJay starts with threat and builds a bespoke security operating system around your property, lifestyle, staffing model, and consequence profile."
+        ]
+      },
+
+      {
+        "type": "phase",
+        "index": 0,
+        "eyebrow": "PHASE 0",
+        "title": "INTELLIGENCE & THREAT DESIGN",
+        "purpose": "Define the adversary, map the terrain, and establish the rules of engagement.",
+        "content": [
+          { "type": "titled", "title": "Threat Assessment", "text": "Baseline adversary intent, capability, and vectors to define posture and consequence." },
+          { "type": "titled", "title": "Site Threat Analysis", "text": "Map approach routes, concealment, service corridors, and workflows into an operational plan." },
+          { "type": "titled", "title": "Security Hardening Plan", "text": "Integrate physical, electronic, and procedural layers into a single executable architecture." }
+        ],
+        "images": ["phase0.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "PHASE 1",
+        "title": "ARCHITECTURE & HARDENING",
+        "purpose": "Engineer and harden the stack so it cannot be casually bypassed or mismanaged.",
+        "content": [
+          { "type": "titled", "title": "Bespoke System Architecture", "text": "Surveillance, access, intrusion, life safety, and workflows designed as one system." },
+          { "type": "titled", "title": "Network Segmentation", "text": "Military-grade VLAN architecture with least-privilege and PACE alignment." },
+          { "type": "titled", "title": "Penetration Testing & Validation", "text": "Adversary-style testing of physical and cyber paths until the system performs." }
+        ],
+        "images": ["phase1.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "PHASE 2",
+        "title": "CORE SECURITY SYSTEMS",
+        "purpose": "Build detection, verification, and control into one operating picture.",
+        "content": [
+          { "type": "titled", "title": "Video Surveillance", "text": "Coverage engineered for identification and verification, not just motion." },
+          { "type": "titled", "title": "Alarm Systems", "text": "Intrusion and life safety tuned for signal over noise." },
+          { "type": "titled", "title": "Access Control", "text": "Credentialed movement with governance and video context." },
+          { "type": "titled", "title": "Secure Mode", "text": "Posture shift enabling rapid lockdown and controlled escalation." }
+        ],
+        "images": ["phase2.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "PHASE 3",
+        "title": "AI-ENABLED MONITORING & OPERATING PICTURE",
+        "purpose": "Reduce noise, accelerate decisions, and operationalize response.",
+        "content": [
+          { "type": "titled", "title": "AI Monitoring", "text": "Behavioral cues and anomaly detection tuned for your environment." },
+          { "type": "titled", "title": "Command Center", "text": "Workflow-driven operating picture: detect → verify → respond." },
+          { "type": "titled", "title": "SOPs & Training", "text": "Systems built to be run under stress at 2AM." },
+          { "type": "titled", "title": "Remote Monitoring", "text": "24/7 visibility and proactive resolution." }
+        ],
+        "images": ["phase3.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "PHASE 4",
+        "title": "RESILIENCE, REDUNDANCY & POWER",
+        "purpose": "Keep the system alive through outages and attack.",
+        "content": [
+          { "type": "titled", "title": "Redundancy", "text": "Eliminate single points of failure." },
+          { "type": "titled", "title": "UPS & Runtime", "text": "Threat-model-driven backup power." },
+          { "type": "titled", "title": "PACE Communications", "text": "Primary, Alternate, Contingency, Emergency pathways." }
+        ],
+        "images": ["phase4.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "PHASE 5",
+        "title": "CONTINUOUS ASSURANCE",
+        "purpose": "Prove performance and keep the system sharp.",
+        "content": [
+          { "type": "titled", "title": "Acceptance Testing", "text": "Every zone and escalation path validated." },
+          { "type": "titled", "title": "Audits & Iteration", "text": "Quarterly tuning and governance checks." }
+        ],
+        "images": ["phase5.png"]
+      }
+    ],
+
+    "includes": [
+      "AI-enabled surveillance architecture",
+      "PTZ + fixed camera coverage planning",
+      "analytics configuration",
+      "access control zoning & roles",
+      "intrusion and life-safety integration",
+      "command center operating picture",
+      "SOP & escalation framework",
+      "network segmentation (PACE-aligned)",
+      "penetration testing & validation",
+      "UPS power & redundancy design",
+      "remote monitoring & support",
+      "quarterly audits & iteration"
+    ]
+  },
+  {
+    "slug": "advanced-executive-protection",
+    "sections": [
+      {
+        "type": "doctrine",
+        "eyebrow": "THE DISTINCTION",
+        "title": "WHY THIS IS ADVANCED",
+        "body": [
+          "Most firms protect the body. Advanced Executive Protection protects the entire life—physical and digital. GreenJay runs EP as a multi-domain program: protective intelligence, digital footprint reduction, electronic exposure control, and real-world movement security under one operating standard.",
+          "What makes this advanced is the rare combination of dignitary protection discipline, Special Forces counter-surveillance tradecraft, and engineering-level technical protection. We don’t outsource the technical layer—because in modern EP, that separation is the gap attackers exploit.",
+          "Traditional EP manages proximity. Advanced EP manages your entire threat signature."
+        ]
+      },
+
+      {
+        "type": "doctrine",
+        "eyebrow": "WHAT SETS US APART",
+        "title": "THE GREENJAY DIFFERENCE",
+        "columns": [
+          {
+            "title": "Special Forces Tradecraft + Dignitary Standards",
+            "text": "Advance work, counter-surveillance posture, contingency planning, and disciplined movement integrated with dignitary coordination."
+          },
+          {
+            "title": "Command & Control Oversight",
+            "text": "Movements run with live monitoring, status updates, and escalation routing."
+          },
+          {
+            "title": "Integrated Physical + Technical Protection",
+            "text": "Devices, networks, comms exposure, and hostile environments are part of the plan."
+          },
+          {
+            "title": "One Accountable Lead",
+            "text": "One chain of command, one operating picture, one standard."
+          }
+        ]
+      },
+
+      {
+        "type": "method",
+        "eyebrow": "A GOVERNED LIFECYCLE",
+        "title": "HOW WE RUN OPERATIONS",
+        "steps": [
+          { "key": "01", "label": "Threat Profile (Physical + Digital)" },
+          { "key": "02", "label": "Advance Operations" },
+          { "key": "03", "label": "Controlled Movement" },
+          { "key": "04", "label": "Technical Protection" },
+          { "key": "05", "label": "Command & Control" },
+          { "key": "06", "label": "Family Coverage" }
+        ]
+      },
+
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "FOUNDATION",
+        "title": "THREAT PROFILE",
+        "purpose": "Define posture, boundaries, and escalation thresholds.",
+        "content": [{ "type": "paragraph", "text": "We begin with a structured threat profile: lifestyle patterns, exposure, travel routines, residence considerations, and digital footprint." }],
+        "images": ["sitesurvey.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "ADVANCE",
+        "title": "ADVANCE OPERATIONS",
+        "purpose": "Shape the environment before arrival.",
+        "content": [
+          { "type": "paragraph", "text": "We deploy ahead to validate venues, hotels, and routes—controlling entry, choke points, and staff exposure." },
+          { "type": "titled", "title": "Deliverables", "text": "Advance packet, route plans, timing windows, and safe-haven logic." }
+        ],
+        "images": ["sitesurvey.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "MOVEMENT",
+        "title": "CONTROLLED MOVEMENT",
+        "purpose": "Disciplined, discreet transitions.",
+        "content": [{ "type": "paragraph", "text": "Predictability is reduced through timing discipline and route engineering with low-visibility posture." }],
+        "images": ["ep_arrival.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "TECHNICAL",
+        "title": "TECHNICAL PROTECTION",
+        "purpose": "Reduce electronic exposure.",
+        "content": [{ "type": "paragraph", "text": "We secure comms posture in hostile networks and reduce device and operational exposure." }],
+        "images": ["command_control.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "C2",
+        "title": "COMMAND & CONTROL",
+        "purpose": "Continuity under change.",
+        "content": [{ "type": "paragraph", "text": "Live situational awareness with checkpoints, updates, and escalation routing." }],
+        "images": ["commandandcontrol.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 6,
+        "eyebrow": "FAMILY",
+        "title": "FAMILY & GENDER-SENSITIVE COVERAGE",
+        "purpose": "Secure and comfortable protection.",
+        "content": [{ "type": "paragraph", "text": "Female protection professionals and privacy-first routines for spouses and children." }],
+        "images": ["family_ep.png"]
+      }
+    ],
+
+    "includes": [
+      "executive protection (EP)",
+      "dignitary protection standards",
+      "Special Forces operational tradecraft",
+      "protective intelligence",
+      "threat profiling (physical + digital)",
+      "advance work & reconnaissance",
+      "route and venue engineering",
+      "arrival and departure control",
+      "counter-surveillance posture",
+      "disciplined movement & overwatch",
+      "secure comms in hostile networks",
+      "command & control monitoring (C2)",
+      "family & spouse coverage",
+      "female inner-ring protection",
+      "SOPs & escalation rules",
+      "after-action refinement"
+    ]
+  }
+]

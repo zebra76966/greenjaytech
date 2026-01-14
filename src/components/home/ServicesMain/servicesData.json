@@ -1,37 +1,94 @@
 [
   {
     "id": 1,
-    "title": "ADVANCE PROTECTION",
-    "subtitle": "CONDITIONS OF ARRIVAL",
-    "description": "Engineered protection frameworks that ensure controlled movement, discretion, and continuity — without disruption or visibility.",
+    "slug": "advanced-executive-protection",
+    "title": "ADVANCED EXECUTIVE PROTECTION",
+    "subtitle": "CONTROLLED MOVEMENT & DISCRETION",
+    "description": "Engineered protection frameworks that ensure controlled movement, discretion, and continuity — without disruption or visibility. Built on Special Forces advance work methodology.",
+    "longDescription": "Advanced Executive Protection is not \"presence.\" It's a governed protection program built on Special Forces operational tradecraft and law enforcement dignitary protection discipline—planned, rehearsed, documented, and executed under one accountable lead. We begin with a complete threat profile (physical + digital), then create the conditions of safety around you: venues, routes, timing, access points, communications exposure, and decision pathways—so risk is managed long before it becomes visible.",
+    "subhead": "SPECIAL FORCES TRADECRAFT • DIGNITARY PROTECTION STANDARDS • PROTECTIVE INTELLIGENCE • COMMAND & CONTROL",
+
+    "features": ["Advance Work", "Family Coverage", "Counter-Surveillance"],
     "image": "/assets/services/serv1.png"
   },
   {
+    "slug": "estate-security-architecture",
     "id": 2,
-    "title": "SECURE ESTATE",
+    "title": "ESTATE SECURITY ARCHITECTURE",
     "subtitle": "RESIDENTIAL & ASSET CONTINUITY",
-    "description": "Long-term oversight and assurance for residences and estates, integrating life safety, systems governance, and operational continuity.",
+    "description": "Long-term oversight and assurance for residences and estates, integrating life safety, systems governance, and operational continuity under compartmented execution.",
+    "longDescription": "Most estates don't have a security system. They have security parts: cameras from one vendor, alarms from another, access control that isn't tied to anything, and a network that was never designed for consequence. When something happens, it turns into guesswork—alerts without verification, response without clarity, and a mess when you need answers. GreenJay builds estate security as a single architecture. Surveillance, access control, intrusion, life safety, communications, and command center workflows—engineered into a hardened network, tuned for signal over noise, and run with procedures your team can execute under pressure.",
+    "subhead": "AI SURVEILLANCE • ACCESS CONTROL • INTRUSION • LIFE SAFETY • COMMAND CENTER",
+
+    "features": ["AI Surveillance", "Access Control", "Life Safety"],
     "image": "/assets/services/serv2.png"
   },
   {
+    "slug": "digital-domain-command",
     "id": 3,
-    "title": "DIGITAL DOMAIN PROTECTION",
+    "title": "DIGITAL DOMAIN COMMAND",
     "subtitle": "PRIVACY & COMMUNICATIONS",
     "description": "Governance of digital exposure, communications integrity, and access — preserving privacy and confidence across personal and professional domains.",
+    "longDescription": "Your own private cellular carrier operating globally — invisible to adversaries, resilient under pressure, completely under your control. Built by Special Forces operators who have deployed tactical communications in the world's most hostile environments. Standard mobile networks were designed for consumer convenience, not executive security. Every connection broadcasts identifying information that sophisticated adversaries exploit for tracking, interception, and pattern-of-life analysis. Digital Domain Command eliminates these vulnerabilities entirely.",
+    "subhead": "SOVEREIGN PRIVATE NETWORK ARCHITECTURE FOR EXECUTIVE PROTECTION",
+
+    "features": ["OSINT", "Device Hardening", "Exposure Control"],
     "image": "/assets/services/serv3.png"
   },
+
   {
     "id": 4,
-    "title": "COMMAND & CONTROL OPERATIONS",
+    "title": "PROGRAM CONTROL & ASSURANCE",
     "subtitle": "OVERSIGHT & GOVERNANCE",
-    "description": "Centralized command oversight that unifies intelligence, monitoring, and decision support into a single accountable operational standard.",
+    "description": "Centralized command oversight that unifies intelligence, monitoring, and decision support into a single accountable operational standard. Vendor vetting, change control, and validation cycles.",
+    "longDescription": "Security programs fail not because tools are absent, but because no single authority governs the system. Program Control & Assurance establishes a unified operational doctrine across all protective domains—physical, digital, and procedural. We create a single accountable command structure that governs vendors, systems, changes, and response standards. Every component is vetted, every modification tracked, and every capability validated on a defined cycle. This replaces fragmented responsibility with disciplined oversight, ensuring that nothing drifts, nothing decays, and nothing critical operates without governance. The result is a living security program that remains coherent under growth, change, and pressure.",
+    "features": ["Vendor Validation", "Penetration Testing", "Red Team"],
     "image": "/assets/services/serv4.png"
   },
   {
     "id": 5,
-    "title": "CONTINUITY & MONITORING",
-    "subtitle": "24/7 ASSURANCE",
+    "title": "SECURE INFRASTRUCTURE",
+    "subtitle": "CONTINUITY & MONITORING",
     "description": "Always-on monitoring and calm escalation governance designed to sustain safety, operations, and continuity without unnecessary intervention.",
-    "image": "/assets/services/serv1.png"
+    "longDescription": "Secure Infrastructure transforms estates and executive environments from reactive systems into governed operational platforms. We design networks and monitoring layers that prioritize signal over noise, ensuring that real events are identified, verified, and escalated with clarity. Segmented networks, integrated AV/IT, and secure remote access are engineered as one environment, not separate utilities. This creates continuity under stress—allowing operations to proceed without disruption while maintaining full situational awareness. The objective is not constant intervention, but persistent assurance: systems that work quietly, respond decisively, and never become liabilities.",
+    "features": ["Network Segmentation", "AV/IT", "Secure Remote Access"],
+    "image": "/assets/services/serv5.png"
+  },
+
+  {
+    "slug": "digital-executive-protection",
+    "id": 6,
+    "title": "DIGITAL EXECUTIVE PROTECTION",
+    "subtitle": "EXECUTIVE-GRADE CYBER SECURITY",
+    "description": "Protection is no longer just physical—targeting starts digitally. We reduce your entire threat signature by combining executive-grade cybersecurity with real-world protective intelligence.",
+    "longDescription": "A doctrine-first digital protection program for executives and their families—built like an operational architecture, not a stack of tools. We reduce your full threat signature by combining protective intelligence with executive-grade cybersecurity—covering your personal accounts, devices, home networks, and family ecosystem without bringing corporate tools into your private life. Our approach recognizes that high-profile individuals face threats that extend far beyond what standard IT security can address. Every recommendation is tailored to your specific risk profile, lifestyle patterns, and operational requirements.",
+    "subhead": "PRIVACY SUPPRESSION • PROTECTIVE INTELLIGENCE • SECURE CONNECTIVITY • INCIDENT RESPONSE",
+    "highlight": "Designed for executives, family offices, and ultra-high net-worth households—built to protect privacy beyond the corporate perimeter. Trusted by principals who understand that digital exposure creates physical risk.",
+
+    "features": ["Personal Privacy", "Device Security", "Home Network"],
+    "image": "/assets/services/serv6.png"
+  },
+  {
+    "slug": "tscm-confidentiality-assurance",
+    "id": 7,
+    "title": "TSCM / ELECTRONIC THREAT PROTECTION",
+    "subtitle": "RF & DEVICE ASSURANCE",
+    "description": "Locate and validate hidden or unauthorized devices, baseline your RF environment, investigate anomalies, and document findings that support real decisions.",
+    "longDescription": "Technical Surveillance Countermeasures (TSCM) is the rigorous process of verifying that sensitive spaces are free from covert technical surveillance, including audio, video, and data exfiltration devices. GreenJay positions this capability not as a commodity service, but as a critical layer of privacy assurance designed specifically for UHNW estates and high-stakes executive operations. Our method is doctrine-first and repeatable, ensuring that privacy is treated as a verified condition rather than an assumption. We operate with absolute discretion and minimal disruption to the principal's lifestyle or business tempo, integrating seamlessly with existing security details. While no environment can be guaranteed as impenetrable indefinitely, our verification process produces a level of confidence directly proportional to the scope of inspection and the access controls in place. Privacy verified, not assumed.",
+
+    "subhead": "TECHNICAL SURVEILLANCE COUNTERMEASURES • RF SPECTRUM ANALYSIS • ELECTRONIC DETECTION • PRIVACY VERIFICATION",
+    "highlight": "While no environment can be guaranteed as impenetrable indefinitely, our verification process produces a level of confidence directly proportional to the scope of inspection and the access controls in place. Privacy verified, not assumed.",
+
+    "features": ["RF Sweeps", "Sweep Program", "Privacy Assurance"],
+    "image": "/assets/services/serv7.png"
+  },
+  {
+    "id": 8,
+    "title": "COUNTER-UAS INTEGRATION",
+    "subtitle": "DETECT · VERIFY · ESCALATE",
+    "description": "Detection coverage, verification, evidence capture, and escalation rules integrated into your estate operating picture. Fast classification and controlled response.",
+    "longDescription": "Unmanned aerial systems introduce a new class of threat—fast, remote, anonymous, and increasingly accessible. Counter-UAS Integration embeds aerial threat detection into your existing estate security architecture. We establish detection zones, classification workflows, evidence capture, and escalation doctrine so that unknown aerial activity is treated as an operational event, not a surprise. Each contact is identified, verified, and routed through defined decision pathways. This transforms drone activity from ambiguity into governed intelligence—enabling calm, lawful, and controlled response without panic or overreach.",
+    "features": ["Detect", "Verify", "Escalate"],
+    "image": "/assets/services/serv8.png"
   }
 ]

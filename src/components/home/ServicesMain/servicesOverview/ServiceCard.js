@@ -4,12 +4,12 @@ import { FiArrowRight } from "react-icons/fi";
 import FluidBackground from "../../animtion2";
 import "./servicesCard.css";
 
-export default function ServiceCard({ title = "SECURITY", description, image, tags = ["tag1", "tag2", "tag3"], animated = true }) {
+export default function ServiceCard({ title = "SECURITY", description, image, tags, animated = true }) {
   const [hovered, setHovered] = useState(false);
 
   return (
     <motion.div
-      className={`overview-service-card animated-card`}
+      className={`overview-service-card animated-card bg-gray-color`}
       onHoverStart={() => setHovered(true)}
       onHoverEnd={() => setHovered(false)}
       whileHover={{ y: -8 }}

@@ -7,18 +7,27 @@ import services from "../servicesData.json";
 import { useNavigate, useParams } from "react-router-dom";
 import ServicesOverview from "./servicesOverviewMain";
 import ContactMain from "../../contact/contactMain";
+import ServiceDoctrine from "./ServiceDoctrine";
 
-export default function ServiceDetailHero({ tags = ["tag1", "tag1", "tag1"] }) {
+import serviceData from "./serviceDoctrine.json";
+
+export default function ServiceDetailHero() {
   const params = useParams();
   const navigate = useNavigate();
 
   const id = params.id;
 
   const [activeServ, setActiveServ] = useState({});
+  const [activeDoctrine, setActiveDoctrine] = useState(null);
 
   useEffect(() => {
     const active = services.find((e) => e.id == id);
     setActiveServ(active || {});
+
+    if (active?.slug) {
+      const doctrine = serviceData.find((d) => d.slug === active.slug);
+      setActiveDoctrine(doctrine || null);
+    }
   }, [id]);
 
   return (
@@ -44,14 +53,28 @@ export default function ServiceDetailHero({ tags = ["tag1", "tag1", "tag1"] }) {
 
           <motion.h1 className="overviewdet-service-title services-hero-title" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
             {activeServ?.title}
+            {activeServ?.subhead && <small className="text-secondary-color pb-4 pt-2 opacity-75">{activeServ?.subhead}</small>}
           </motion.h1>
 
           <motion.div className="overviewdet-service-description" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.35 }}>
-            <p>{activeServ?.description}</p>
+            <p>{activeServ?.longDescription}</p>
           </motion.div>
 
+          {activeServ?.highlight && (
+            <motion.div
+              className="overviewdet-service-description-hightlight p-3 small text-secondary-color fw-light my-5"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.35 }}
+            >
+              <p className="my-0">
+                <em> {activeServ?.highlight}</em>
+              </p>
+            </motion.div>
+          )}
+
           <motion.div className="overviewdet-service-tags" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.45 }}>
-            {tags.map((tag, i) => (
+            {activeServ?.features?.map((tag, i) => (
               <span key={i}>{tag}</span>
             ))}
           </motion.div>
@@ -93,6 +116,8 @@ export default function ServiceDetailHero({ tags = ["tag1", "tag1", "tag1"] }) {
           </motion.div>
         </div>
       </motion.section>
+
+      {activeDoctrine && <ServiceDoctrine data={activeDoctrine} />}
 
       <ServicesOverview headertxt={"OTHER SERVICES."} />
       <ContactMain />
