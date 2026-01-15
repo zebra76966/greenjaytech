@@ -46,13 +46,14 @@
     "image": "/assets/services/serv4.png"
   },
   {
+    "slug": "bespoke-av-it-engineering",
     "id": 5,
-    "title": "SECURE INFRASTRUCTURE",
+    "title": "BESPOKE AV / IT ENGINEERING",
     "subtitle": "CONTINUITY & MONITORING",
-    "description": "Always-on monitoring and calm escalation governance designed to sustain safety, operations, and continuity without unnecessary intervention.",
-    "longDescription": "Secure Infrastructure transforms estates and executive environments from reactive systems into governed operational platforms. We design networks and monitoring layers that prioritize signal over noise, ensuring that real events are identified, verified, and escalated with clarity. Segmented networks, integrated AV/IT, and secure remote access are engineered as one environment, not separate utilities. This creates continuity under stress—allowing operations to proceed without disruption while maintaining full situational awareness. The objective is not constant intervention, but persistent assurance: systems that work quietly, respond decisively, and never become liabilities.",
+    "description": "Elite audio/visual and IT systems that disappear into the architecture—reference-grade sound, clean video distribution, and concealed displays—built on a hardened backbone. We engineer segmented networks, governed remote access, and defenses against Wi‑Fi leakage and evil‑twin attacks so performance and privacy stay intact.",
+    "longDescription": "Elite audio/visual and IT systems that disappear into the architecture—reference-grade sound, clean video distribution, and concealed displays—built on a hardened backbone. We engineer segmented networks, governed remote access, and defenses against Wi‑Fi leakage and evil‑twin attacks so performance and privacy stay intact.",
     "features": ["Network Segmentation", "AV/IT", "Secure Remote Access"],
-    "image": "/assets/services/serv5.png"
+    "image": "/assets/services/avit.png"
   },
 
   {

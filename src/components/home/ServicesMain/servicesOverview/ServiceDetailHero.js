@@ -10,6 +10,7 @@ import ContactMain from "../../contact/contactMain";
 import ServiceDoctrine from "./ServiceDoctrine";
 
 import serviceData from "./serviceDoctrine.json";
+import ScrollToTop from "../../../scrolltotop";
 
 export default function ServiceDetailHero() {
   const params = useParams();
@@ -20,6 +21,7 @@ export default function ServiceDetailHero() {
   const [activeServ, setActiveServ] = useState({});
   const [activeDoctrine, setActiveDoctrine] = useState(null);
 
+  // Load service + doctrine
   useEffect(() => {
     const active = services.find((e) => e.id == id);
     setActiveServ(active || {});
@@ -27,8 +29,16 @@ export default function ServiceDetailHero() {
     if (active?.slug) {
       const doctrine = serviceData.find((d) => d.slug === active.slug);
       setActiveDoctrine(doctrine || null);
+    } else {
+      setActiveDoctrine(null);
     }
   }, [id]);
+
+  useEffect(() => {
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
+
+    return;
+  }, []);
 
   return (
     <>
@@ -117,7 +127,7 @@ export default function ServiceDetailHero() {
         </div>
       </motion.section>
 
-      {activeDoctrine && <ServiceDoctrine data={activeDoctrine} />}
+      <ServiceDoctrine data={activeDoctrine} />
 
       <ServicesOverview headertxt={"OTHER SERVICES."} />
       <ContactMain />

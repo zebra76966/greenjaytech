@@ -83,7 +83,6 @@
         ],
         "images": ["TSCM16.png"]
       },
-
       {
         "type": "phase",
         "index": 3,
@@ -97,7 +96,6 @@
         ],
         "images": ["TSCM17.png"]
       },
-
       {
         "type": "phase",
         "index": 4,
@@ -1086,6 +1084,230 @@
       "female inner-ring protection",
       "SOPs & escalation rules",
       "after-action refinement"
+    ]
+  },
+  {
+    "slug": "bespoke-av-it-engineering",
+    "sections": [
+      {
+        "type": "doctrine",
+        "eyebrow": "SERVICE 04",
+        "title": "BESPOKE AV & IT ENGINEERING",
+        "body": [
+          "Elite audio/visual and IT systems that disappear into the architecture—reference-grade sound, clean video distribution, motorized and concealed displays—built on a hardened backbone with segmented networks, controlled remote access, and protection against Wi-Fi leakage and evil twin attacks.",
+          "Every system is engineered as part of a governed architecture: convenience never overrides security, privacy, or operational stability."
+        ],
+        "images": ["av_1.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "DOCTRINE-FIRST DESIGN",
+        "title": "Bespoke Design & Architectural Ownership",
+        "purpose": "Design the system before selecting equipment.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We begin by understanding how the estate is used and where exposure exists, then design the system as an owned architecture. Vendors are compartmentalized by scope, preserving long-term integrity, privacy, and control."
+          },
+          {
+            "type": "titled",
+            "title": "Mode-Based Posture",
+            "text": "The home changes posture intentionally—Away, Arrival, Night, Entertain, Elevated Security. Every action is predictable and logged."
+          }
+        ],
+        "images": ["av_1.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "SITE RECONNAISSANCE",
+        "title": "Attack Surface Mapping & Environmental Baseline",
+        "purpose": "Threat-informed planning, not guesswork.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We map approach paths, standoff distances, terrain, and blind spots. Detection zones extend beyond the structure for early warning rather than reactive response."
+          }
+        ],
+        "images": ["av_2.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "MODE-BASED AUTOMATION",
+        "title": "Smart Home Automation & Lifestyle Control",
+        "purpose": "The residence operates as a single coherent environment.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Lighting, shading, climate, audio, video, and security are orchestrated through defined modes. Elevated Security enables single-command lockdown."
+          }
+        ],
+        "images": ["av-7.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "CENTRALIZED COMMAND",
+        "title": "Centralized Control Architecture",
+        "purpose": "Operational clarity through unified control.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Control is consolidated into refined touchpoints. Servers are localized, physically secured, and independent of cloud reliance."
+          }
+        ],
+        "images": ["av_5.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "CONCEALED MEDIA",
+        "title": "Whole-Home Audio & Distributed Video",
+        "purpose": "Technology disappears into the architecture.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Motorized displays and invisible audio integrate into ceilings and walls. Every AV endpoint is treated as a networked risk and isolated from security layers."
+          }
+        ],
+        "images": ["AV-6.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 6,
+        "eyebrow": "DISCREET SURVEILLANCE",
+        "title": "Architectural Camera Integration & AI Analytics",
+        "purpose": "Zero aesthetic disruption, full perimeter coverage.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Soffit-recessed optics, color-matched housings, and AI analytics deliver signal over noise while remaining architecturally invisible."
+          }
+        ],
+        "images": ["av_3.png", "av-15.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 7,
+        "eyebrow": "LAYERED ACCESS",
+        "title": "Credential Governance & Perimeter Hardening",
+        "purpose": "Access is governed, logged, and accountable.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Role-based credentials, embedded sensing, and hardened perimeters provide invisible security with full auditability."
+          }
+        ],
+        "images": ["Av_4.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 8,
+        "eyebrow": "NETWORK BACKBONE",
+        "title": "Hardened Network Topology",
+        "purpose": "Enterprise-grade infrastructure for mission-critical estates.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Security, Admin, AV, and Guest systems are physically and logically segmented. Consumer hardware is replaced with enterprise core switching."
+          }
+        ],
+        "images": ["av-8.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 9,
+        "eyebrow": "WIRELESS DEFENSE",
+        "title": "Wi-Fi Containment & Cyber Defense",
+        "purpose": "Coverage inside, containment at the perimeter.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "RF curtain technology prevents signal leakage, detects rogue access points, and blocks evil-twin attacks."
+          }
+        ],
+        "images": ["av-9.png", "av-16.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 10,
+        "eyebrow": "REMOTE SUPPORT",
+        "title": "Governed Remote Access",
+        "purpose": "Support without permanent exposure.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Remote pathways are authenticated, revocable, encrypted, and fully logged—no permanent backdoors."
+          }
+        ],
+        "images": ["av-11.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 11,
+        "eyebrow": "ENERGY GOVERNANCE",
+        "title": "Climate Control & Energy Management",
+        "purpose": "Comfort without unpredictable behavior.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "HVAC, lighting, and shading respond to occupancy and defined modes while remaining part of the hardened network."
+          }
+        ],
+        "images": ["av-10.png"]
+      },
+
+      {
+        "type": "phase",
+        "index": 12,
+        "eyebrow": "RESILIENCE",
+        "title": "Cybersecurity, Validation & Penetration Testing",
+        "purpose": "Assume compromise, contain it.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We validate segmentation, credentials, and boundaries adversarially. Breach in AV or Guest layers cannot propagate to Security or Control."
+          }
+        ],
+        "images": ["av-12.png", "av-17.png"]
+      }
+    ],
+
+    "includes": [
+      "bespoke home automation design",
+      "centralized control architecture",
+      "concealed AV integration",
+      "whole-home audio distribution",
+      "distributed video systems",
+      "lighting control & scenes",
+      "motorized shading integration",
+      "HVAC automation & modes",
+      "energy management integration",
+      "enterprise network backbone",
+      "VLAN segmentation design",
+      "secure Wi-Fi architecture",
+      "Wi-Fi leakage containment",
+      "evil twin detection & defense",
+      "governed remote access",
+      "role-based permissions",
+      "mode-based posture control",
+      "penetration testing",
+      "credential governance",
+      "site reconnaissance",
+      "documentation & training"
     ]
   }
 ]

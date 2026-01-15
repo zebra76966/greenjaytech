@@ -1,5 +1,4 @@
-import logo from "./logo.svg";
-import { useState, useEffect } from "react";
+import { useRef, useState, useEffect } from "react";
 import "./App.css";
 import Main from "./components/home/main";
 import ServicsMain from "./components/home/ServicesMain/ServicesMain";
@@ -8,16 +7,20 @@ import Lenis from "@studio-freight/lenis";
 import Footer from "./components/footer";
 import IntroLoader from "./components/IntroLoader";
 
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import ServiceDetailHero from "./components/home/ServicesMain/servicesOverview/ServiceDetailHero";
 import ScrollToTop from "./components/scrolltotop";
 import DoctrinesViewer from "./components/home/Doctrines/DoctrinesViewer";
 import SignUp from "./components/auth/SignUp";
 
-function App() {
+function AppInner() {
   const [isNavOpen, setIsNavOpen] = useState(true);
   const [loading, setLoading] = useState(true);
 
+  const lenisRef = useRef(null);
+  const location = useLocation();
+
+  // Init Lenis once
   useEffect(() => {
     const lenis = new Lenis({
       duration: 1.2,
@@ -25,6 +28,9 @@ function App() {
       smoothWheel: true,
       smoothTouch: false,
     });
+
+    lenisRef.current = lenis;
+    window.__lenis = lenis; // optional global access
 
     function raf(time) {
       lenis.raf(time);
@@ -38,15 +44,31 @@ function App() {
     };
   }, []);
 
+  // Loader
   useEffect(() => {
     const timer = setTimeout(() => setLoading(false), 2800);
     return () => clearTimeout(timer);
   }, []);
 
-  return (
-    <Router>
-      <IntroLoader show={loading} />
+  // Re-sync Lenis on every route change (fix for heavy pages like ServiceDoctrine)
+  useEffect(() => {
+    const lenis = lenisRef.current;
+    if (!lenis) return;
 
+    // Jump to top immediately
+    lenis.scrollTo(0, { immediate: true });
+
+    // Let DOM/images settle, then recompute scroll bounds
+    const t = setTimeout(() => {
+      lenis.resize();
+    }, 120);
+
+    return () => clearTimeout(t);
+  }, [location.pathname]);
+
+  return (
+    <>
+      <IntroLoader show={loading} />
       <ScrollToTop />
 
       {!loading && (
@@ -66,8 +88,14 @@ function App() {
           </main>
         </div>
       )}
-    </Router>
+    </>
   );
 }
 
-export default App;
+export default function App() {
+  return (
+    <Router>
+      <AppInner />
+    </Router>
+  );
+}

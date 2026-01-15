@@ -44,7 +44,7 @@ export default function FluidBackgroundZoom() {
 const styles = {
   wrapper: {
     width: "100vw",
-    height: "100vh",
+    height: "100%",
     background: "#000",
     overflow: "hidden",
   },

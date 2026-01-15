@@ -19,6 +19,10 @@ export default function ServiceDoctrine({ data }) {
   const navRefs = useRef([]);
 
   useEffect(() => {
+    setActive(0);
+  }, []);
+
+  useEffect(() => {
     if (phases.length > 5) {
       const idx = phases.findIndex((p) => p.index === active);
       navRefs.current[idx]?.scrollIntoView({
@@ -65,39 +69,45 @@ export default function ServiceDoctrine({ data }) {
           return (
             <motion.div
               key={i}
-              className={`doctrine-box ${sec.theme === "green" ? "doctrine-green" : ""}`}
+              className={`doctrine-box position-relative ${sec.theme === "green" ? "doctrine-green" : ""}`}
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6 }}
+              style={{ overflow: "hidden" }}
             >
-              {sec.eyebrow && <span className="section-label">{sec.eyebrow}</span>}
-              {sec.title && <h2 className="section-title">{sec.title}</h2>}
+              <div className="position-relative" style={{ zIndex: "999" }}>
+                {sec.eyebrow && <span className="section-label">{sec.eyebrow}</span>}
+                {sec.title && <h2 className="section-title">{sec.title}</h2>}
 
-              {sec.body?.map((p, idx) => (
-                <p key={idx} className="section-body">
-                  {p}
-                </p>
-              ))}
+                {sec.body?.map((p, idx) => (
+                  <p key={idx} className="section-body">
+                    {p}
+                  </p>
+                ))}
 
-              {sec.columns && (
-                <div className="three-cols">
-                  {sec.columns.map((c, j) => (
-                    <div key={j} className="col-item">
-                      <h4>{c.title}</h4>
-                      <p>{c.text}</p>
-                    </div>
-                  ))}
-                </div>
-              )}
+                {sec.columns && (
+                  <div className="three-cols">
+                    {sec.columns.map((c, j) => (
+                      <div key={j} className="col-item">
+                        <h4>{c.title}</h4>
+                        <p>{c.text}</p>
+                      </div>
+                    ))}
+                  </div>
+                )}
 
-              {sec.images && (
-                <div className={`image-row cols-${sec.images.length}`}>
-                  {sec.images.map((img, j) => (
-                    <img key={j} src={imgPath(img)} alt="" />
-                  ))}
-                </div>
-              )}
+                {sec.images && (
+                  <div className={`image-row cols-${sec.images.length}`}>
+                    {sec.images.map((img, j) => (
+                      <img key={j} src={imgPath(img)} alt="" />
+                    ))}
+                  </div>
+                )}
+              </div>
+              <motion.div className="card-ripple service-bg" initial={{ opacity: 0 }} animate={{ opacity: 0.5 }} transition={{ duration: 0.8, ease: "easeOut" }}>
+                <FluidBackgroundZoom />
+              </motion.div>
             </motion.div>
           );
         }
@@ -201,6 +211,20 @@ export default function ServiceDoctrine({ data }) {
                         )}
                       </div>
                     </motion.div>
+
+                    {sec.images?.[0] && (
+                      <div className="w-100 p-4 pe-5">
+                        <motion.img
+                          className=" position-relative w-100 rounded-3"
+                          src={`${imgPath(sec.images[0])}`}
+                          animate={{
+                            scale: active === sec.index ? 1.05 : 1,
+                          }}
+                          transition={{ duration: 1.2, ease: "easeOut" }}
+                          style={{ maxHeight: "500px", objectFit: "contain", zIndex: 999999, opacity: 1 }}
+                        />
+                      </div>
+                    )}
                   </Col>
                   <Col md={3} className="text-start " style={{ zIndex: 99 }}>
                     <div className="d-flex flex-column gap-5 align-items-start h-100 pe-4">
@@ -221,21 +245,6 @@ export default function ServiceDoctrine({ data }) {
                       </div>
                     </div>
                   </Col>
-                </Row>
-                <Row className="gx-5">
-                  {sec.images?.[0] && (
-                    <Col md={sec.images.length > 1 ? 6 : 8}>
-                      <motion.img
-                        className=" position-relative w-100"
-                        src={`${imgPath(sec.images[0])}`}
-                        animate={{
-                          scale: active === sec.index ? 1.05 : 1,
-                        }}
-                        transition={{ duration: 1.2, ease: "easeOut" }}
-                        style={{ height: "300px", objectFit: "cover", zIndex: 999999, opacity: 1 }}
-                      />
-                    </Col>
-                  )}
                 </Row>
               </motion.article>
             ))}
