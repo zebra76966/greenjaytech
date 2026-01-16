@@ -31,16 +31,25 @@ export default function HeroSection() {
           {/* LEFT CONTENT */}
           <Col lg={6} className="hero-left px-lg-5">
             <motion.span className="hero-eyebrow text-primary-color mb-5" variants={fadeUp} initial="hidden" animate="visible" custom={0}>
-              GREENJAY TECH.
+              GREENJAY // SECURITY ARCHITECTURE + PROTECTIVE OPERATIONS.
             </motion.span>
 
             <motion.h1 className="hero-title mt-4 text-primary-color" variants={fadeUp} initial="hidden" animate="visible" custom={1}>
               SECURITY
-              <span className="hFont pt-2 ">REDEFINED</span>
+              <span className="hFont d-inline">ENGINEERED</span>
             </motion.h1>
 
-            <motion.p className="hero-description mb-5 text-secondary-color  " variants={fadeUp} initial="hidden" animate="visible" custom={2}>
-              Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
+            <motion.p className="hero-description small fw-light  mb-0 text-secondary-color   " style={{ fontSize: "0.7em" }} variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+              <em> U.S. Army Special Forces (Green Beret) doctrine • Dignitary protection experience • Compartmented execution</em>
+            </motion.p>
+
+            <motion.p className="hero-description  text-secondary-color  fw-light small" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+              Greenjay runs executive protection and estate security as one accountable program—advanced EP, AI-enabled surveillance and monitoring, access control, secure infrastructure
+              (network/AV/IT segmentation), resilient communications, counter-UAS integration, and real validation. We begin with a full threat profile (physical + digital), then design, integrate,
+              and test the system so your full threat signature is controlled—not just your perimeter.
+            </motion.p>
+            <motion.p className="hero-description small fw-light  mb-0 text-secondary-color  " style={{ fontSize: "0.7em" }} variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+              <em>No vendor sees the full architecture. We vet personnel, scope on a need-to-know basis, and assume responsibility for the complete operation.</em>
             </motion.p>
 
             <motion.div className="hero-actions d-flex gap-5 pt-5" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
@@ -52,7 +61,9 @@ export default function HeroSection() {
 
                   <FiArrowRight size={35} />
                 </span>
-                <span className="btn-text">ENQUIRE NOW</span>
+                <span className="btn-text text-start" style={{ letterSpacing: "0.2em" }}>
+                  REQUEST A <br /> PRIVATE BREIFING
+                </span>
               </button>
 
               {/* HIRE US BUTTON */}

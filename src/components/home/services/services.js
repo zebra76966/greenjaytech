@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { motion } from "framer-motion";
 import FluidBackground from "../animtion2";
 
@@ -6,49 +6,18 @@ import "./services.css";
 import { Col, Row } from "react-bootstrap";
 import { FiArrowRight } from "react-icons/fi";
 import FullPageScrollWrapper from "../../sccrollwatcher";
+import servicesData from "../ServicesMain/servicesData.json";
 
 // servicesData.js
-const services = [
-  {
-    id: 1,
-    title: "ADVANCE PROTECTION",
-    subtitle: "CONDITIONS OF ARRIVAL",
-    description: "Engineered protection frameworks that ensure controlled movement, discretion, and continuity — without disruption or visibility.",
-    image: "/assets/services/advance-protection.png",
-  },
-  {
-    id: 2,
-    title: "SECURE ESTATE",
-    subtitle: "RESIDENTIAL & ASSET CONTINUITY",
-    description: "Long-term oversight and assurance for residences and estates, integrating life safety, systems governance, and operational continuity.",
-    image: "/assets/services/secure-estate.png",
-  },
-  {
-    id: 3,
-    title: "DIGITAL DOMAIN PROTECTION",
-    subtitle: "PRIVACY & COMMUNICATIONS",
-    description: "Governance of digital exposure, communications integrity, and access — preserving privacy and confidence across personal and professional domains.",
-    image: "/assets/services/digital-domain.png",
-  },
-  {
-    id: 4,
-    title: "COMMAND & CONTROL OPERATIONS",
-    subtitle: "OVERSIGHT & GOVERNANCE",
-    description: "Centralized command oversight that unifies intelligence, monitoring, and decision support into a single accountable operational standard.",
-    image: "/assets/services/command-control.png",
-  },
-  {
-    id: 5,
-    title: "CONTINUITY & MONITORING",
-    subtitle: "24/7 ASSURANCE",
-    description: "Always-on monitoring and calm escalation governance designed to sustain safety, operations, and continuity without unnecessary intervention.",
-    image: "/assets/services/continuity-monitoring.png",
-  },
-];
 
 export default function ServicesSection() {
   const [active, setActive] = useState(1);
   const cardRefs = useRef([]);
+
+  const allowNavScroll = useRef(false);
+
+  const navRefs = useRef([]);
+
   const cardVariants = {
     hidden: {
       opacity: 0.4,
@@ -66,7 +35,23 @@ export default function ServicesSection() {
     },
   };
 
+  useEffect(() => {
+    if (!allowNavScroll.current) return;
+
+    if (servicesData.length > 5) {
+      const idx = servicesData.findIndex((p) => p.id === active);
+
+      if (idx !== -1) {
+        navRefs.current[idx]?.scrollIntoView({
+          behavior: "smooth",
+          block: "center",
+        });
+      }
+    }
+  }, [active]);
+
   const scrollToCard = (id, index) => {
+    allowNavScroll.current = true;
     setActive(id);
     cardRefs.current[index]?.scrollIntoView({
       behavior: "smooth",
@@ -75,24 +60,34 @@ export default function ServicesSection() {
   };
 
   return (
-    <section className="services-section pe-0 ps-5">
+    <section
+      className="services-section pe-0 ps-5"
+      onMouseEnter={() => {
+        allowNavScroll.current = true;
+      }}
+      onMouseLeave={() => {
+        allowNavScroll.current = false;
+      }}
+    >
       <h6 className="services-eyebrow position-sticky top-0 start-0 text-center pFont fs-5  py-4" style={{ zIndex: "999" }}>
         OUR SERVICES.
       </h6>
       <div className="services-grid  pe-0 w-100 ps-lg-4">
         {/* LEFT NUMBERS */}
-        <aside className="services-nav">
-          {services.map((s, i) => (
-            <button key={s.id} className={`service-index ${active === s.id ? "active" : ""}`} onClick={() => scrollToCard(s.id, i)}>
+        <aside className={`services-nav ${servicesData.length > 5 ? "is-scrollable" : ""}`}>
+          {servicesData.map((s, i) => (
+            <button key={s.id} ref={(el) => (navRefs.current[i] = el)} className={`service-index ${active === s.id ? "active" : ""}`} onClick={() => scrollToCard(s.id, i)}>
               <span className="index-number">{String(s.id).padStart(2, "0")}</span>
-              <span className="index-label ps-2">{s.subtitle}</span>
+              <span className="index-label ps-2" style={{ maxWidth: "90%" }}>
+                {s.subtitle}
+              </span>
             </button>
           ))}
         </aside>
 
         {/* RIGHT CARDS */}
         <div className="services-cards ">
-          {services.map((s, i) => (
+          {servicesData.map((s, i) => (
             <motion.article
               key={s.id}
               ref={(el) => (cardRefs.current[i] = el)}
@@ -103,14 +98,14 @@ export default function ServicesSection() {
               viewport={{ once: false, amount: 0.45 }}
               onViewportEnter={() => setActive(s.id)}
             >
-              <motion.div
+              {/* <motion.div
                 className="card-bg-image"
                 style={{ backgroundImage: `url(${s.image})` }}
                 animate={{
                   scale: active === s.id ? 1.05 : 1,
                 }}
                 transition={{ duration: 1.2, ease: "easeOut" }}
-              />
+              /> */}
 
               {/* SVG RIPPLE (ACTIVE ONLY) */}
               {active === s.id && (
@@ -131,6 +126,12 @@ export default function ServicesSection() {
                       <FiArrowRight size={20} />
                     </button>
                   </motion.div>
+
+                  {s.image && (
+                    <div className="p-2">
+                      <img className=" position-relative  rounded-3" src={s.image} style={{ maxHeight: "500px", objectFit: "contain", zIndex: 999999, opacity: 1 }} />
+                    </div>
+                  )}
                 </Col>
                 <Col md={3} className="text-start " style={{ zIndex: 99 }}>
                   <div className="d-flex flex-column gap-5 align-items-start h-100 pe-4">

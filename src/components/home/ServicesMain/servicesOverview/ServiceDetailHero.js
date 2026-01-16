@@ -34,12 +34,6 @@ export default function ServiceDetailHero() {
     }
   }, [id]);
 
-  useEffect(() => {
-    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
-
-    return;
-  }, []);
-
   return (
     <>
       <motion.section className="overviewdet-service-detail-hero ch-100 p-4 position-relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: "easeOut" }}>

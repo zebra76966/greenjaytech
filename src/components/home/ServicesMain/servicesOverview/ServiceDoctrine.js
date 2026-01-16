@@ -15,14 +15,25 @@ export default function ServiceDoctrine({ data }) {
 
   const [active, setActive] = useState(() => phases[0]?.index || 0);
   const cardRefs = useRef([]);
+  const allowNavScroll = useRef(false);
 
   const navRefs = useRef([]);
 
   useEffect(() => {
-    setActive(0);
+    // hard reset everything related to this view
+    cardRefs.current = [];
+    navRefs.current = [];
+
+    const first = phases[0]?.index ?? null;
+    setActive(first);
+
+    // jump to top instantly
+    window.scrollTo({ top: 0, left: 0, behavior: "instant" });
   }, []);
 
   useEffect(() => {
+    if (!allowNavScroll.current) return;
+
     if (phases.length > 5) {
       const idx = phases.findIndex((p) => p.index === active);
       navRefs.current[idx]?.scrollIntoView({
@@ -62,8 +73,23 @@ export default function ServiceDoctrine({ data }) {
   };
 
   return (
-    <section className="service-doctrine-wrapper">
+    <motion.section
+      className="service-doctrine-wrapper"
+      onViewportEnter={() => {
+        allowNavScroll.current = true;
+      }}
+      onViewportLeave={() => {
+        allowNavScroll.current = false;
+
+        cardRefs.current = [];
+        navRefs.current = [];
+
+        const first = phases[0]?.index ?? null;
+        setActive(first);
+      }}
+    >
       {/* NON-PHASE SECTIONS */}
+
       {others.map((sec, i) => {
         if (sec.type === "doctrine") {
           return (
@@ -258,6 +284,6 @@ export default function ServiceDoctrine({ data }) {
           <p className="includes-text">{data.includes.join(" • ")}</p>
         </div>
       )}
-    </section>
+    </motion.section>
   );
 }

@@ -11,20 +11,20 @@
 }
 
 .hero-eyebrow {
-  letter-spacing: 1em;
-  font-size: 1.1rem;
+  letter-spacing: 0.4em;
+  font-size: 0.8rem;
 
   display: block;
 }
 
 .hero-title {
-  font-size: 13dvh;
+  font-size: 11dvh;
   font-weight: 800;
   line-height: 0.95;
 }
 
 .hero-title span {
-  font-size: 11.5dvh;
+  /* font-size: 11dvh; */
   display: block;
   color: transparent;
   -webkit-text-stroke: 1px var(--secondary-color);
