@@ -18,7 +18,7 @@
 }
 
 .services-hero-title {
-  font-size: 22dvh;
+  font-size: 22vh;
   font-weight: 800;
   line-height: 0.95;
   filter: drop-shadow(0px 5px 10px #000000);
@@ -39,7 +39,7 @@
 /* RIGHT */
 .services-hero-right {
   position: relative;
-  height: 100dvh;
+  height: 100vh;
 }
 
 .visual-wrapper-services {

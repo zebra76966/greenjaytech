@@ -4,7 +4,7 @@
 .doctrines-wrapper {
   display: grid;
   grid-template-columns: 1fr 450px;
-  grid-template-rows: 100dvh; /* 👈 ADD THIS */
+  grid-template-rows: 100vh; /* 👈 ADD THIS */
   background: #000;
   color: var(--primary-color);
   overflow: hidden;
@@ -30,14 +30,14 @@
 }
 
 .doctrine-counter {
-  font-size: 6dvh;
+  font-size: 6vh;
 
   color: transparent;
   -webkit-text-stroke: 2px var(--secondary-color);
 }
 
 .doctrine-counter span {
-  font-size: 2.5dvh;
+  font-size: 2.5vh;
 
   margin-left: 4px;
 
@@ -61,7 +61,7 @@
 }
 
 .pdf-wrapper {
-  height: 52dvh;
+  height: 52vh;
   width: 100%;
 }
 
@@ -180,7 +180,10 @@
   overflow: hidden;
   cursor: pointer;
   transform-origin: center;
-  transition: border-color 0.25s ease, background 0.25s ease, min-height 0.25s ease;
+  transition:
+    border-color 0.25s ease,
+    background 0.25s ease,
+    min-height 0.25s ease;
 }
 
 /* ACTIVE CARD */
@@ -294,7 +297,7 @@
 }
 
 .pdf-fullscreen-modal .pdfWrapperMain {
-  min-height: 70dvh;
+  min-height: 70vh;
   max-height: 100%;
   width: 100%;
 }

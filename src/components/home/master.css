@@ -11,7 +11,7 @@
 }
 
 .ch-100 {
-  min-height: 100dvh;
+  min-height: 100vh;
 }
 
 .text-warning-color {
@@ -64,7 +64,7 @@
 
 /* Container: NO CSS scroll-snap (JS handles snapping) */
 .fullpage-container {
-  height: 100dvh;
+  height: 100vh;
   overflow-y: auto;
   scroll-behavior: smooth; /* smooth when we call scrollTo */
   -webkit-overflow-scrolling: touch; /* better momentum on iOS */
@@ -76,8 +76,8 @@
 }
 
 .page {
-  height: 100dvh;
-  min-height: 100dvh;
+  height: 100vh;
+  min-height: 100vh;
   display: block;
   box-sizing: border-box;
   transform: translateY(50px);

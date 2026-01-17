@@ -242,7 +242,7 @@
 .services-nav {
   display: flex;
   flex-direction: column;
-  max-height: 85dvh; /* or match your section height */
+  max-height: 85vh; /* or match your section height */
 }
 
 .services-nav.is-scrollable {

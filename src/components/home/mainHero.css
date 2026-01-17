@@ -18,13 +18,13 @@
 }
 
 .hero-title {
-  font-size: 11dvh;
+  font-size: 11vh;
   font-weight: 800;
   line-height: 0.95;
 }
 
 .hero-title span {
-  /* font-size: 11dvh; */
+  /* font-size: 11vh; */
   display: block;
   color: transparent;
   -webkit-text-stroke: 1px var(--secondary-color);
@@ -167,7 +167,7 @@
 /* RIGHT */
 .hero-right {
   position: relative;
-  height: 100dvh;
+  height: 100vh;
 }
 
 .visual-wrapper {
@@ -377,13 +377,13 @@
     filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.7));
   }
   .hero-title {
-    font-size: 8dvh;
+    font-size: 8vh;
   }
 }
 
 @media (max-width: 992px) {
   .hero-title {
-    font-size: 7.5dvh;
+    font-size: 7.5vh;
   }
   .hero-eyebrow {
     letter-spacing: 0.3em;
@@ -437,7 +437,7 @@
 
 @media screen and (max-width: 600px) {
   .hero-title {
-    font-size: 5.5dvh;
+    font-size: 5.5vh;
   }
   .hero-description {
     max-width: 90%;

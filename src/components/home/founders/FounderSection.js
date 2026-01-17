@@ -92,7 +92,7 @@ export default function FounderSection() {
 
         {/* RIGHT INFO */}
         <motion.div className="founder-right text-end" variants={fadeInUp} initial="hidden" whileInView="visible" viewport={{ once: true, amount: 0.4 }}>
-          <img src="/assets/founders/founderRob3.png" alt="Founder" className="position-absolute  start-50" style={{ top: "-40%", height: "35dvh" }} />
+          <img src="/assets/founders/founderRob3.png" alt="Founder" className="position-absolute  start-50" style={{ top: "-40%", height: "35vh" }} />
 
           <div style={{ zIndex: "9999" }} className="position-relative">
             <div className="w-100 d-flex align-items-bottom gap-3 justify-content-end mb-3 text-primary-color fs-1">

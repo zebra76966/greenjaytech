@@ -41,7 +41,7 @@
 }
 
 .index-number {
-  font-size: 10dvh;
+  font-size: 10vh;
   font-weight: 700;
   line-height: 1;
 
@@ -74,7 +74,7 @@
 /* CARD */
 .service-card {
   position: relative;
-  min-height: 70dvh;
+  min-height: 70vh;
   border-radius: 20px;
   overflow: hidden;
   background: #000;
@@ -135,7 +135,7 @@
 }
 
 .card-index {
-  font-size: 20dvh;
+  font-size: 20vh;
   color: transparent;
   -webkit-text-stroke: 2px var(--secondary-color);
   z-index: 9999;
@@ -191,7 +191,7 @@
   }
 
   .index-number {
-    font-size: 6dvh;
+    font-size: 6vh;
     font-weight: 700;
     line-height: 1;
 
@@ -240,6 +240,6 @@
   }
 
   .index-number {
-    font-size: 6.5dvh;
+    font-size: 6.5vh;
   }
 }

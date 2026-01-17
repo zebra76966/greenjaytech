@@ -38,7 +38,9 @@
   background: radial-gradient(circle at 85% 20%, #1c1c1c 0%, #000 60%);
 
   /* soften and bias the glow */
-  box-shadow: 6px -6px 28px rgba(219, 164, 90, 0.18), inset 0 0 50px rgba(0, 0, 0, 0.85);
+  box-shadow:
+    6px -6px 28px rgba(219, 164, 90, 0.18),
+    inset 0 0 50px rgba(0, 0, 0, 0.85);
 }
 
 .globe-shell::after {
@@ -48,7 +50,9 @@
   border-radius: 50%;
   border: 1px solid rgba(219, 164, 90, 0.45);
 
-  box-shadow: 4px -4px 12px rgba(219, 164, 90, 0.45), 0 0 26px rgba(219, 164, 90, 0.18);
+  box-shadow:
+    4px -4px 12px rgba(219, 164, 90, 0.45),
+    0 0 26px rgba(219, 164, 90, 0.18);
 
   pointer-events: none;
 }
@@ -97,7 +101,7 @@
 }
 
 .global-logo {
-  height: 15dvh;
+  height: 15vh;
   width: auto;
   filter: drop-shadow(0 0 10px rgba(219, 164, 90, 0.5));
 }
