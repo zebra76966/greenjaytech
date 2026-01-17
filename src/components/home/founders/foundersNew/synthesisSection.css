@@ -1,0 +1,45 @@
+.synthesis-glow {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at 50% 40%, rgba(219, 164, 90, 0.12), transparent 60%);
+  pointer-events: none;
+}
+
+.synthesis-column {
+  position: relative;
+}
+
+.synthesis-column::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: -1px;
+  width: 1px;
+  background: linear-gradient(to bottom, transparent, rgba(219, 164, 90, 0.25), transparent);
+}
+
+@media (max-width: 991px) {
+  .synthesis-column::after {
+    display: none;
+  }
+}
+
+.synthesis-list li {
+  list-style: none;
+  padding-left: 1rem;
+  position: relative;
+  margin-bottom: 0.5rem;
+}
+
+.synthesis-list li::before {
+  content: "—";
+  position: absolute;
+  left: 0;
+  color: var(--primary-color);
+  opacity: 0.6;
+}
+
+.synthesis-emblem {
+  filter: drop-shadow(0 0 20px rgba(219, 164, 90, 0.25));
+}

@@ -4,9 +4,11 @@ import { HiOutlineMenuAlt1 } from "react-icons/hi";
 import { NavLink } from "react-router-dom";
 import { useEffect, useState } from "react";
 import "./Sidenav.css";
+import { FaBuildingUser } from "react-icons/fa6";
 
 const navItems = [
   { icon: <FiHome />, label: "HOME", to: "/" },
+  { icon: <FaBuildingUser />, label: "FOUNDERS", to: "/founders" },
   { icon: <FiSettings />, label: "SERVICES", to: "/services" },
   { icon: <FiHelpCircle />, label: "WHY US?", to: "/why-us" },
   { icon: <FiInfo />, label: "ABOUT", to: "/about" },

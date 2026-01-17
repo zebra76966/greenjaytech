@@ -12,6 +12,7 @@ import ServiceDetailHero from "./components/home/ServicesMain/servicesOverview/S
 import ScrollToTop from "./components/scrolltotop";
 import DoctrinesViewer from "./components/home/Doctrines/DoctrinesViewer";
 import SignUp from "./components/auth/SignUp";
+import LeadershipPage from "./components/home/founders/foundersMain";
 
 function AppInner() {
   const [isNavOpen, setIsNavOpen] = useState(true);
@@ -78,6 +79,7 @@ function AppInner() {
           <main className={`app-content bg-color-dark ${isNavOpen ? "shifted" : ""}`}>
             <Routes>
               <Route path="/" element={<Main />} />
+              <Route path="/founders" element={<LeadershipPage />} />
               <Route path="/services" element={<ServicsMain />} />
               <Route path="/service/:id" element={<ServiceDetailHero />} />
               <Route path="/doctrine/:id" element={<DoctrinesViewer />} />

@@ -52,6 +52,33 @@ export default function WhyGreenjay() {
             index={0}
             height={"100%"}
           />
+
+          <div className="h-100 d-xxl-none d-block">
+            <WhyCard
+              icon={<FiUserCheck />}
+              title="VETTED PARTNERS"
+              subtitle="CONTROLLED ACCESS"
+              highlight={null}
+              description={
+                "We vet vendors and personnel, control site access, and supervise critical installation. Every change is logged, approved, and mapped back to the master architecture—so 'quick fixes' don't create silent vulnerabilities."
+              }
+              index={3}
+              height={"50%"}
+            />
+          </div>
+          <div className="h-100 d-xxl-none d-block">
+            <WhyCard
+              icon={<FiUsers />}
+              title="INTEGRATED PROTECTIVE"
+              subtitle="+ TECHNICAL"
+              highlight={null}
+              description={
+                "We unify protective operations with surveillance, access control, comms, and digital hygiene—so movement, privacy, and response are coordinated as one system. Privacy-first coverage including female agents when required."
+              }
+              index={3}
+              height={"50%"}
+            />
+          </div>
         </div>
 
         {/* CENTER */}
@@ -71,7 +98,15 @@ export default function WhyGreenjay() {
             <p className="card-sub  fs-1 fw-bold text-primary-color mt-0 pt-0 wSpacing">{"OPERATIONS"}</p>
           </motion.div>
 
-          <motion.div className=" w-100  why-card  d-flex align-items-top " variants={fadeUp} initial="hidden" whileInView="visible" custom={2} viewport={{ once: false }} style={{ height: "28%" }}>
+          <motion.div
+            className=" w-100  why-card fCard  d-flex align-items-top "
+            variants={fadeUp}
+            initial="hidden"
+            whileInView="visible"
+            custom={2}
+            viewport={{ once: false }}
+            style={{ height: "28%" }}
+          >
             <div className=" w-100  text-center mb-auto ">
               <p className="text-secondary-color wSpacing ">DISCREET ENGAGEMENTS</p>
               <h3 className="pFont fs-1 fw-bold">NDA AVAILABLE</h3>
@@ -80,7 +115,7 @@ export default function WhyGreenjay() {
             </div>
           </motion.div>
 
-          <div className="center-orb-wrapper">
+          <div className="center-orb-wrapper d-xxl-block d-none">
             <motion.div
               className="center-orb"
               animate={{
@@ -105,7 +140,7 @@ export default function WhyGreenjay() {
           </div>
 
           <motion.div
-            className=" center-card w-100 why-card  d-flex align-items-bottom"
+            className=" center-card w-100 why-card fCard  d-flex align-items-bottom"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
@@ -137,33 +172,43 @@ export default function WhyGreenjay() {
             index={3}
             height={"22%"}
           />
+
+          <div className="h-50 d-xxl-none d-block">
+            <StatsCard />
+          </div>
         </motion.div>
 
         {/* RIGHT COLUMN */}
         <div className="why-col h-100">
-          <WhyCard
-            icon={<FiUsers />}
-            title="INTEGRATED PROTECTIVE"
-            subtitle="+ TECHNICAL"
-            highlight={null}
-            description={
-              "We unify protective operations with surveillance, access control, comms, and digital hygiene—so movement, privacy, and response are coordinated as one system. Privacy-first coverage including female agents when required."
-            }
-            index={3}
-            height={"50%"}
-          />
-          <WhyCard
-            icon={<FiUserCheck />}
-            title="VETTED PARTNERS"
-            subtitle="CONTROLLED ACCESS"
-            highlight={null}
-            description={
-              "We vet vendors and personnel, control site access, and supervise critical installation. Every change is logged, approved, and mapped back to the master architecture—so 'quick fixes' don't create silent vulnerabilities."
-            }
-            index={3}
-            height={"50%"}
-          />
-          <StatsCard />
+          <div className="h-100 d-xxl-block d-none">
+            <WhyCard
+              icon={<FiUsers />}
+              title="INTEGRATED PROTECTIVE"
+              subtitle="+ TECHNICAL"
+              highlight={null}
+              description={
+                "We unify protective operations with surveillance, access control, comms, and digital hygiene—so movement, privacy, and response are coordinated as one system. Privacy-first coverage including female agents when required."
+              }
+              index={3}
+              height={"100%"}
+            />
+          </div>
+          <div className="h-100 d-xxl-block d-none">
+            <WhyCard
+              icon={<FiUserCheck />}
+              title="VETTED PARTNERS"
+              subtitle="CONTROLLED ACCESS"
+              highlight={null}
+              description={
+                "We vet vendors and personnel, control site access, and supervise critical installation. Every change is logged, approved, and mapped back to the master architecture—so 'quick fixes' don't create silent vulnerabilities."
+              }
+              index={3}
+              height={"100%"}
+            />
+          </div>
+          <div className="h-50 d-xxl-block d-none">
+            <StatsCard />
+          </div>
         </div>
       </div>
     </section>

@@ -201,6 +201,9 @@
   .services-cards {
     padding-bottom: 10em;
   }
+  .services-section {
+    padding: 5rem 0;
+  }
 }
 
 @media screen and (max-width: 768px) {

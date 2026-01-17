@@ -9,7 +9,7 @@
   margin: auto;
   min-height: 90vh;
   display: grid;
-  grid-template-columns: 1fr 1.2fr 1fr;
+  grid-template-columns: auto 40% auto;
   gap: 1rem;
   align-items: center;
 }
@@ -161,8 +161,25 @@
     0 30px 80px rgba(0, 0, 0, 0.8);
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1300px) {
   .why-grid {
-    grid-template-columns: 1fr 1.2fr;
+    grid-template-columns: auto auto;
+  }
+  .why-card {
+    height: fit-content !important;
+    padding: 1.5rem;
+  }
+
+  .why-col.h-100 {
+    height: auto !important;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: 100%;
+  }
+  .why-section {
+    padding: 0rem 0;
   }
 }

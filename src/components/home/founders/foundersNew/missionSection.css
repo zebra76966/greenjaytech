@@ -1,0 +1,23 @@
+.mission-glow {
+  position: absolute;
+  inset: -20%;
+  background: radial-gradient(circle at 70% 40%, rgba(219, 164, 90, 0.12), transparent 60%);
+  pointer-events: none;
+}
+
+.bg-glass {
+  backdrop-filter: blur(5px);
+  background-color: rgba(255, 255, 255, 0.1);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.pillar-card {
+  transition:
+    box-shadow 0.4s ease,
+    transform 0.4s ease;
+}
+
+.pillar-card:hover {
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
+}
