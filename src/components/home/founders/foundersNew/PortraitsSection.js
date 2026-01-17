@@ -17,8 +17,8 @@ const columnVariants = {
 };
 
 export default function PortraitsSection() {
-  const [robImage, setRobImage] = useState("tux.png");
-  const [jenImage, setJenImage] = useState("jennifer2.png");
+  const [robImage, setRobImage] = useState("/founders/tux.png");
+  const [jenImage, setJenImage] = useState("/founders/jennifer2.png");
 
   return (
     <section className="portraits-section ch-100 bg-color-dark py-5" id="leadership">
@@ -49,7 +49,7 @@ export default function PortraitsSection() {
               </div>
 
               <div className="portrait-thumbnails d-flex justify-content-center gap-3 mb-4">
-                {["tux.png", "dark.jpg", "suit2.png", "military2.png"].map((img) => (
+                {["/founders/tux.png", "/founders/dark.jpg", "/founders/suit2.png", "/founders/military2.png"].map((img) => (
                   <motion.div
                     key={img}
                     className={`portrait-thumb ${robImage === img ? "active" : ""}`}
@@ -89,7 +89,7 @@ export default function PortraitsSection() {
               </div>
 
               <div className="portrait-thumbnails d-flex justify-content-center gap-3 mb-4">
-                {["jennifer2.png", "IMG-20251230-WA0083.jpg"].map((img) => (
+                {["/founders/jennifer2.png", "/founders/jennifer.jpg"].map((img) => (
                   <motion.div
                     key={img}
                     className={`portrait-thumb ${jenImage === img ? "active" : ""}`}
