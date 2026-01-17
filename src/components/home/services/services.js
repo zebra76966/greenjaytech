@@ -44,16 +44,28 @@ export default function ServicesSection() {
     if (!isTablet && !allowNavScroll.current) return;
     if (isAutoScrolling.current) return;
 
+    const el = navRefs.current[idx];
+    const container = el?.parentElement;
+    if (!el || !container) return;
+
+    const elRect = el.getBoundingClientRect();
+    const cRect = container.getBoundingClientRect();
+
+    // Check if the item is already comfortably visible
+    const isFullyVisible = elRect.left >= cRect.left + 16 && elRect.right <= cRect.right - 16;
+
+    if (isFullyVisible) return; // ← this kills the jerk
+
     isAutoScrolling.current = true;
 
-    navRefs.current[idx]?.scrollIntoView({
+    el.scrollIntoView({
       behavior: "smooth",
       ...(isTablet ? { inline: "center", block: "nearest" } : { block: "center" }),
     });
 
     setTimeout(() => {
       isAutoScrolling.current = false;
-    }, 300);
+    }, 250);
   }, [active]);
 
   const scrollToCard = (id, index) => {
