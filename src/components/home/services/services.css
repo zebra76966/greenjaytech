@@ -221,7 +221,9 @@
 
 @media screen and (max-width: 512px) {
   .cimg {
-    max-height: 280px;
+    max-height: 200px;
+
+    object-fit: cover !important;
   }
   .services-nav {
     gap: 1.5em;
@@ -236,10 +238,20 @@
   }
   .card-content {
     max-width: 100%;
-    padding: 2rem;
+    padding: 1.5rem;
   }
 
   .index-number {
     font-size: 6.5vh;
+  }
+  .card-content p {
+    max-width: 100%;
+    font-size: 0.9rem;
+  }
+  .card-content h3 {
+    font-size: 1.5rem;
+  }
+  .infoText.fs-6 {
+    font-size: 0.8rem !important;
   }
 }

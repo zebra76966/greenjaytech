@@ -154,15 +154,15 @@ export default function ServicesSection() {
                   )}
                 </Col>
                 <Col xl={3} className="text-start " style={{ zIndex: 99 }}>
-                  <div className="d-flex flex-xl-column flex-sm-row flex-column gap-xl-5 gap-2 align-items-start h-100 pe-4">
+                  <div className="d-flex flex-xl-column flex-sm-row flex-column gap-xl-5 gap-2 align-items-start h-100 pe-md-4 pe-0">
                     <h2 className="card-index pFont d-xl-block d-none">{String(s.id).padStart(2, "0")}</h2>
                     {s.image && (
-                      <div className="p-2 d-xl-none d-inline">
+                      <div className="p-2 d-xl-none d-inline w-100">
                         <img className=" position-relative  rounded-3 w-100 cimg " src={s.image} style={{ objectFit: "contain", zIndex: 999999, opacity: 1 }} />
                       </div>
                     )}
                     <div className="mt-md-auto p-xl-0 p-2">
-                      <p className="text-secondary-color fs-6 mt-md-5 mt-0">includes personal security detail (psd) operations</p>
+                      <p className="text-secondary-color fs-6 mt-md-5 mt-0 infoText">includes personal security detail (psd) operations</p>
                       <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-md-5" />
                       <button className="btn-enquire-advanced text-primary-color ">
                         <span className="arrow-wrapper border-primary-color">
