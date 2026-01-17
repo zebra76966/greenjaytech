@@ -13,6 +13,7 @@ import servicesData from "../ServicesMain/servicesData.json";
 export default function ServicesSection() {
   const [active, setActive] = useState(1);
   const cardRefs = useRef([]);
+  const isAutoScrolling = useRef(false);
 
   const allowNavScroll = useRef(false);
 
@@ -36,19 +37,23 @@ export default function ServicesSection() {
   };
 
   useEffect(() => {
-    if (!allowNavScroll.current) return;
-
     const idx = servicesData.findIndex((p) => p.id === active);
     if (idx === -1) return;
 
     const isTablet = window.innerWidth <= 1100;
+    if (!isTablet && !allowNavScroll.current) return;
+    if (isAutoScrolling.current) return;
+
+    isAutoScrolling.current = true;
 
     navRefs.current[idx]?.scrollIntoView({
       behavior: "smooth",
-      ...(isTablet
-        ? { inline: "center", block: "nearest" } // horizontal mode
-        : { block: "center" }), // vertical mode
+      ...(isTablet ? { inline: "center", block: "nearest" } : { block: "center" }),
     });
+
+    setTimeout(() => {
+      isAutoScrolling.current = false;
+    }, 300);
   }, [active]);
 
   const scrollToCard = (id, index) => {
@@ -97,7 +102,9 @@ export default function ServicesSection() {
               initial="hidden"
               whileInView="visible"
               viewport={{ once: false, amount: 0.45 }}
-              onViewportEnter={() => setActive(s.id)}
+              onViewportEnter={() => {
+                if (active !== s.id) setActive(s.id);
+              }}
             >
               {/* <motion.div
                 className="card-bg-image"
