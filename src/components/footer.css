@@ -151,3 +151,16 @@
   font-size: 0.7rem;
   opacity: 0.7;
 }
+
+@media screen and (max-width: 768px) {
+  .footer-inner {
+    position: relative;
+    z-index: 2;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 4rem;
+    padding-bottom: 4rem;
+  }
+}

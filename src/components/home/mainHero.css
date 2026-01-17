@@ -61,6 +61,9 @@
   place-items: center;
   /* overflow: hidden; */
 }
+.arrow-wrapper > .ico {
+  font-size: 34px;
+}
 
 .arrow-wrapper svg {
   z-index: 2;
@@ -237,6 +240,10 @@
   cursor: pointer;
   padding: 0.9rem 2rem;
   letter-spacing: 0.3em;
+  z-index: 9999;
+}
+.consult-btn .ico {
+  font-size: 35px;
 }
 
 /* Scroll indicator container */
@@ -353,4 +360,113 @@
   background: var(--primary-color);
   color: #000;
   box-shadow: 0 0 18px rgba(212, 175, 55, 0.45);
+}
+
+@media (max-width: 1700px) {
+  .gold-ring {
+    scale: 0.8;
+    right: 0px;
+    /* transform-origin: center right; */
+  }
+  .hero-image {
+    position: relative;
+    max-height: 80%;
+    z-index: 3;
+    right: -100px;
+    margin-left: auto;
+    filter: drop-shadow(0 40px 60px rgba(0, 0, 0, 0.7));
+  }
+  .hero-title {
+    font-size: 8dvh;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 7.5dvh;
+  }
+  .hero-eyebrow {
+    letter-spacing: 0.3em;
+    font-size: 0.7rem;
+
+    display: block;
+  }
+  .hero-description {
+    max-width: 80%;
+    font-size: 0.8em !important;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .hero-description.small {
+    font-size: 0.7em !important;
+  }
+  .btn-enquire-advanced {
+    gap: 1.2rem;
+    font-size: 0.8rem;
+    letter-spacing: 0.35em;
+  }
+  .arrow-wrapper {
+    width: 3.3em;
+    height: 3.3em;
+
+    border-radius: 50%;
+  }
+  .arrow-wrapper > .ico {
+    font-size: 24px;
+  }
+
+  .btn-hire-pattern {
+    padding: 0.7rem 4rem;
+
+    font-size: 1rem;
+  }
+  .hero-actions {
+    justify-content: center;
+  }
+  .consult-btn {
+    cursor: pointer;
+
+    font-size: 0.8em !important;
+    letter-spacing: 0.3em;
+    z-index: 9999;
+  }
+  .consult-btn .ico {
+    font-size: 2.5em !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero-title {
+    font-size: 5.5dvh;
+  }
+  .hero-description {
+    max-width: 90%;
+  }
+  .consult-btn {
+    font-size: 0.7em !important;
+    letter-spacing: 0.2em;
+  }
+
+  .btn-enquire-advanced {
+    gap: 1.1rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.3em;
+  }
+  .arrow-wrapper {
+    width: 3.1em;
+    height: 3.1em;
+    border-radius: 50%;
+  }
+  .arrow-wrapper > .ico {
+    font-size: 22px;
+  }
+
+  .btn-hire-pattern {
+    padding: 0.6rem 3rem;
+    font-size: 0.8rem;
+  }
+
+  .services-eyebrow.fs-5 {
+    font-size: 0.9rem !important;
+  }
 }

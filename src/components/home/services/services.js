@@ -38,16 +38,17 @@ export default function ServicesSection() {
   useEffect(() => {
     if (!allowNavScroll.current) return;
 
-    if (servicesData.length > 5) {
-      const idx = servicesData.findIndex((p) => p.id === active);
+    const idx = servicesData.findIndex((p) => p.id === active);
+    if (idx === -1) return;
 
-      if (idx !== -1) {
-        navRefs.current[idx]?.scrollIntoView({
-          behavior: "smooth",
-          block: "center",
-        });
-      }
-    }
+    const isTablet = window.innerWidth <= 1100;
+
+    navRefs.current[idx]?.scrollIntoView({
+      behavior: "smooth",
+      ...(isTablet
+        ? { inline: "center", block: "nearest" } // horizontal mode
+        : { block: "center" }), // vertical mode
+    });
   }, [active]);
 
   const scrollToCard = (id, index) => {
@@ -61,7 +62,7 @@ export default function ServicesSection() {
 
   return (
     <section
-      className="services-section pe-0 ps-5"
+      className="services-section pe-0 ps-xl-5"
       onMouseEnter={() => {
         allowNavScroll.current = true;
       }}
@@ -115,7 +116,7 @@ export default function ServicesSection() {
               )}
 
               <Row>
-                <Col md={9}>
+                <Col xl={9}>
                   <motion.div className="card-content" initial={{ opacity: 0, y: 20 }} animate={{ opacity: active === s.id ? 1 : 0.7, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
                     <h3 className="display-3">{s.title}</h3>
                     <p>{s.description}</p>
@@ -128,18 +129,22 @@ export default function ServicesSection() {
                   </motion.div>
 
                   {s.image && (
-                    <div className="p-2">
-                      <img className=" position-relative  rounded-3" src={s.image} style={{ maxHeight: "500px", objectFit: "contain", zIndex: 999999, opacity: 1 }} />
+                    <div className="p-2 d-xl-block d-none">
+                      <img className=" position-relative  rounded-3 w-100 cimg " src={s.image} style={{ objectFit: "contain", zIndex: 999999, opacity: 1 }} />
                     </div>
                   )}
                 </Col>
-                <Col md={3} className="text-start " style={{ zIndex: 99 }}>
-                  <div className="d-flex flex-column gap-5 align-items-start h-100 pe-4">
-                    <h2 className="card-index pFont">{String(s.id).padStart(2, "0")}</h2>
-
-                    <div className="mt-atuo">
-                      <p className="text-secondary-color fs-6 mt-5">includes personal security detail (psd) operations</p>
-                      <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-5" />
+                <Col xl={3} className="text-start " style={{ zIndex: 99 }}>
+                  <div className="d-flex flex-xl-column flex-sm-row flex-column gap-xl-5 gap-2 align-items-start h-100 pe-4">
+                    <h2 className="card-index pFont d-xl-block d-none">{String(s.id).padStart(2, "0")}</h2>
+                    {s.image && (
+                      <div className="p-2 d-xl-none d-inline">
+                        <img className=" position-relative  rounded-3 w-100 cimg " src={s.image} style={{ objectFit: "contain", zIndex: 999999, opacity: 1 }} />
+                      </div>
+                    )}
+                    <div className="mt-md-auto p-xl-0 p-2">
+                      <p className="text-secondary-color fs-6 mt-md-5 mt-0">includes personal security detail (psd) operations</p>
+                      <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-md-5" />
                       <button className="btn-enquire-advanced text-primary-color ">
                         <span className="arrow-wrapper border-primary-color">
                           <span className="ripple delay-1 border-primary-color" />

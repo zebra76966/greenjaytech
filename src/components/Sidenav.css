@@ -78,5 +78,29 @@
 }
 
 .app-content.shifted {
-  margin-left: 260px;
+  margin-left: 200px;
+}
+
+/* Mobile off-canvas behavior */
+.side-nav.mobile {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99999;
+}
+
+/* Dark overlay when open on mobile */
+.nav-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  z-index: 150;
+}
+
+/* On mobile, content should never shift */
+@media screen and (max-width: 1360px) {
+  .app-content {
+    margin-left: 0 !important;
+  }
 }
