@@ -163,4 +163,8 @@
     gap: 4rem;
     padding-bottom: 4rem;
   }
+  .newsletter-input button {
+    letter-spacing: 0.1em;
+    padding: 0.4rem 0.5rem;
+  }
 }

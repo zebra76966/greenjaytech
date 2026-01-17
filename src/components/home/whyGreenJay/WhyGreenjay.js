@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { FiFlag, FiHelpCircle, FiTarget, FiShield, FiTrendingUp } from "react-icons/fi";
+import { FiFlag, FiHelpCircle, FiTarget, FiShield, FiTrendingUp, FiMonitor, FiUsers, FiUserCheck } from "react-icons/fi";
 import FluidBackground from "../animtion2";
 import "./whyGreenjay.css";
 
@@ -29,40 +29,55 @@ export default function WhyGreenjay() {
         <div className="why-col h-100">
           <WhyCard
             icon={<FiFlag />}
-            title="UNIFIED COMMAND"
-            subtitle="ONE PARTNER"
+            title="SPECIAL FORCES DOCTRINE"
+            subtitle="THREAT PROFILE → MISSION PLAN"
             highlight="TOTAL CONTROL"
-            description="We serve as your single point of contact — managing vendors, platforms, and systems to deliver seamless interoperability across your entire security 
-infrastructure."
+            description="Greenjay is built on U.S. Special Forces methods: advance work, disciplined execution, and controlled outcomes. We start with a complete threat profile—pattern of life, venues, travel, electronic exposure—then design security as an operation, not a purchase."
             index={0}
-            height={"60%"}
+            height={"35%"}
           />
           <WhyCard
-            title="END-TO-END"
-            subtitle="ACCOUNTABILITY"
-            description="We serve as your single point of contact — managing vendors, platforms, and systems to deliver seamless interoperability across your entire security infrastructure."
+            title="COMPARTMENTED ARCHITECTURE"
+            subtitle="NEED-TO-KNOW EXECUTION"
+            description="We design and run a compartmented architecture: need-to-know scopes, segmented systems, and controlled access so no outside party sees the complete blueprint. This protects privacy, reduces insider risk, and prevents accidental disclosure."
             index={1}
-            height={"40%"}
+            height={"33%"}
             isHr={"hidden"}
+          />
+          <WhyCard
+            icon={<FiMonitor />}
+            title="PRIVATE OPERATING PICTURE"
+            subtitle="COMMAND CENTER INTEGRATION"
+            description="High-end protection requires a single operating picture—video, access events, intrusion alerts, drone detections, and response procedures in one place. We design workflows that reduce false alarms, trigger the right escalation, and preserve evidence."
+            index={0}
+            height={"100%"}
           />
         </div>
 
         {/* CENTER */}
         <motion.div className="why-center h-100 gap-4" initial={{ scale: 0.8, opacity: 0 }} whileInView={{ scale: 1, opacity: 1 }} transition={{ duration: 1 }} viewport={{ once: false }}>
-          <motion.div className="why-card center-card w-100 p-4  " variants={fadeUp} initial="hidden" whileInView="visible" custom={2} viewport={{ once: false }} style={{ height: "45%" }}>
+          <motion.div className="why-card center-card w-100 p-4  " variants={fadeUp} initial="hidden" whileInView="visible" custom={2} viewport={{ once: false }} style={{ height: "22%" }}>
             <div className="d-flex gap-3 align-items-center justify-content-center ">
               <div className="card-icon text-primary-color fs-1">
                 <FiHelpCircle />
               </div>
               <h3 className="fs-2 text-primary-color mb-0">{"WHY CHOOSE GREENJAY"}</h3>
             </div>
-            <hr className="border-bottom-1 border-secondary-color pb-2 mt-0 opacity-100 " />
+            <hr className="border-bottom-1 border-secondary-color mt-0 opacity-100 mb-0 pb-0 " />
 
-            <p className="card-sub fs-4 text-primary-color mb-0 pb-0 wSpacing">{"SIMPLIFY"}</p>
-            <p className="card-sub  fs-5 text-secondary-color mt-0 pt-0 wSpacing">{"COMPLEXITY"}</p>
+            <p className="card-sub fs-6  text-primary-color mb-0 pb-0 wSpacing mt-3 pt-3 ">{"BUILT LIKE A"}</p>
 
-            <p className="card-sub  text-primary-color mb-0 pb-0 wSpacing">{"DELEVERING MISSION"}</p>
-            <p className="card-sub  fs-1 fw-bold text-secondary-color mt-0 pt-0 wSpacing">{"SUCCESS"}</p>
+            <p className="card-sub  fs-4 fw-bold text-secondary-color mt-0 pt-0 mb-0 wSpacing mb-0 pb-0">{"SPECIAL FORCES"}</p>
+            <p className="card-sub  fs-1 fw-bold text-primary-color mt-0 pt-0 wSpacing">{"OPERATIONS"}</p>
+          </motion.div>
+
+          <motion.div className=" w-100  why-card  d-flex align-items-top " variants={fadeUp} initial="hidden" whileInView="visible" custom={2} viewport={{ once: false }} style={{ height: "28%" }}>
+            <div className=" w-100  text-center mb-auto ">
+              <p className="text-secondary-color wSpacing ">DISCREET ENGAGEMENTS</p>
+              <h3 className="pFont fs-1 fw-bold">NDA AVAILABLE</h3>
+
+              <p className="text-secondary-color wSpacing mt-2">Privacy-first execution</p>
+            </div>
           </motion.div>
 
           <div className="center-orb-wrapper">
@@ -90,16 +105,16 @@ infrastructure."
           </div>
 
           <motion.div
-            className="why-card center-card w-100 p-4  d-flex align-items-bottom"
+            className=" center-card w-100 why-card  d-flex align-items-bottom"
             variants={fadeUp}
             initial="hidden"
             whileInView="visible"
             custom={2}
             viewport={{ once: false }}
-            style={{ height: "55%" }}
+            style={{ height: "30%" }}
           >
-            <div className="mt-auto w-100 why-card pt-3 ">
-              <h3 className="pFont fs-1 fw-bold">GET IN TOUCH</h3>
+            <div className=" w-100  pt-3 mt-auto">
+              <h3 className="pFont fs-1 fw-bold ">GET IN TOUCH</h3>
 
               <p className="text-secondary-color wSpacing mt-2">LET’S SECURE YOUR MISSION</p>
               <button className="btn-hire-pattern py-4  mt-4">
@@ -113,16 +128,38 @@ infrastructure."
               </button>
             </div>
           </motion.div>
+          <WhyCard
+            icon={<FiTarget />}
+            title="VALIDATION"
+            subtitle="RED TEAM TESTING"
+            highlight={null}
+            description={"We run scheduled validation cycles: config audits, penetration testing, and red-team exercises—then remediate and retest with documented closure."}
+            index={3}
+            height={"22%"}
+          />
         </motion.div>
 
         {/* RIGHT COLUMN */}
         <div className="why-col h-100">
           <WhyCard
-            icon={<FiTarget />}
-            title="MISSION RELIABILITY"
-            subtitle="ENGINEERED FOR"
-            highlight="PRESSURE"
-            description={"We serve as your single point of contact — managing vendors, platforms, and systems to deliver seamless interoperability across your entire security infrastructure."}
+            icon={<FiUsers />}
+            title="INTEGRATED PROTECTIVE"
+            subtitle="+ TECHNICAL"
+            highlight={null}
+            description={
+              "We unify protective operations with surveillance, access control, comms, and digital hygiene—so movement, privacy, and response are coordinated as one system. Privacy-first coverage including female agents when required."
+            }
+            index={3}
+            height={"50%"}
+          />
+          <WhyCard
+            icon={<FiUserCheck />}
+            title="VETTED PARTNERS"
+            subtitle="CONTROLLED ACCESS"
+            highlight={null}
+            description={
+              "We vet vendors and personnel, control site access, and supervise critical installation. Every change is logged, approved, and mapped back to the master architecture—so 'quick fixes' don't create silent vulnerabilities."
+            }
             index={3}
             height={"50%"}
           />
@@ -149,7 +186,7 @@ function WhyCard({ icon, title, subtitle, highlight, description, index, height,
         <>
           {isHr == "hidden" && <p className="fs-3 text-primary-color mb-0 pFont pb-0 wSpacing">{title}</p>}
           <p className={`card-sub fs-5 ${isHr == "hidden" ? "text-secondary-color wSpacing" : "text-primary-color"} mb-0 pb-0 pt-0 mt-0`}>{subtitle}</p>
-          <p className="card-sub  fs-6 text-secondary-color mt-0 pt-0">{highlight}</p>
+          {highlight && <p className="card-sub  fs-6 text-secondary-color mt-0 pt-0">{highlight}</p>}
         </>
       )}
 
@@ -160,15 +197,15 @@ function WhyCard({ icon, title, subtitle, highlight, description, index, height,
 
 function StatsCard() {
   return (
-    <motion.div className="stats-stack h-50" variants={fadeUp} initial="hidden" whileInView="visible" custom={4} viewport={{ once: false }}>
+    <motion.div className="stats-stack " variants={fadeUp} initial="hidden" whileInView="visible" custom={4} viewport={{ once: false }} style={{ height: "50%" }}>
       <div className="stat why-card fs-2 rounded-5 fw-bold">
-        100% <span className="text-secondary-color fw-light fs-6">MISSION RELIABILITY</span>
+        15+ <span className="text-secondary-color fw-light fs-6">YEARS SPECIAL FORCES EXPERIENCE.</span>
       </div>
       <div className="stat  why-card fs-2 rounded-5 fw-bold">
-        250+ <span className="text-secondary-color fw-light fs-6">SUCCESSFUL INTEGRATIONS</span>
+        10+ <span className="text-secondary-color fw-light fs-6">YEARS LAW ENFORCEMENT.</span>
       </div>
       <div className="stat  why-card fs-2 rounded-5 fw-bold">
-        15+ <span className="text-secondary-color fw-light fs-6">YEARS OPERATIONAL EXP.</span>
+        10+ <span className="text-secondary-color fw-light fs-6">YEARS ENGINEERING.</span>
       </div>
     </motion.div>
   );

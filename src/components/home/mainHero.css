@@ -381,9 +381,20 @@
   }
 }
 
-@media (max-width: 992px) {
-  .hero-title {
-    font-size: 7.5vh;
+@media (max-width: 1300px) {
+  .gold-ring {
+    scale: 0.7;
+    right: -100px;
+  }
+  .hero-image {
+    position: relative;
+    max-height: 70%;
+    z-index: 3;
+    right: -100px;
+  }
+  .hero-description {
+    max-width: 80%;
+    font-size: 0.8em !important;
   }
   .hero-eyebrow {
     letter-spacing: 0.3em;
@@ -391,20 +402,12 @@
 
     display: block;
   }
-  .hero-description {
-    max-width: 80%;
-    font-size: 0.8em !important;
-    margin-right: auto;
-    margin-left: auto;
-  }
-  .hero-description.small {
-    font-size: 0.7em !important;
-  }
   .btn-enquire-advanced {
     gap: 1.2rem;
     font-size: 0.8rem;
     letter-spacing: 0.35em;
   }
+
   .arrow-wrapper {
     width: 3.3em;
     height: 3.3em;
@@ -420,9 +423,6 @@
 
     font-size: 1rem;
   }
-  .hero-actions {
-    justify-content: center;
-  }
   .consult-btn {
     cursor: pointer;
 
@@ -432,6 +432,24 @@
   }
   .consult-btn .ico {
     font-size: 2.5em !important;
+  }
+  .hero-description.small {
+    font-size: 0.7em !important;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero-title {
+    font-size: 7.5vh;
+  }
+
+  .hero-description {
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .hero-actions {
+    justify-content: center;
   }
 }
 

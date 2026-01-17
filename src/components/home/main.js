@@ -16,7 +16,7 @@ const Main = () => {
     <>
       <HeroSection />
       <ServicesSection />
-      {/* <WhyGreenjay /> */}
+      <WhyGreenjay />
       {/* <FounderSection /> */}
     </>
   );
