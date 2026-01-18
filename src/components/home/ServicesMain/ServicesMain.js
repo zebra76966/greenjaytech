@@ -19,7 +19,7 @@ const ServicsMain = () => {
       <ServicesOverview />
       {/* <DoctrinesViewer /> */}
       <DoctrinesOverview />
-      {/* <GlobalOperations /> */}
+      <GlobalOperations />
       {/* <ContactMain /> */}
     </>
   );

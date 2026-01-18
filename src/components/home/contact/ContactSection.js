@@ -7,7 +7,7 @@ import FluidBackgroundZoom from "../animtion3";
 
 export default function ContactSection() {
   return (
-    <section className="contact-section   px-5 position-relative ch-100 d-flex align-items-center mt-5" style={{ overflow: "hidden" }}>
+    <section className="contact-section   px-lg-5 px-2  position-relative ch-100 d-flex align-items-center mt-5" style={{ overflow: "hidden" }}>
       <Container fluid className="px-lg-5 mx-auto position-relative" style={{ zIndex: 99999 }}>
         <Row className="align-items-center">
           {/* LEFT */}

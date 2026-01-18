@@ -94,7 +94,7 @@
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
-  gap: 1.5rem;
+  gap: 0.5rem;
   margin-top: 3rem;
 }
 
@@ -103,6 +103,7 @@
   flex-direction: column;
   align-items: center;
   min-width: 90px;
+  max-width: 120px;
 }
 
 .method-circle {
@@ -223,9 +224,32 @@
   font-size: 0.9rem;
 }
 
+.contact-title.worldOP {
+  font-size: 6dvw !important;
+}
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1200px) {
+  .contact-title-eyebrow.wrldOp.fs-6 {
+    font-size: 0.9em !important;
+    margin-top: 2em;
+    letter-spacing: 0.5em;
+  }
+  .worldOP.subtext {
+    font-size: 0.95em !important;
+  }
+  .global-logo {
+    height: 10vh !important;
+  }
+  .btn-hire-pattern.worldOP {
+    padding: 0.7rem 2rem;
+  }
+  .method-box .method-steps {
+    display: flex;
+    justify-content: start;
+  }
+}
 
-@media (max-width: 900px) {
+@media (max-width: 992px) {
   .phase-content {
     grid-template-columns: 1fr;
   }
@@ -236,6 +260,29 @@
 
   .service-doctrine-wrapper {
     padding: 4rem 1rem;
+  }
+
+  .contact-title-eyebrow.wrldOp.fs-6 {
+    font-size: 0.8em !important;
+    margin-top: 2em;
+    letter-spacing: 0.5em;
+  }
+  .worldOP.subtext {
+    font-size: 0.8em !important;
+  }
+  .globe-shell {
+    max-height: 500px;
+    width: auto !important;
+  }
+
+  .contact-title.worldOP {
+    font-size: 5.5dvh !important;
+  }
+  .method-step {
+    display: flex;
+    align-items: center;
+    min-width: 90px;
+    max-width: 120px;
   }
 }
 

@@ -36,18 +36,18 @@ export default function ServiceDetailHero() {
 
   return (
     <>
-      <motion.section className="overviewdet-service-detail-hero ch-100 p-4 position-relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: "easeOut" }}>
+      <motion.section className="overviewdet-service-detail-hero ch-100 p-md-4 p-2 position-relative" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1.2, ease: "easeOut" }}>
         {/* LEFT PANEL */}
 
-        <div className="overviewdet-service-detail-left pe-0">
+        <div className="overviewdet-service-detail-left pe-lg-0 pe-3 pt-md-3 pt-5 mt-md-3 mt-5">
           <motion.button
             className="btn-enquire-advanced"
             initial={{ opacity: 0, x: -20, scale: 0.8, originX: 0 }}
-            animate={{ opacity: 1, x: 0, scale: 0.8, originX: 0, originY: 0 }}
+            animate={{ opacity: 1, x: 0, scale: 1, originX: 0, originY: 0 }}
             onClick={() => navigate(-1)}
           >
             <span className="btn-text">GO BACK</span>
-            <span className="arrow-wrapper" style={{ scale: 0.7 }}>
+            <span className="arrow-wrapper">
               <span className="ripple delay-1" />
               <span className="ripple delay-2" />
 
@@ -79,18 +79,20 @@ export default function ServiceDetailHero() {
 
           <motion.div className="overviewdet-service-tags" initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.45 }}>
             {activeServ?.features?.map((tag, i) => (
-              <span key={i}>{tag}</span>
+              <span className="mb-1" key={i}>
+                {tag}
+              </span>
             ))}
           </motion.div>
 
           <motion.div
-            className="hero-actions d-flex gap-5 pt-5"
+            className="hero-actions d-flex gap-5 pt-5 servDet"
             initial={{ opacity: 0, y: 20, scale: 0.5, originX: 0 }}
-            animate={{ opacity: 1, y: 0, scale: 0.8, originX: 0 }}
+            animate={{ opacity: 1, y: 0, scale: 0.9, originX: 0 }}
             transition={{ delay: 0.55 }}
           >
             {/* ENQUIRE BUTTON */}
-            <button className="btn-enquire-advanced w-100">
+            <button className="btn-enquire-advanced w-100 servDet">
               <span className="arrow-wrapper">
                 <span className="ripple delay-1" />
                 <span className="ripple delay-2" />

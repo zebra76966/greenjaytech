@@ -152,9 +152,16 @@ export default function ServiceDoctrine({ data }) {
 
               <div className="method-steps">
                 {sec.steps?.map((s, k) => (
-                  <div key={k} className="method-step">
-                    <div className="method-circle ">{s.key}</div>
-                    <div className="method-label">{s.label}</div>
+                  <div key={k} className="method-step d-flex gap-2 flex-row align-items-center">
+                    <div>
+                      <div className="method-circle ">{s.key}</div>
+                      <div className="method-label">{s.label}</div>
+                    </div>
+                    {k < sec.steps.length - 1 && (
+                      <div className="fs-4 text-primary-color d-md-block d-none">
+                        <FiArrowRight />
+                      </div>
+                    )}
                   </div>
                 ))}
               </div>
@@ -171,7 +178,7 @@ export default function ServiceDoctrine({ data }) {
         return null;
       })}
 
-      <section className="services-section pe-0 ps-5">
+      <section className="services-section pe-0 ps-lg-5">
         <h6 className="services-eyebrow position-sticky top-0 start-0 text-center pFont fs-5  py-4" style={{ zIndex: "999" }}>
           THE PHASES.
         </h6>
@@ -233,7 +240,7 @@ export default function ServiceDoctrine({ data }) {
                             </div>
                           ) : (
                             <p key={k}>{c.text}</p>
-                          )
+                          ),
                         )}
                       </div>
                     </motion.div>
@@ -254,12 +261,12 @@ export default function ServiceDoctrine({ data }) {
                   </Col>
                   <Col md={3} className="text-start " style={{ zIndex: 99 }}>
                     <div className="d-flex flex-column gap-5 align-items-start h-100 pe-4">
-                      <h2 className="card-index pFont">{String(sec.index).padStart(2, "0")}</h2>
+                      <h2 className="card-index pFont d-lg-block d-none">{String(sec.index).padStart(2, "0")}</h2>
 
-                      <div className="mt-atuo">
-                        <p className="text-secondary-color fs-6 mt-5">includes personal security detail (psd) operations</p>
-                        <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-5" />
-                        <button className="btn-enquire-advanced text-primary-color ">
+                      <div className="mt-auto">
+                        <p className="text-secondary-color fs-6 mt-lg-5 mt-2">includes personal security detail (psd) operations</p>
+                        <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-lg-5 my-1" />
+                        <button className="btn-enquire-advanced text-primary-color mt-lg-0 mt-2">
                           <span className="arrow-wrapper border-primary-color">
                             <span className="ripple delay-1 border-primary-color" />
                             <span className="ripple delay-2 border-primary-color " />

@@ -137,6 +137,32 @@
   .overviewdet-service-detail-right {
     height: 50vh;
   }
+
+  .overviewdet-service-title {
+    font-size: 5dvh;
+  }
+  .overviewdet-service-detail-left {
+    padding: 30px 15px;
+  }
+  .overviewdet-service-tags {
+    display: block;
+    width: 100%;
+  }
+  .overviewdet-service-tags span {
+    display: inline-block;
+    flex-wrap: nowrap;
+    margin-right: 5px;
+  }
+  .overviewdet-service-description p {
+    font-size: 0.9em !important;
+  }
+  .btn-enquire-advanced.servDet {
+    gap: 1rem;
+    font-size: 0.8rem;
+  }
+  .hero-actions.servDet {
+    scale: 1 !important;
+  }
 }
 
 .overviewdet-service-detail-hero {
