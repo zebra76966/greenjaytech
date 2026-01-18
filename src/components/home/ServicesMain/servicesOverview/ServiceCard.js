@@ -45,7 +45,7 @@ export default function ServiceCard({ title = "SECURITY", description, image, ta
         </div>
 
         <div className="overview-service-footer  justify-content-end d-md-flex d-none">
-          <button className="btn-enquire-advanced" onClick={openContact}>
+          <button className="btn-enquire-advanced">
             <span className="btn-text">LEARN MORE</span>
             <span className="arrow-wrapper">
               <span className="ripple delay-1" />

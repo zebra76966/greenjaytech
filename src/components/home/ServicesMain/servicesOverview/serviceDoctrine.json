@@ -1309,5 +1309,249 @@
       "site reconnaissance",
       "documentation & training"
     ]
+  },
+  {
+    "slug": "program-control-continuous-assurance",
+    "sections": [
+      {
+        "type": "doctrine",
+        "eyebrow": "PROGRAM CONTROL & CONTINUOUS ASSURANCE",
+        "title": "Sustained Security for Exceptional Estates",
+        "body": [
+          "Where discerning principals demand more than installation—they require enduring protection that evolves, adapts, and remains defensible under the most rigorous scrutiny.",
+          "GreenJay transforms security from a static installation into a living discipline governed over time."
+        ],
+        "images": ["hero_assurance.png"]
+      },
+      {
+        "type": "phase",
+        "index": 1,
+        "eyebrow": "THE CHALLENGE",
+        "title": "The Entropy Problem",
+        "purpose": "High-end security rarely fails at the moment of installation. It fails months later—quietly, imperceptibly, and without alarm.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Vendors rotate. Renovations occur. Credentials proliferate. A 'temporary' configuration becomes permanent. A firewall rule changes. An update silently disables logging."
+          },
+          {
+            "type": "paragraph",
+            "text": "This is the reality of entropy: without active governance, your investment loses efficacy with each passing day."
+          }
+        ],
+        "images": ["assurance1.png"]
+      },
+      {
+        "type": "phase",
+        "index": 2,
+        "eyebrow": "THE SOLUTION",
+        "title": "Program Architecture",
+        "purpose": "We assume accountability for the security program itself—not merely the hardware.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "GreenJay governs the entire ecosystem: vendors, access, changes, and validation cycles."
+          },
+          {
+            "type": "paragraph",
+            "text": "The result is a posture that remains defensible, resilient, and operationally ready—not merely installed, but sustained."
+          }
+        ],
+        "images": ["assurance2.png"]
+      },
+      {
+        "type": "phase",
+        "index": 3,
+        "eyebrow": "GOVERNANCE PILLAR I",
+        "title": "Vendor Vetting & Scoping",
+        "purpose": "Uncontrolled vendors are the most common source of exposure in premium environments.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We vet vendors, define strict scope-of-work boundaries, and enforce access duration rules."
+          },
+          {
+            "type": "paragraph",
+            "text": "Every vendor operates inside defined technical and procedural lanes."
+          }
+        ],
+        "images": ["assurance3.png"]
+      },
+      {
+        "type": "phase",
+        "index": 4,
+        "eyebrow": "GOVERNANCE PILLAR II",
+        "title": "Controlled Access Architecture",
+        "purpose": "Access is the oxygen of a security program.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We enforce least-privilege access across all domains—physical, logical, and administrative."
+          },
+          {
+            "type": "paragraph",
+            "text": "Permissions are revoked the moment they are no longer required."
+          }
+        ],
+        "images": ["assurance4.png"]
+      },
+      {
+        "type": "phase",
+        "index": 5,
+        "eyebrow": "GOVERNANCE PILLAR III",
+        "title": "Change Control Governance",
+        "purpose": "Security erodes through small, undocumented changes.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We operate a Security Change Control Board (SCCB) to govern drift."
+          },
+          {
+            "type": "paragraph",
+            "text": "No change is accepted without proof it preserved or improved posture."
+          }
+        ],
+        "images": ["assurance5.png"]
+      },
+      {
+        "type": "phase",
+        "index": 6,
+        "eyebrow": "GOVERNANCE PILLAR IV",
+        "title": "SOPs & Operational Discipline",
+        "purpose": "Hardware does not protect people—procedures do.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We develop living SOPs tied to your systems and staff."
+          },
+          {
+            "type": "paragraph",
+            "text": "Incidents are met with structured, decisive, evidence-based action."
+          }
+        ],
+        "images": ["assurance6.png"]
+      },
+      {
+        "type": "phase",
+        "index": 7,
+        "eyebrow": "CONTINUOUS ASSURANCE",
+        "title": "Recurring Validation Cycles",
+        "purpose": "Posture must be proven, not assumed.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We implement recurring validation cycles to prove controls still function."
+          },
+          {
+            "type": "paragraph",
+            "text": "Executives stop relying on hope. They operate with evidence."
+          }
+        ],
+        "images": ["assurance7.png"]
+      },
+      {
+        "type": "phase",
+        "index": 8,
+        "eyebrow": "STRESS TESTING",
+        "title": "PACE Drills & Degraded Mode",
+        "purpose": "Systems must work when conditions degrade.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We test under ISP failure, power loss, and cloud disruption."
+          },
+          {
+            "type": "paragraph",
+            "text": "True confidence comes from knowing systems work under stress."
+          }
+        ],
+        "images": ["assurance8.png"]
+      },
+      {
+        "type": "phase",
+        "index": 9,
+        "eyebrow": "INDEPENDENT VERIFICATION",
+        "title": "Third-Party Penetration Testing",
+        "purpose": "Independent testing reveals what insiders miss.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We coordinate third-party adversarial testing."
+          },
+          {
+            "type": "paragraph",
+            "text": "Findings become engineering fixes—not shelfware."
+          }
+        ],
+        "images": ["assurance9.png"]
+      },
+      {
+        "type": "phase",
+        "index": 10,
+        "eyebrow": "CLOSING THE LOOP",
+        "title": "The Remediation Loop",
+        "purpose": "Findings must become resolved controls.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We manage the remediation lifecycle end-to-end."
+          },
+          {
+            "type": "paragraph",
+            "text": "Only retested controls are considered closed."
+          }
+        ],
+        "images": ["assurance10.png"]
+      },
+      {
+        "type": "phase",
+        "index": 11,
+        "eyebrow": "DOCUMENTATION",
+        "title": "Evidence & Defensibility",
+        "purpose": "Defensibility requires documentation.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We produce audit-grade evidence for insurers, counsel, and auditors."
+          },
+          {
+            "type": "paragraph",
+            "text": "You possess proof that your posture was governed and maintained."
+          }
+        ],
+        "images": ["assurance11.png"]
+      },
+      {
+        "type": "phase",
+        "index": 12,
+        "eyebrow": "THE OUTCOME",
+        "title": "Summary of Value",
+        "purpose": "Security that stays correct.",
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "A single accountable entity ensures continuous reduction of latent risk."
+          },
+          {
+            "type": "paragraph",
+            "text": "Confidence becomes provable."
+          }
+        ],
+        "images": ["assurance12.png"]
+      }
+    ],
+    "includes": [
+      "program governance",
+      "vendor control",
+      "access lifecycle management",
+      "change control board",
+      "standard operating procedures",
+      "recurring validation cycles",
+      "PACE drills",
+      "penetration testing",
+      "remediation management",
+      "audit-grade documentation",
+      "defensible security posture"
+    ]
   }
 ]

@@ -11,8 +11,8 @@ const navItems = [
   { icon: <FaBuildingUser />, label: "FOUNDERS", to: "/founders" },
   { icon: <FiSettings />, label: "SERVICES", to: "/services" },
   { icon: <FiHelpCircle />, label: "WHY US?", to: "/#whyus" },
-  { icon: <FiInfo />, label: "ABOUT", to: "/about" },
-  { icon: <FiStar />, label: "REVIEWS", to: "/reviews" },
+  { icon: <FiInfo />, label: "ABOUT", to: "/founders" },
+  { icon: <FiStar />, label: "DOCTRINES", to: "/services#doctrines" },
   { icon: <FiMessageSquare />, label: "FAQs", to: "/faqs" },
 ];
 

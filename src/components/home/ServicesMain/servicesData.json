@@ -84,6 +84,7 @@
     "image": "/assets/services/serv7.png"
   },
   {
+    "slug": "program-control-continuous-assurance",
     "id": 8,
     "title": "COUNTER-UAS INTEGRATION",
     "subtitle": "DETECT · VERIFY · ESCALATE",

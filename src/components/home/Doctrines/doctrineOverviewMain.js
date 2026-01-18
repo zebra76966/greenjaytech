@@ -39,7 +39,7 @@ export default function DoctrinesOverview({ headertxt }) {
   return (
     <>
       {!activeServ && (
-        <section className="main-doctrines-section bg-color-dark ch-100">
+        <section className="main-doctrines-section bg-color-dark ch-100" id="doctrines">
           <Container fluid className="px-lg-5 position-relative">
             <div className="w-100 d-flex justify-content-between  position-sticky top-0 start-0 bg-black align-items-center" style={{ zIndex: "9999" }}>
               <h6 className="services-eyebrow  Ovm pFont fs-5 py-lg-4">{headertxt || "DOCTRINES OVERVIEW."}</h6>
