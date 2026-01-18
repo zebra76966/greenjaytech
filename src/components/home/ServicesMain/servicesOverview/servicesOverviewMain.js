@@ -64,7 +64,7 @@ export default function ServicesOverview({ headertxt }) {
             </h6>
 
             <motion.div
-              className="overviewMain-services-grid justify-content-center row g-5"
+              className="overviewMain-services-grid justify-content-center row g-lg-5 g-3"
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, margin: "-100px" }}
@@ -86,7 +86,7 @@ export default function ServicesOverview({ headertxt }) {
                     },
                   }}
                   onClick={() => navigate(`/service/${service.id}`)}
-                  className="col-lg-4"
+                  className="col-xl-4 col-md-6 col-12"
                 >
                   <ServiceCard title={service.title} subtitle={service.subtitle} description={service.description} image={service.image} tags={service.features} />
                 </motion.div>

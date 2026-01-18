@@ -57,3 +57,33 @@
   cursor: not-allowed;
   pointer-events: none;
 }
+
+@media screen and (max-width: 992px) {
+  .overview-doctrine-card {
+    width: 350px;
+  }
+  .overview-doctrine-content h3 {
+    font-size: 1.3em;
+  }
+  .overview-doctrine-content {
+    padding: 1em;
+  }
+  .overviewMain-doctrines-scroll {
+    white-space: wrap !important;
+  }
+}
+
+.doctrine-scroll-item {
+  flex: 0 0 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .btn-hire-pattern.docViewAll {
+    width: 80%;
+    transform-origin: right;
+  }
+  .services-eyebrow.Ovm.fs-5 {
+    font-size: 0.7em !important;
+    margin-bottom: 0;
+  }
+}

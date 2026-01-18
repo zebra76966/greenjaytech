@@ -50,7 +50,6 @@
 }
 
 .overview-service-tags {
-  display: flex;
   gap: 8px;
   margin-top: 16px;
 }
@@ -66,4 +65,16 @@
   margin-top: 28px;
   scale: 0.7;
   transform-origin: right bottom;
+}
+
+@media screen and (max-width: 992px) {
+  .overview-service-footer {
+    scale: 0.9;
+  }
+  .overview-service-content h3 {
+    font-size: 24px;
+  }
+  .overview-service-content p {
+    font-size: 12px;
+  }
 }

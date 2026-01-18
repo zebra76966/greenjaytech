@@ -36,11 +36,13 @@ export default function ServiceCard({ title = "SECURITY", description, image, ta
 
         <div className="overview-service-tags">
           {tags.map((tag, i) => (
-            <span key={i}>{tag}</span>
+            <span key={i} className="badge fw-light text-primary-color mb-1">
+              {tag}
+            </span>
           ))}
         </div>
 
-        <div className="overview-service-footer d-flex justify-content-end">
+        <div className="overview-service-footer  justify-content-end d-md-flex d-none">
           <button className="btn-enquire-advanced">
             <span className="btn-text">LEARN MORE</span>
             <span className="arrow-wrapper">

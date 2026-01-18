@@ -36,7 +36,7 @@ export default function ServicesHero() {
           {/* LEFT CONTENT */}
           <Col lg={12} className=" text-center px-lg-5">
             <div className="hero-top-actions d-flex align-items-center gap-2">
-              <div className="hero-search">
+              <div className="hero-search d-md-flex d-none">
                 <input type="text" placeholder="search..." />
                 <span className="search-divider" />
                 <FaMagnifyingGlass className="search-icon fs-5" />
@@ -69,7 +69,7 @@ export default function ServicesHero() {
 
               <motion.div className="services-hero-actions d-flex justify-content-center   pt-5 " variants={fadeUp} initial="hidden" animate="visible" custom={3}>
                 <div>
-                  <button className="btn-hire-pattern mb-4 py-4">
+                  <button className="btn-hire-pattern mb-4 py-lg-4 py-3">
                     {/* SVG BACKGROUND */}
                     <span className="btn-pattern-bg">
                       <FluidBackground />
@@ -104,7 +104,11 @@ export default function ServicesHero() {
         </button>
 
         {/* SCROLL INDICATOR */}
-        <motion.div className="scroll-indicator" onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })} style={{ pointerEvents: "auto", cursor: "pointer" }}>
+        <motion.div
+          className="scroll-indicator d-md-block d-none"
+          onClick={() => window.scrollTo({ top: window.innerHeight, behavior: "smooth" })}
+          style={{ pointerEvents: "auto", cursor: "pointer" }}
+        >
           {/* Mouse */}
           <div className="mouse-icon-wrapper">
             <CiDesktopMouse2 className="mouse-icon" />

@@ -81,3 +81,13 @@
   scale: 0.7;
   transform-origin: right bottom;
 }
+
+@media screen and (max-width: 992px) {
+  .overview-doctrine-footer {
+    scale: 1;
+  }
+  .overview-doctrine-footer svg {
+    scale: 0.5;
+    transform-origin: center 40%;
+  }
+}

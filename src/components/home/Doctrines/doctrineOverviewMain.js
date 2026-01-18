@@ -41,10 +41,10 @@ export default function DoctrinesOverview({ headertxt }) {
       {!activeServ && (
         <section className="main-doctrines-section bg-color-dark ch-100">
           <Container fluid className="px-lg-5 position-relative">
-            <div className="w-100 d-flex justify-content-between position-sticky top-0 start-0 bg-black" style={{ zIndex: "9999" }}>
-              <h6 className="services-eyebrow  pFont fs-5 py-4">{headertxt || "DOCTRINES OVERVIEW."}</h6>
+            <div className="w-100 d-flex justify-content-between  position-sticky top-0 start-0 bg-black align-items-center" style={{ zIndex: "9999" }}>
+              <h6 className="services-eyebrow  Ovm pFont fs-5 py-lg-4">{headertxt || "DOCTRINES OVERVIEW."}</h6>
 
-              <button className="btn-hire-pattern" style={{ scale: 0.8 }}>
+              <button className="btn-hire-pattern docViewAll" style={{ scale: 0.8 }}>
                 {/* SVG BACKGROUND */}
                 <span className="btn-pattern-bg">
                   <FluidBackground />
