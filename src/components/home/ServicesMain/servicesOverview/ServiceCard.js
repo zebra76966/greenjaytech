@@ -3,9 +3,11 @@ import { motion, AnimatePresence, hover } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import FluidBackground from "../../animtion2";
 import "./servicesCard.css";
+import { useContact } from "../../contact/contactContext";
 
 export default function ServiceCard({ title = "SECURITY", description, image, tags, animated = true }) {
   const [hovered, setHovered] = useState(false);
+  const { openContact } = useContact();
 
   return (
     <motion.div
@@ -43,7 +45,7 @@ export default function ServiceCard({ title = "SECURITY", description, image, ta
         </div>
 
         <div className="overview-service-footer  justify-content-end d-md-flex d-none">
-          <button className="btn-enquire-advanced">
+          <button className="btn-enquire-advanced" onClick={openContact}>
             <span className="btn-text">LEARN MORE</span>
             <span className="arrow-wrapper">
               <span className="ripple delay-1" />

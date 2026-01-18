@@ -4,14 +4,20 @@ import { FaTwitter, FaLinkedinIn, FaInstagram, FaGlobe } from "react-icons/fa";
 import "./contactSection.css";
 import FluidBackground from "../animtion2";
 import FluidBackgroundZoom from "../animtion3";
+import { FiMinimize, FiMinimize2 } from "react-icons/fi";
 
-export default function ContactSection() {
+export default function ContactSection({ origin, onClose }) {
   return (
-    <section className="contact-section   px-lg-5 px-2  position-relative ch-100 d-flex align-items-center mt-5" style={{ overflow: "hidden" }}>
+    <section className="contact-section   px-lg-5 px-2  position-relative ch-100 d-flex align-items-center mt-5 " id="contact" style={{ overflow: "hidden" }}>
+      {origin == "modal" && (
+        <button className="btn-lg btn btn-oultine-dark position-absolute top-0 end-0 m-3 me-5 rounded-circle fs-5 text-primary-color " style={{ zIndex: 999 }} onClick={onClose}>
+          <FiMinimize2 size={32} />
+        </button>
+      )}
       <Container fluid className="px-lg-5 mx-auto position-relative" style={{ zIndex: 999 }}>
         <Row className="align-items-center">
           {/* LEFT */}
-          <Col md={8} className="border-primary-color">
+          <Col md={origin !== "modal" ? 8 : 12} className="border-primary-color">
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="contact-title-eyebrow">
               GET IN TOUCH.
             </motion.p>
@@ -33,9 +39,12 @@ export default function ContactSection() {
               <Form.Group className="mb-4">
                 <Form.Control type="email" placeholder="Email" className="contact-input" />
               </Form.Group>
+              <Form.Group className="mb-4">
+                <Form.Control type="phone" placeholder="Phone (optional)" className="contact-input" />
+              </Form.Group>
 
               <Form.Group className="mb-4">
-                <Form.Control as="textarea" rows={3} placeholder="Message" className="contact-input" />
+                <Form.Control as="textarea" rows={3} placeholder="Message (Brief Description of Your Protection Needs)" className="contact-input" />
               </Form.Group>
 
               <button className="btn-hire-pattern py-3 ms-0" style={{ scale: 0.8, transformOrigin: "left" }}>
@@ -45,36 +54,39 @@ export default function ContactSection() {
                 </span>
 
                 {/* TEXT */}
-                <span className="btn-label fw-bold">SEND</span>
+                <span className="btn-label fw-bold">SUBMIT REQUEST</span>
               </button>
             </Form>
           </Col>
 
           {/* RIGHT */}
-          <Col md={4} className="contact-meta mt-5 mt-md-0 ps-4">
-            <div className="mb-5">
-              <h6 className=" fw-light fs-1">Visit us.</h6>
-              <p>
-                SOME ADDRESS HERE <br />
-                1234 STREET NYC
-              </p>
-            </div>
 
-            <div className="mb-4">
-              <h6 className=" fw-light fs-1">Talk to us.</h6>
-              <p>
-                +12 12314597 <br />
-                rob@greenjay.com
-              </p>
-            </div>
+          {origin !== "modal" && (
+            <Col md={4} className="contact-meta mt-5 mt-md-0 ps-4">
+              <div className="mb-5">
+                <h6 className=" fw-light fs-1">Visit us.</h6>
+                <p>
+                  SOME ADDRESS HERE <br />
+                  1234 STREET NYC
+                </p>
+              </div>
 
-            <div className="contact-socials">
-              <FaTwitter />
-              <FaLinkedinIn />
-              <FaInstagram />
-              <FaGlobe />
-            </div>
-          </Col>
+              <div className="mb-4">
+                <h6 className=" fw-light fs-1">Talk to us.</h6>
+                <p>
+                  +12 12314597 <br />
+                  rob@greenjay.com
+                </p>
+              </div>
+
+              <div className="contact-socials">
+                <FaTwitter />
+                <FaLinkedinIn />
+                <FaInstagram />
+                <FaGlobe />
+              </div>
+            </Col>
+          )}
         </Row>
       </Container>
 

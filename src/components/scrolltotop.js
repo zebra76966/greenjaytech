@@ -2,19 +2,18 @@ import { useEffect } from "react";
 import { useLocation } from "react-router-dom";
 
 const ScrollToTop = () => {
-  const { pathname } = useLocation();
+  const { pathname, hash } = useLocation();
 
   useEffect(() => {
-    // First pass: immediately reset
-    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    // If a hash exists, let ScrollToHash handle it
+    if (hash) return;
 
-    // Second pass: after layout/paint settles
-    const id = requestAnimationFrame(() => {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    });
-
-    return () => cancelAnimationFrame(id);
-  }, [pathname]);
+    if (window.__lenis) {
+      window.__lenis.scrollTo(0, { immediate: true });
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "auto" });
+    }
+  }, [pathname, hash]);
 
   return null;
 };

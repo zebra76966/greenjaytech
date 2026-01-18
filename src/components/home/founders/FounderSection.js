@@ -6,6 +6,7 @@ import { useInView } from "framer-motion";
 import { useRef } from "react";
 
 import "./founders.css";
+import { useContact } from "../contact/contactContext";
 const fadeInUp = {
   hidden: { opacity: 0, y: 40 },
   visible: {
@@ -19,6 +20,8 @@ const fadeInUp = {
 };
 
 export default function FounderSection() {
+  const { openContact } = useContact();
+
   const sectionRef = useRef(null);
   const isInView = useInView(sectionRef, {
     once: true,
@@ -117,7 +120,7 @@ export default function FounderSection() {
               <li> Counter-drone and electronic mitigation concepts</li>
             </ul>
 
-            <button className="btn-enquire-advanced ms-auto mt-5">
+            <button className="btn-enquire-advanced ms-auto mt-5" onClick={openContact}>
               <span className="arrow-wrapper">
                 <span className="ripple delay-1" />
                 <span className="ripple delay-2" />

@@ -7,6 +7,7 @@ import FoundersSection from "./foundersNew/FoundersSection";
 import GallerySection from "./foundersNew/GallerySection";
 import CommitmentSection from "./foundersNew/CommitmentSection";
 import CTASection from "./foundersNew/CTASection";
+import ContactMain from "../contact/contactMain";
 
 export default function LeadershipPage() {
   return (
@@ -18,6 +19,7 @@ export default function LeadershipPage() {
       <FoundersSection />
       <GallerySection />
       <CommitmentSection />
+      <ContactMain />
     </>
   );
 }

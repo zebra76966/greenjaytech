@@ -5,10 +5,12 @@ import FluidBackground from "../../animtion2";
 import { FiArrowRight } from "react-icons/fi";
 import { Col, Row } from "react-bootstrap";
 import FluidBackgroundZoom from "../../animtion3";
+import { useContact } from "../../contact/contactContext";
 
 const imgPath = (name) => `/assets/services/doctrines/${name}`;
 
 export default function ServiceDoctrine({ data }) {
+  const { openContact } = useContact();
   const phases = useMemo(() => data?.sections?.filter((s) => s.type === "phase") || [], [data]);
 
   const others = useMemo(() => data?.sections?.filter((s) => s.type !== "phase") || [], [data]);
@@ -282,7 +284,7 @@ export default function ServiceDoctrine({ data }) {
                       <div className="mt-auto">
                         <p className="text-secondary-color fs-6 mt-lg-5 mt-2">includes personal security detail (psd) operations</p>
                         <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-lg-5 my-1" />
-                        <button className="btn-enquire-advanced text-primary-color mt-lg-0 mt-2">
+                        <button className="btn-enquire-advanced text-primary-color mt-lg-0 mt-2" onClick={openContact}>
                           <span className="arrow-wrapper border-primary-color">
                             <span className="ripple delay-1 border-primary-color" />
                             <span className="ripple delay-2 border-primary-color " />

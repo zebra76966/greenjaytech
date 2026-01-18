@@ -10,6 +10,8 @@ import { IoChevronDownOutline } from "react-icons/io5";
 import { FiPhone, FiMail } from "react-icons/fi";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import FluidBackgroundZoom from "./animtion3";
+import { useNavigate } from "react-router-dom";
+import { useContact } from "./contact/contactContext";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -25,6 +27,8 @@ const fadeUp = {
 };
 
 export default function HeroSection() {
+  const navigate = useNavigate();
+  const { openContact } = useContact();
   return (
     <section className="hero-section bg-color-dark">
       <Container fluid>
@@ -55,7 +59,7 @@ export default function HeroSection() {
 
             <motion.div className="hero-actions d-flex d- gap-lg-5 gap-3 pt-5" variants={fadeUp} initial="hidden" animate="visible" custom={3}>
               {/* ENQUIRE BUTTON */}
-              <button className="btn-enquire-advanced">
+              <button className="btn-enquire-advanced" onClick={openContact}>
                 <span className="arrow-wrapper">
                   <span className="ripple delay-1" />
                   <span className="ripple delay-2" />
@@ -68,7 +72,7 @@ export default function HeroSection() {
               </button>
 
               {/* HIRE US BUTTON */}
-              <button className="btn-hire-pattern">
+              <button className="btn-hire-pattern" onClick={openContact}>
                 {/* SVG BACKGROUND */}
                 <span className="btn-pattern-bg">
                   <FluidBackground />
@@ -97,7 +101,7 @@ export default function HeroSection() {
                 </button>
 
                 {/* EMAIL */}
-                <button className="hero-icon-btn">
+                <button className="hero-icon-btn" onClick={openContact}>
                   <FiMail className="fs-5" />
                 </button>
               </div>
@@ -122,7 +126,7 @@ export default function HeroSection() {
             </div>
           </Col>
         </Row>
-        <button className="btn btn-md consult-btn bg-primary-color position-absolute bottom-0 start-0 rounded-0 py-lg-3 py-2 px-lg-4 px-3 ">
+        <button className="btn btn-md consult-btn bg-primary-color position-absolute bottom-0 start-0 rounded-0 py-lg-3 py-2 px-lg-4 px-3 " onClick={openContact}>
           GET CONSULTATION
           <span className=" border-1 border-dark   border-start mx-3 h-100 py-2" />
           <FaUserAstronaut className="ms-2 ico" />

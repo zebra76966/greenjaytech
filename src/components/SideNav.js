@@ -10,7 +10,7 @@ const navItems = [
   { icon: <FiHome />, label: "HOME", to: "/" },
   { icon: <FaBuildingUser />, label: "FOUNDERS", to: "/founders" },
   { icon: <FiSettings />, label: "SERVICES", to: "/services" },
-  { icon: <FiHelpCircle />, label: "WHY US?", to: "/why-us" },
+  { icon: <FiHelpCircle />, label: "WHY US?", to: "/#whyus" },
   { icon: <FiInfo />, label: "ABOUT", to: "/about" },
   { icon: <FiStar />, label: "REVIEWS", to: "/reviews" },
   { icon: <FiMessageSquare />, label: "FAQs", to: "/faqs" },

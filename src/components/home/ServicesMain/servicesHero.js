@@ -12,6 +12,7 @@ import { IoChevronDownOutline } from "react-icons/io5";
 import { FiPhone, FiMail } from "react-icons/fi";
 import { FaMagnifyingGlass } from "react-icons/fa6";
 import { useNavigate } from "react-router-dom";
+import { useContact } from "../contact/contactContext";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 30 },
@@ -28,6 +29,7 @@ const fadeUp = {
 
 export default function ServicesHero() {
   const navigate = useNavigate();
+  const { openContact } = useContact();
 
   return (
     <section className="services-hero-section bg-color-dark">
@@ -69,7 +71,7 @@ export default function ServicesHero() {
 
               <motion.div className="services-hero-actions d-flex justify-content-center   pt-5 " variants={fadeUp} initial="hidden" animate="visible" custom={3}>
                 <div>
-                  <button className="btn-hire-pattern mb-4 py-lg-4 py-3">
+                  <button className="btn-hire-pattern mb-4 py-lg-4 py-3" onClick={openContact}>
                     {/* SVG BACKGROUND */}
                     <span className="btn-pattern-bg">
                       <FluidBackground />
@@ -97,7 +99,7 @@ export default function ServicesHero() {
             </div>
           </Col>
         </Row>
-        <button className="btn btn-md consult-btn bg-primary-color position-absolute bottom-0 start-0 rounded-0 py-3 px-4" style={{ zIndex: 99 }}>
+        <button className="btn btn-md consult-btn bg-primary-color position-absolute bottom-0 start-0 rounded-0 py-3 px-4" style={{ zIndex: 99 }} onClick={openContact}>
           GET CONSULTATION
           <span className=" border-1 border-dark   border-start mx-3 h-100 py-2" />
           <FaUserAstronaut className="ms-2" size={35} />

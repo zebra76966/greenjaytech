@@ -3,8 +3,10 @@ import WorldFluidMap from "./utils/worldmap";
 import { Col, Container, Row } from "react-bootstrap";
 import { motion } from "framer-motion";
 import FluidBackground from "./animtion2";
+import { useContact } from "./contact/contactContext";
 
 const GlobalOperations = () => {
+  const { openContact } = useContact();
   return (
     <div className="ch-100 d-flex align-items-center" style={{ overflowX: "hidden" }}>
       <Container fluid>
@@ -15,13 +17,7 @@ const GlobalOperations = () => {
                 ONE ACCOUNTABLE STANDARD.
               </motion.p>
 
-              <motion.h1
-                className="contact-title worldOP mt-4 text-primary-color mb-3"
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.8 }}
-                style={{ fontSize: "10.5vh" }}
-              >
+              <motion.h1 className="contact-title worldOP mt-4 text-primary-color mb-3" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
                 GLOBAL
                 <span className="hFont pt-2 ms-2">OPERATIONS</span>
               </motion.h1>
@@ -60,7 +56,7 @@ const GlobalOperations = () => {
               <div className="d-flex gap-4 w-100 align-items-center mt-md-5 pt-4 justify-content-md-start justify-content-center">
                 <img src="/assets/thumbnail.png" alt="Greenjay" className="global-logo border-primary-color" />
                 <div>
-                  <button className="btn-hire-pattern worldOP py-3">
+                  <button className="btn-hire-pattern worldOP py-3" onClick={openContact}>
                     {/* SVG BACKGROUND */}
                     <span className="btn-pattern-bg">
                       <FluidBackground />

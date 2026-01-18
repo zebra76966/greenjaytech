@@ -7,10 +7,13 @@ import { Col, Row } from "react-bootstrap";
 import { FiArrowRight } from "react-icons/fi";
 import FullPageScrollWrapper from "../../sccrollwatcher";
 import servicesData from "../ServicesMain/servicesData.json";
+import { useContact } from "../contact/contactContext";
 
 // servicesData.js
 
 export default function ServicesSection() {
+  const { openContact } = useContact();
+
   const [active, setActive] = useState(1);
   const cardRefs = useRef([]);
   const isAutoScrolling = useRef(false);
@@ -140,7 +143,7 @@ export default function ServicesSection() {
                     <h3 className="display-3">{s.title}</h3>
                     <p>{s.description}</p>
 
-                    <button className="card-cta">
+                    <button className="card-cta" onClick={openContact}>
                       <span>ENQUIRE NOW</span>
 
                       <FiArrowRight size={20} />
@@ -164,7 +167,7 @@ export default function ServicesSection() {
                     <div className="mt-md-auto p-xl-0 p-2">
                       <p className="text-secondary-color fs-6 mt-md-5 mt-0 infoText">includes personal security detail (psd) operations</p>
                       <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-md-5" />
-                      <button className="btn-enquire-advanced text-primary-color ">
+                      <button className="btn-enquire-advanced text-primary-color " onClick={openContact}>
                         <span className="arrow-wrapper border-primary-color">
                           <span className="ripple delay-1 border-primary-color" />
                           <span className="ripple delay-2 border-primary-color " />

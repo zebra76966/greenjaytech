@@ -105,3 +105,14 @@
   color: var(--primary-color);
   scale: 1.2;
 }
+
+.contact-modal .modal-content {
+  background: transparent;
+
+  box-shadow: none;
+}
+
+.contact-modal .modal-dialog {
+  max-width: 900px; /* or whatever fits your design */
+  backdrop-filter: blur(10px);
+}

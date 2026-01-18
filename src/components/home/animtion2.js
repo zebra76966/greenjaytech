@@ -35,6 +35,7 @@ export default function FluidBackground() {
 const styles = {
   wrapper: {
     width: "100%",
+    minWidth: "100dvw",
     height: "100vh",
     background: "#000",
     overflow: "hidden",

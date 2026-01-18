@@ -11,8 +11,10 @@ import ServiceDoctrine from "./ServiceDoctrine";
 
 import serviceData from "./serviceDoctrine.json";
 import ScrollToTop from "../../../scrolltotop";
+import { useContact } from "../../contact/contactContext";
 
 export default function ServiceDetailHero() {
+  const { openContact } = useContact();
   const params = useParams();
   const navigate = useNavigate();
 
@@ -92,7 +94,7 @@ export default function ServiceDetailHero() {
             transition={{ delay: 0.55 }}
           >
             {/* ENQUIRE BUTTON */}
-            <button className="btn-enquire-advanced w-100 servDet">
+            <button className="btn-enquire-advanced w-100 servDet" onClick={openContact}>
               <span className="arrow-wrapper">
                 <span className="ripple delay-1" />
                 <span className="ripple delay-2" />
@@ -103,7 +105,7 @@ export default function ServiceDetailHero() {
             </button>
 
             {/* HIRE US BUTTON */}
-            <button className="btn-hire-pattern w-100">
+            <button className="btn-hire-pattern w-100" onClick={openContact}>
               {/* SVG BACKGROUND */}
               <span className="btn-pattern-bg">
                 <FluidBackground />

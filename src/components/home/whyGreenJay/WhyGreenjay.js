@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { FiFlag, FiHelpCircle, FiTarget, FiShield, FiTrendingUp, FiMonitor, FiUsers, FiUserCheck } from "react-icons/fi";
 import FluidBackground from "../animtion2";
 import "./whyGreenjay.css";
+import { useContact } from "../contact/contactContext";
 
 const fadeUp = {
   hidden: {
@@ -22,8 +23,10 @@ const fadeUp = {
 };
 
 export default function WhyGreenjay() {
+  const { openContact } = useContact();
+
   return (
-    <section className="why-section ch-100">
+    <section className="why-section ch-100" id="whyus">
       <div className="why-grid ">
         {/* LEFT COLUMN */}
         <div className="why-col h-100">
@@ -152,7 +155,7 @@ export default function WhyGreenjay() {
               <h3 className="pFont fs-1 fw-bold ">GET IN TOUCH</h3>
 
               <p className="text-secondary-color wSpacing mt-2">LET’S SECURE YOUR MISSION</p>
-              <button className="btn-hire-pattern py-4  mt-4">
+              <button className="btn-hire-pattern py-4  mt-4" onClick={openContact}>
                 {/* SVG BACKGROUND */}
                 <span className="btn-pattern-bg">
                   <FluidBackground />
