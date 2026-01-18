@@ -19,6 +19,8 @@ export default function ServiceDoctrine({ data }) {
 
   const navRefs = useRef([]);
 
+  const isAutoScrolling = useRef(false);
+
   useEffect(() => {
     // hard reset everything related to this view
     cardRefs.current = [];
@@ -32,16 +34,36 @@ export default function ServiceDoctrine({ data }) {
   }, []);
 
   useEffect(() => {
-    if (!allowNavScroll.current) return;
+    const idx = phases.findIndex((p) => p.index === active);
+    if (idx === -1) return;
 
-    if (phases.length > 5) {
-      const idx = phases.findIndex((p) => p.index === active);
-      navRefs.current[idx]?.scrollIntoView({
-        behavior: "smooth",
-        block: "center",
-      });
-    }
-  }, [active, phases]);
+    const isTablet = window.innerWidth <= 1100;
+    if (!isTablet && !allowNavScroll.current) return;
+    if (isAutoScrolling.current) return;
+
+    const el = navRefs.current[idx];
+    const container = el?.parentElement;
+    if (!el || !container) return;
+
+    const elRect = el.getBoundingClientRect();
+    const cRect = container.getBoundingClientRect();
+
+    // Check if the item is already comfortably visible
+    const isFullyVisible = elRect.left >= cRect.left + 16 && elRect.right <= cRect.right - 16;
+
+    if (isFullyVisible) return; // ← this kills the jerk
+
+    isAutoScrolling.current = true;
+
+    el.scrollIntoView({
+      behavior: "smooth",
+      ...(isTablet ? { inline: "center", block: "nearest" } : { block: "center" }),
+    });
+
+    setTimeout(() => {
+      isAutoScrolling.current = false;
+    }, 250);
+  }, [active]);
 
   if (!data) return null;
 
@@ -75,17 +97,11 @@ export default function ServiceDoctrine({ data }) {
   return (
     <motion.section
       className="service-doctrine-wrapper"
-      onViewportEnter={() => {
+      onMouseEnter={() => {
         allowNavScroll.current = true;
       }}
-      onViewportLeave={() => {
+      onMouseLeave={() => {
         allowNavScroll.current = false;
-
-        cardRefs.current = [];
-        navRefs.current = [];
-
-        const first = phases[0]?.index ?? null;
-        setActive(first);
       }}
     >
       {/* NON-PHASE SECTIONS */}
