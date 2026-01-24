@@ -49,7 +49,7 @@ export default function ServiceDetailHero() {
             onClick={() => navigate(-1)}
           >
             <span className="btn-text">GO BACK</span>
-            <span className="arrow-wrapper">
+            <span className="arrow-wrapper" style={{ width: "3em", height: "3em" }}>
               <span className="ripple delay-1" />
               <span className="ripple delay-2" />
 

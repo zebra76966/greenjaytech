@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col, Button, Card } from "react-bootstrap";
 import { motion } from "framer-motion";
 import { FiArrowRight } from "react-icons/fi";
 import "./mainHero.css";
@@ -26,6 +26,21 @@ const fadeUp = {
   }),
 };
 
+const people = [
+  {
+    name: "Robinson Paniagua",
+    role: "Founder · Green Beret · Covert ops doctrine",
+    image: "/founders/dark.jpg",
+  },
+  {
+    name: "Jennifer Paniagua",
+    role: "Co-Founder · Dignitary protection · Privacy-first EP",
+    image: "/founders/jennifer.jpg",
+  },
+];
+
+const MotionCard = motion(Card);
+
 export default function HeroSection() {
   const navigate = useNavigate();
   const { openContact } = useContact();
@@ -50,8 +65,8 @@ export default function HeroSection() {
 
             <motion.p className="hero-description  text-secondary-color  fw-light small" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
               Greenjay runs executive protection and estate security as one accountable program—advanced EP, AI-enabled surveillance and monitoring, access control, secure infrastructure
-              (network/AV/IT segmentation), resilient communications, counter-UAS integration, and real validation. We begin with a full threat profile (physical + digital), then design, integrate,
-              and test the system so your full threat signature is controlled—not just your perimeter.
+              (network/AV/IT segmentation), resilient communications, Residential Counter UAS integration, and real validation. We begin with a full threat profile (physical + digital), then design,
+              integrate, and test the system so your full threat signature is controlled—not just your perimeter.
             </motion.p>
             <motion.p className="hero-description small fw-light  mb-0 text-secondary-color  " style={{ fontSize: "0.7em" }} variants={fadeUp} initial="hidden" animate="visible" custom={2}>
               <em>No vendor sees the full architecture. We vet personnel, scope on a need-to-know basis, and assume responsibility for the complete operation.</em>
@@ -67,21 +82,49 @@ export default function HeroSection() {
                   <FiArrowRight className="ico" />
                 </span>
                 <span className="btn-text text-start" style={{ letterSpacing: "0.2em" }}>
-                  REQUEST A <br /> PRIVATE BREIFING
+                  REQUEST A <br /> PRIVATE BRIEFING
                 </span>
               </button>
 
               {/* HIRE US BUTTON */}
-              <button className="btn-hire-pattern" onClick={openContact}>
+              <button className="btn-hire-pattern px-4 " onClick={() => navigate("/founders")}>
                 {/* SVG BACKGROUND */}
                 <span className="btn-pattern-bg">
                   <FluidBackground />
                 </span>
 
                 {/* TEXT */}
-                <span className="btn-label fw-bold">HIRE&nbsp;US</span>
+                <span className="btn-label fw-bold fs-6">MEET THE FOUNDERS</span>
               </button>
             </motion.div>
+
+            <div className="gap-2 d-md-flex mt-5">
+              {people.map((p, i) => (
+                <div className="w-100" key={i}>
+                  <MotionCard
+                    className="team-card h-100"
+                    initial={{ opacity: 0, y: 12 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ duration: 0.4, delay: i * 0.1 }}
+                    whileHover={{
+                      y: -4,
+                      boxShadow: "0 20px 40px rgba(0,0,0,0.35)",
+                    }}
+                    onClick={() => navigate("/founders")}
+                  >
+                    <div className="team-card-inner">
+                      <img src={p.image} alt={p.name} className="avatar" />
+
+                      <div className="content">
+                        <h5 className="text-primary-color fs-6 pFont">{p.name}</h5>
+                        <p className="small">{p.role}</p>
+                        <span className="read-bio">Read bio →</span>
+                      </div>
+                    </div>
+                  </MotionCard>
+                </div>
+              ))}
+            </div>
           </Col>
 
           {/* RIGHT VISUAL */}
@@ -126,11 +169,11 @@ export default function HeroSection() {
             </div>
           </Col>
         </Row>
-        <button className="btn btn-md consult-btn bg-primary-color position-absolute bottom-0 start-0 rounded-0 py-lg-3 py-2 px-lg-4 px-3 " onClick={openContact}>
+        {/* <button className="btn btn-md consult-btn bg-primary-color position-absolute bottom-0 start-0 rounded-0 py-lg-3 py-2 px-lg-4 px-3 " onClick={openContact}>
           GET CONSULTATION
           <span className=" border-1 border-dark   border-start mx-3 h-100 py-2" />
           <FaUserAstronaut className="ms-2 ico" />
-        </button>
+        </button> */}
 
         {/* SCROLL INDICATOR */}
         <motion.div

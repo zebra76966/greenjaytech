@@ -252,12 +252,16 @@ export default function ServiceDoctrine({ data }) {
                       <div className="phase-text">
                         {sec.content?.map((c, k) =>
                           c.type === "titled" ? (
-                            <div key={k} className="phase-block">
+                            <div key={k} className="phase-block w-100">
                               <h4 className="pFont">{c.title}</h4>
-                              <p>{c.text}</p>
+                              <p className="w-100" style={{ maxWidth: "100%" }}>
+                                {c.text}
+                              </p>
                             </div>
                           ) : (
-                            <p key={k}>{c.text}</p>
+                            <p key={k} className="w-100" style={{ maxWidth: "100%" }}>
+                              {c.text}
+                            </p>
                           ),
                         )}
                       </div>
@@ -282,7 +286,7 @@ export default function ServiceDoctrine({ data }) {
                       <h2 className="card-index pFont d-lg-block d-none">{String(sec.index).padStart(2, "0")}</h2>
 
                       <div className="mt-auto">
-                        <p className="text-secondary-color fs-6 mt-lg-5 mt-2">includes personal security detail (psd) operations</p>
+                        {/* <p className="text-secondary-color fs-6 mt-lg-5 mt-2">includes personal security detail (psd) operations</p> */}
                         <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-lg-5 my-1" />
                         <button className="btn-enquire-advanced text-primary-color mt-lg-0 mt-2" onClick={openContact}>
                           <span className="arrow-wrapper border-primary-color">

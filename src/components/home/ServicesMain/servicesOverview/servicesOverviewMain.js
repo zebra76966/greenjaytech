@@ -86,7 +86,7 @@ export default function ServicesOverview({ headertxt }) {
                     },
                   }}
                   onClick={() => navigate(`/service/${service.id}`)}
-                  className="col-xl-4 col-md-6 col-12"
+                  className={`col-xl-${index >= 3 && index <= 4 ? "6" : "4"} col-md-6 col-12`}
                 >
                   <ServiceCard title={service.title} subtitle={service.subtitle} description={service.description} image={service.image} tags={service.features} />
                 </motion.div>

@@ -36,15 +36,15 @@ export default function ServiceCard({ title = "SECURITY", description, image, ta
 
         <p>{description || "Lorem ipsum is simply dummy text of the printing and typesetting industry."}</p>
 
-        <div className="overview-service-tags">
+        <div className="overview-service-tags ">
           {tags.map((tag, i) => (
-            <span key={i} className="badge fw-light text-primary-color mb-1">
+            <span key={i} className="badge fw-light text-secondary-color mb-1 me-1 text-uppercase">
               {tag}
             </span>
           ))}
         </div>
-
-        <div className="overview-service-footer  justify-content-end d-md-flex d-none">
+        <hr className="bg-secondary mb-0 pb-0" />
+        <div className="overview-service-footer  justify-content-end d-md-flex d-none ">
           <button className="btn-enquire-advanced">
             <span className="btn-text">LEARN MORE</span>
             <span className="arrow-wrapper">

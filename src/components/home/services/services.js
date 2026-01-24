@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import FluidBackground from "../animtion2";
 
 import "./services.css";
-import { Col, Row } from "react-bootstrap";
+import { Button, Card, Col, Row } from "react-bootstrap";
 import { FiArrowRight } from "react-icons/fi";
 import FullPageScrollWrapper from "../../sccrollwatcher";
 import servicesData from "../ServicesMain/servicesData.json";
@@ -80,6 +80,8 @@ export default function ServicesSection() {
     });
   };
 
+  const MotionCard = motion(Card);
+
   return (
     <section
       className="services-section pe-0 ps-xl-5"
@@ -90,9 +92,33 @@ export default function ServicesSection() {
         allowNavScroll.current = false;
       }}
     >
+      <div className=" d-flex gap-5 justify-content-center align-items-center threat-profile-box-wrapper mb-5">
+        <MotionCard className="threat-box" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: "easeOut" }} whileHover={{ y: -6 }}>
+          <span className="kicker text-secondary-color">MANDATORY FIRST STEP</span>
+
+          <h3 className="title text-primary-color">THREAT PROFILE ASSESSMENT</h3>
+          <h6 className="subtitle pFont">(PHYSICAL + DIGITAL)</h6>
+
+          <p className="description">
+            Every engagement begins with a complete threat profile—pattern of life, estate exposure, personnel vectors, and a digital threat assessment—so architecture and protective operations are
+            built on verified risk, not assumptions.
+          </p>
+
+          <div className="actions">
+            <Button className="primary-btn-cstm" onClick={openContact}>
+              REQUEST THREAT BRIEFING
+            </Button>
+            <Button className="link-btn-cstm" onClick={openContact}>
+              LEARN MORE
+            </Button>
+          </div>
+        </MotionCard>
+      </div>
+
       <h6 className="services-eyebrow position-sticky top-0 start-0 text-center pFont fs-5  py-4" style={{ zIndex: "999" }}>
         OUR SERVICES.
       </h6>
+
       <div className="services-grid  pe-0 w-100 ps-lg-4">
         {/* LEFT NUMBERS */}
         <aside className={`services-nav ${servicesData.length > 5 ? "is-scrollable" : ""}`}>
@@ -165,7 +191,9 @@ export default function ServicesSection() {
                       </div>
                     )}
                     <div className="mt-md-auto p-xl-0 p-2">
-                      <p className="text-secondary-color fs-6 mt-md-5 mt-0 infoText">includes personal security detail (psd) operations</p>
+                      <p className="text-secondary-color fs-6 mt-md-5 mt-0 infoText">
+                        includes :<span className="small d-block">{s.includes}</span>
+                      </p>
                       <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-md-5" />
                       <button className="btn-enquire-advanced text-primary-color " onClick={openContact}>
                         <span className="arrow-wrapper border-primary-color">

@@ -8,7 +8,7 @@ import { FiMinimize, FiMinimize2 } from "react-icons/fi";
 
 export default function ContactSection({ origin, onClose }) {
   return (
-    <section className="contact-section   px-lg-5 px-2  position-relative ch-100 d-flex align-items-center mt-5 " id="contact" style={{ overflow: "hidden" }}>
+    <section className={`contact-section   px-lg-5 px-2  position-relative ${origin !== "modal" ? "ch-100 " : "pb-5"}  d-flex align-items-center mt-5 `} id="contact" style={{ overflow: "hidden" }}>
       {origin == "modal" && (
         <button className="btn-lg btn btn-oultine-dark position-absolute top-0 end-0 m-3 me-5 rounded-circle fs-5 text-primary-color " style={{ zIndex: 999 }} onClick={onClose}>
           <FiMinimize2 size={32} />
@@ -22,13 +22,17 @@ export default function ContactSection({ origin, onClose }) {
               GET IN TOUCH.
             </motion.p>
 
-            <motion.h1 className="contact-title mt-4 text-primary-color mb-5" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
-              CONTACT
-              <span className="hFont pt-2 ms-2">US</span>
+            <motion.h1
+              className={`contact-title mt-4 text-primary-color mb-5 ${origin !== "modal" ? "" : "display-5"}`}
+              initial={{ opacity: 0, y: 30 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.8 }}
+            >
+              REQUEST A<span className={`hFont   ${origin !== "modal" ? " d-block pt-3" : " display-5  ps-3"}`}>PRIVATE BRIEFING</span>
             </motion.h1>
 
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2, duration: 0.6 }} className="contact-sub">
-              Please feel free to contact us and we will get back to you as soon as we can.
+              Complete the form below and our team will reach out within 24 hours to schedule a confidential discussion.
             </motion.p>
 
             <Form className="contact-form mt-4 w-100">

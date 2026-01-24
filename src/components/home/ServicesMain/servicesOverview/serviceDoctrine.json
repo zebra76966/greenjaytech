@@ -81,7 +81,7 @@
           { "type": "titled", "title": "Thermal Imaging & Physical Search", "text": "Detect powered devices concealed within walls, furniture, and fixtures." },
           { "type": "titled", "title": "Staff & Vendor Considerations", "text": "Access governance and vetting to prevent reintroduction of devices." }
         ],
-        "images": ["TSCM16.png"]
+        "images": ["TSCM7.png"]
       },
       {
         "type": "phase",
@@ -94,7 +94,7 @@
           { "type": "titled", "title": "Rapid Deployment", "text": "Teams arrive ahead of meetings to sanitize environments under tight windows." },
           { "type": "titled", "title": "Time-Bound Validity", "text": "Assurance expires once access control is lost." }
         ],
-        "images": ["TSCM17.png"]
+        "images": ["TSCM3.png"]
       },
       {
         "type": "phase",
@@ -107,7 +107,7 @@
           { "type": "titled", "title": "Spectrum Mapping", "text": "Baseline legitimate signals and identify anomalies." },
           { "type": "titled", "title": "Signal Localization", "text": "Direction-finding to physically locate transmitters." }
         ],
-        "images": ["TSCM18.png"]
+        "images": ["TSCM6.png"]
       },
 
       {
@@ -121,7 +121,7 @@
           { "type": "titled", "title": "Live Spectrum Surveillance", "text": "Operators monitor RF in real-time for anomalies." },
           { "type": "titled", "title": "Psychological Deterrent", "text": "Visible monitoring discourages insider compromise." }
         ],
-        "images": ["TSCM19.png"]
+        "images": ["TSCM10.png"]
       },
 
       {
@@ -135,7 +135,7 @@
           { "type": "titled", "title": "Wi-Fi & Network Analysis", "text": "Identify rogue access points and weak encryption." },
           { "type": "titled", "title": "IoT Device Audit", "text": "Enumerate and assess connected devices." }
         ],
-        "images": ["TSCM20.png"]
+        "images": ["TSCM4.png"]
       },
 
       {
@@ -149,7 +149,7 @@
           { "type": "titled", "title": "NLJD", "text": "Detect semiconductor junctions regardless of power state." },
           { "type": "titled", "title": "Thermal Imaging", "text": "Reveal concealed electronics via heat signatures." }
         ],
-        "images": ["TSCM21.png"]
+        "images": ["TSCM5.png"]
       },
 
       {
@@ -163,7 +163,7 @@
           { "type": "titled", "title": "GPS Tracker Detection", "text": "Inspect wheel wells, undercarriage, OBD ports, and RF emissions." },
           { "type": "titled", "title": "Regular Cadence", "text": "Monthly or quarterly sweeps based on risk profile." }
         ],
-        "images": ["TSCM22.png"]
+        "images": ["TSCM11.png"]
       }
     ],
 
@@ -196,7 +196,7 @@
         "title": "THE PROTECTION DOCTRINE",
         "body": [
           "We translate assessment into an engineered plan with measurable outcomes at each stage. This is not IT support; this is a bespoke security environment built around your life.",
-          "Our five-phase methodology ensures nothing is left to chance—every control is designed, implemented, validated, and maintained with the same rigor applied to protecting classified systems.",
+          "Our five-phase methodology ensures nothing is left to chance—every control is designed, implemented, validated, and maintained with the same rigor applied to protecting classified systems. The doctrine creates accountability at every step, with clear ownership and documented baselines that persist through staff changes and life transitions",
           "We don't just install tools; we build an architecture that evolves with your threat landscape."
         ],
         "images": ["DP17.png"]
@@ -211,16 +211,16 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "We begin by mapping your personal digital life as operational terrain—identifying the assets that matter most and the exposure signals that adversaries exploit. This is a comprehensive intelligence assessment that reveals how you appear to threat actors."
+            "text": "We begin by mapping your personal digital life as operational terrain—identifying the assets that matter most and the exposure signals that adversaries exploit. This isn't a vulnerability scan; it's a comprehensive intelligence assessment that reveals how you appear to threat actors. We examine everything from your public records footprint to the metadata embedded in documents you've shared over the years. The assessment identifies not just weaknesses, but the specific attack paths that connect minor exposures to catastrophic outcomes."
           },
           {
             "type": "paragraph",
-            "text": "We map attack paths, recovery chains, and trust relationships where one weak link becomes a gateway to everything else."
+            "text": "We identify assets (financial access, cloud accounts, travel patterns, property records) and exposure signals (public records, broker listings, social metadata, corporate filings). The difference between IT support and protection is the focus on 'paths'. We map attack surfaces, account recovery chains, and device trust chains where one weak link becomes a gateway to everything else. A forgotten email alias, an old social media account, or a family member's lax security can each serve as the first domino."
           },
           {
             "type": "titled",
             "title": "Adversary Paths",
-            "text": "We don't just look for misconfigurations; we look for how a minor breach could pivot into total compromise."
+            "text": "We don't just look for misconfigurations; we look for paths an adversary would use to pivot from a minor breach to a total compromise—identifying 'soft' accounts connected to 'hard' assets."
           }
         ],
         "images": ["DP3.png", "DP18.png"]
@@ -235,22 +235,22 @@
         "content": [
           {
             "type": "paragraph",
-            "text": "Your information is scattered across hundreds of data brokers and public aggregators. Each listing is a potential starting point for hostile research."
+            "text": "The goal is not 'privacy theater'—it is the systematic removal of the digital breadcrumbs that enable profiling, targeting, and social engineering. Your information is scattered across hundreds of data brokers, people-search sites, and public record aggregators. Each listing is a potential starting point for someone researching you with malicious intent. We execute a comprehensive suppression campaign that removes your data from these sources and monitors for re-emergence."
           },
           {
             "type": "titled",
             "title": "Data Broker Suppression",
-            "text": "We remove your data, verify removal, and maintain suppression over time."
+            "text": "Removal from people-search sites, directory aggregators, and public-record linkages that expose your address history, phone numbers, email addresses, and family connections. We don't just submit opt-outs—we verify removal, track re-listings, and maintain suppression over time. The data broker ecosystem is constantly refreshing from source records, so this requires ongoing vigilance rather than one-time action. We maintain relationships with removal services and know which brokers respond to which approaches."
           },
           {
             "type": "titled",
             "title": "Metadata Cleanup",
-            "text": "We address location-revealing data embedded in photos and documents."
+            "text": "Addressing location-revealing data in photos and documents that can expose patterns of life, travel schedules, property locations, and daily routines. A single geotagged photo can reveal your home address, favorite restaurant, or children's school. We audit your public-facing content and provide guidance on preventing future metadata leakage. This extends to documents you share professionally—PDFs, presentations, and spreadsheets often contain hidden metadata about their authors and creation locations."
           },
           {
             "type": "titled",
             "title": "Ongoing Maintenance",
-            "text": "Exposure drifts back over time. We monitor and correct continuously."
+            "text": "Privacy exposure drifts back to baseline over time as new data sources emerge and existing brokers refresh their databases. We run continuous monitoring to ensure suppressions hold and new exposures are caught early. Quarterly audits verify that previous removals remain effective and identify any new listings that require action. This is not a project with an end date—it's an ongoing discipline that keeps your exposure level low."
           }
         ],
         "images": ["DP4.png"]
@@ -261,26 +261,26 @@
         "index": 3,
         "eyebrow": "HARDENING",
         "title": "ACCOUNT & IDENTITY PROTECTION",
-        "purpose": "Secure the root identities that serve as the keys to your entire digital life.",
+        "purpose": "Secure the 'root' identities—email, cloud, and vaults—that serve as the keys to your entire digital life and financial access.",
         "content": [
           {
             "type": "paragraph",
-            "text": "We apply a tiered identity architecture that contains compromise and limits blast radius."
+            "text": "We separate privileged access from daily-use accounts using a tiered architecture that contains compromise. A single mistake in a daily-use account should never lead to total compromise of your most sensitive access. This principle—borrowed from how nation-states protect classified systems—creates compartments that limit the blast radius of any single breach. Your primary email, financial accounts, and cloud storage require different protection than the accounts you use for shopping or social media."
           },
           {
             "type": "titled",
             "title": "Phishing-Resistant Access",
-            "text": "Hardware-backed authentication and elimination of weak MFA."
+            "text": "Implementation of hardware-backed authentication and strict MFA that cannot be bypassed through social engineering or SIM-swapping attacks. We deploy phishing-resistant factors like YubiKeys and passkeys where they matter most—creating authentication that requires physical possession rather than just knowledge. SMS-based two-factor authentication is systematically eliminated in favor of cryptographic methods that adversaries cannot intercept or redirect. We configure backup authentication paths that don't create new vulnerabilities."
           },
           {
             "type": "titled",
             "title": "Root vs. Branch Architecture",
-            "text": "Root accounts receive maximum protection and isolation."
+            "text": "Hardening 'root' accounts (primary email, financial access, cloud storage) so a single mistake in a 'branch' account does not lead to total takeover. Your primary email is the master key to most of your digital life—it's where password resets go, where security alerts arrive, and where attackers can stage account takeovers. We apply maximum protection to these root identities while ensuring that less critical accounts are isolated from them. Recovery paths are designed so that compromise of one account cannot cascade to others."
           },
           {
             "type": "titled",
             "title": "Vault Hygiene",
-            "text": "Credential discipline with secure sharing and recovery paths."
+            "text": "Ensuring credentials aren't repeated or stored in unsafe places—implementing proper password management, secure notes for sensitive information, and emergency access procedures. A credential vault isn't just a convenience tool; it's a critical security control that enables unique, complex passwords for every account. We configure vaults with appropriate sharing for family members and trusted staff, with audit trails that show who accessed what. Emergency access procedures ensure that critical accounts remain accessible if you're incapacitated."
           }
         ],
         "images": ["DP5.png"]
@@ -291,26 +291,26 @@
         "index": 4,
         "eyebrow": "ENDPOINTS",
         "title": "DEVICE HARDENING",
-        "purpose": "Assume adversarial pressure on every device you carry.",
+        "purpose": "Compromise becomes access at the endpoint. We implement a secure baseline that assumes adversarial pressure on every device you carry.",
         "content": [
           {
             "type": "paragraph",
-            "text": "Your phones and laptops are where most compromises occur. We establish a hardened baseline across all endpoints."
+            "text": "Your phones, laptops, and tablets are the endpoints where most compromises occur—and where attackers gain persistent access to your communications, location, and credentials. We harden them against both opportunistic threats and targeted attacks, implementing configurations that would withstand nation-state level scrutiny. Every device that touches your digital life is a potential entry point; we ensure each one meets a security baseline appropriate to your threat model. This includes devices you might not think of as computers—smart home controllers, vehicle infotainment systems, and connected medical devices."
           },
           {
             "type": "titled",
             "title": "Posture Assessment",
-            "text": "We identify risky configurations and outdated components."
+            "text": "Reviewing encryption status, patch levels, risky configurations, and installed applications across all devices. We identify weaknesses before adversaries do—outdated operating systems, applications with excessive permissions, and configurations that expose unnecessary attack surface. The assessment covers not just your devices but those of family members and household staff who share your network. We provide clear remediation priorities based on which weaknesses create the most risk."
           },
           {
             "type": "titled",
             "title": "Lock Down",
-            "text": "Secure recovery paths and prevent physical loss from becoming digital compromise."
+            "text": "Securing recovery paths so a stolen device doesn't become a silent gateway to your entire digital life. Remote wipe capabilities, device encryption, and secure boot configurations ensure that physical loss doesn't become digital compromise. We configure devices so that even if an attacker gains physical access, they cannot extract credentials, messages, or access tokens. Screen lock timeouts, biometric settings, and USB restrictions are all calibrated to balance security with usability."
           },
           {
             "type": "titled",
             "title": "Lifecycle Management",
-            "text": "Secure onboarding and decommissioning of devices."
+            "text": "Secure processes for adding new devices and retiring old ones—because old devices with residual access are a common attack vector. When you upgrade your phone or replace a laptop, the old device often retains credentials, cached data, and access tokens that could be exploited. We implement secure decommissioning procedures that ensure no residual access remains. New device provisioning follows a documented checklist that ensures security baselines are met from day one."
           }
         ],
         "images": ["DP6.png"]
@@ -321,26 +321,26 @@
         "index": 5,
         "eyebrow": "FINANCIAL DEFENSE",
         "title": "EMAIL & FINANCIAL PROTECTION",
-        "purpose": "Email is the primary attack surface for fraud. We harden it accordingly.",
+        "purpose": "Email is the primary attack surface for fraud and business email compromise. We harden mailbox access and implement compartmentation strategies that protect your assets.",
         "content": [
           {
             "type": "paragraph",
-            "text": "Business email compromise starts in the inbox. We close these paths before they can be exploited."
+            "text": "Business email compromise and financial fraud start with email—it's where attackers establish persistence, monitor your communications, and stage their attacks. We close these attack paths before they can be exploited, implementing protections that detect compromise early and prevent fraudulent transactions. The average BEC attack costs victims hundreds of thousands of dollars; for high-net-worth individuals, the stakes are even higher. We implement layered defenses that make your email accounts hostile territory for attackers."
           },
           {
             "type": "titled",
             "title": "Silent Compromise Checks",
-            "text": "We detect hidden forwarding rules and delegated access."
+            "text": "Inspecting for forwarding rules, hidden inbox rules, and delegated access—the silent indicators that an account has already been compromised and is being monitored. Attackers often maintain access for weeks or months before executing their fraud, quietly collecting intelligence and waiting for the right moment. We perform forensic-level reviews of mailbox configurations to detect these signs of compromise. Regular audits ensure that no unauthorized access persists undetected."
           },
           {
             "type": "titled",
             "title": "Financial Hardening",
-            "text": "Out-of-band verification for high-risk transactions."
+            "text": "Enforcing high-signal alerts and verification steps for banking, investments, and wire transfers. Out-of-band confirmation for large transactions ensures that even if email is compromised, fraudulent transfers can be stopped. We work with your financial institutions to implement callback verification, transaction limits, and cooling-off periods that create friction for attackers without impeding legitimate activity. Alert thresholds are calibrated to your normal transaction patterns so that anomalies trigger immediate notification."
           },
           {
             "type": "titled",
             "title": "Verify-and-Contain Doctrine",
-            "text": "Contain first, investigate second."
+            "text": "If anomalies are detected, we isolate and rotate credentials immediately—speed matters when containing a breach. We contain first, investigate second, ensuring that attackers cannot expand their access while we determine the scope of compromise. Response procedures are documented and rehearsed so that when an incident occurs, everyone knows their role. Post-incident reviews identify how the breach occurred and what additional hardening is needed."
           }
         ],
         "images": ["DP7.png"]
@@ -351,21 +351,21 @@
         "index": 6,
         "eyebrow": "INFRASTRUCTURE",
         "title": "HOME NETWORK ENGINEERING",
-        "purpose": "Consumer networks cannot handle enterprise-grade risk.",
+        "purpose": "Consumer-grade networks cannot handle enterprise-grade risks. We rebuild your residence's network with strict segmentation that contains compromise and enables monitoring.",
         "content": [
           {
             "type": "paragraph",
-            "text": "We engineer your residence like a secure facility with zones and containment."
+            "text": "Your home network is often the weakest link in your security posture—consumer equipment lacks the controls needed to protect high-value targets. We engineer it like a secure facility—with zones, access controls, and monitoring that would be familiar in a corporate data center. The typical home network trusts all devices equally; our architecture assumes that any device might be compromised and prevents lateral movement. This segmentation is invisible during normal use but provides critical containment when something goes wrong."
           },
           {
             "type": "titled",
             "title": "Network Segmentation",
-            "text": "IoT, Guest, and Admin zones with explicit controls."
+            "text": "Separating critical security systems from IoT and guest devices using VLANs and firewall rules that prevent cross-traffic. We create distinct zones—Trusted Admin for your work systems, IoT/Media for smart home devices, and Guest for visitors—with explicit rules governing what can communicate with what. Security cameras, door locks, and alarm systems get their own protected segment that cannot be reached from compromised consumer devices. This architecture is designed and documented so that future changes maintain the security model."
           },
           {
             "type": "titled",
             "title": "Controlled Administrative Access",
-            "text": "Governed change and access discipline."
+            "text": "Firewall governance and explicit allow/deny rules ensure that no device has access it doesn't need. Administrative interfaces for network equipment are isolated from regular traffic and protected with strong authentication. We implement logging that captures connection attempts and configuration changes, enabling detection of unauthorized access. Change management procedures ensure that modifications are intentional and documented."
           }
         ],
         "images": ["DP8.png"]
@@ -376,26 +376,26 @@
         "index": 7,
         "eyebrow": "PERIMETER",
         "title": "SECURE WI-FI & SIGNAL CONTAINMENT",
-        "purpose": "Wi-Fi is often the softest edge of your perimeter.",
+        "purpose": "Wi-Fi is often the softest edge of your security perimeter. We engineer coverage and containment to prevent signal leakage beyond your property lines.",
         "content": [
           {
             "type": "paragraph",
-            "text": "Wireless signals don’t respect property lines. We contain them."
+            "text": "Wireless signals don't respect property boundaries—your Wi-Fi network can be probed, attacked, and exploited by adversaries sitting in parked cars or neighboring buildings. We engineer coverage to provide strong signal where you need it while minimizing leakage beyond your perimeter. Access point placement, power levels, and antenna configurations are all optimized to keep your network contained. This physical-layer security complements the logical controls implemented in network segmentation."
           },
           {
             "type": "titled",
             "title": "Leakage Control",
-            "text": "Prevent signal spill beyond your perimeter."
+            "text": "Tuning transmit power to prevent signal spill beyond your property lines where hostile actors could harvest credentials or probe for vulnerabilities. Site surveys identify where signal bleeds outside your controlled space, and access point configurations are adjusted to minimize this exposure. In high-threat environments, we may recommend directional antennas or RF-absorbing materials to contain signals. The goal is wireless coverage that serves your needs without advertising your network to the neighborhood."
           },
           {
             "type": "titled",
             "title": "Rogue Defense",
-            "text": "Detect evil twin and impersonation networks."
+            "text": "Safeguards against 'look-alike' networks designed to capture credentials through evil twin attacks and deauthentication exploits. We detect and alert on rogue access points that impersonate your legitimate network. Client devices are configured to validate network authenticity before connecting, preventing automatic connection to malicious infrastructure. Wireless intrusion detection provides ongoing monitoring for attack attempts."
           },
           {
             "type": "titled",
             "title": "Role Design",
-            "text": "Guest, Staff, and Admin segregation."
+            "text": "Segregating Guest, Staff, and Admin traffic so that each category of user gets appropriate access and nothing more. Guest networks provide internet access without any visibility into your internal systems. Staff networks may access specific resources needed for their role. Admin networks provide full access but require additional authentication. Each SSID maps to a security zone with explicit access controls."
           }
         ],
         "images": ["DP9.png"]
@@ -406,26 +406,26 @@
         "index": 8,
         "eyebrow": "MOBILE SECURITY",
         "title": "TRAVEL & MOBILE CONNECTIVITY",
-        "purpose": "Travel is hostile terrain for digital security.",
+        "purpose": "Travel is hostile terrain for digital security. We deploy secure connectivity postures that enforce encrypted tunnels and ensure your devices never 'trust' local networks.",
         "content": [
           {
             "type": "paragraph",
-            "text": "We enforce secure posture regardless of the network you’re on."
+            "text": "When you travel, you connect to networks you don't control—hotel Wi-Fi, airport lounges, conference centers, and foreign cellular networks. Each of these represents an opportunity for adversaries to intercept your traffic, inject malware, or harvest credentials. We ensure your devices maintain a secure posture regardless of the underlying network quality or trustworthiness. Travel security isn't just about VPNs; it's a comprehensive approach that addresses physical security, network threats, and border crossing considerations."
           },
           {
             "type": "titled",
             "title": "Private Connectivity",
-            "text": "Dedicated tunnels and enforced encryption."
+            "text": "Using private APNs and static IPs to control routing and identity, ensuring your traffic doesn't touch public infrastructure in the clear. Dedicated cellular connections bypass potentially compromised local networks entirely. VPN configurations activate automatically when leaving trusted networks, with kill switches that prevent any unencrypted traffic. Split tunneling is disabled to ensure all traffic receives protection."
           },
           {
             "type": "titled",
             "title": "Hostile Network Safeguards",
-            "text": "Defense against rogue infrastructure."
+            "text": "Protection against hotel and airport Wi-Fi capture points, SSL stripping attacks, and rogue access points that impersonate legitimate networks. Automatic VPN enforcement, captive portal handling, and suspicious network detection work together to maintain security in hostile environments. DNS requests are encrypted to prevent snooping, and certificate validation is strictly enforced. Devices are configured to forget networks after use, preventing automatic reconnection to previously visited locations."
           },
           {
             "type": "titled",
             "title": "Reduced Friction",
-            "text": "Security without cognitive load."
+            "text": "Executive decision-making shouldn't suffer under stress—our travel protocols are pre-built and automated so security works without you thinking about it. One-touch VPN activation, pre-configured secure hotspots, and documented procedures for common scenarios ensure that protection doesn't slow you down. Travel briefings before high-risk destinations cover specific threats and countermeasures. Emergency communication procedures ensure you can reach support if something goes wrong."
           }
         ],
         "images": ["DP10.png"]
@@ -436,26 +436,26 @@
         "index": 9,
         "eyebrow": "ACTIVE DEFENSE",
         "title": "INTELLIGENCE & COUNTER-SURVEILLANCE",
-        "purpose": "Detect threats before they materialize.",
+        "purpose": "Continuous monitoring across the Surface, Deep, and Dark Web for leaked credentials, impersonation attempts, and indicators that you're being targeted.",
         "content": [
           {
             "type": "paragraph",
-            "text": "We monitor the same sources attackers use."
+            "text": "Passive defense isn't enough for high-profile individuals—we run continuous intelligence operations that detect threats before they materialize into incidents. This means monitoring the same sources that attackers use to research targets: breach databases, dark web forums, social media, and public records. When your information appears in a new breach or someone starts researching you online, we know about it quickly. This early warning capability shifts the advantage from attacker to defender."
           },
           {
             "type": "titled",
             "title": "Early Detection",
-            "text": "Surface, deep, and dark web monitoring."
+            "text": "Identifying exposure before it becomes an incident through continuous monitoring of threat intelligence feeds, breach notifications, and dark web sources. We monitor for your credentials, personal data, organizational information, and mentions that suggest targeting activity. Alert thresholds are tuned to minimize false positives while ensuring that genuine threats receive immediate attention. Intelligence is actionable—when we detect exposure, we provide specific remediation steps."
           },
           {
             "type": "titled",
             "title": "Impersonation Takedowns",
-            "text": "Rapid removal of malicious infrastructure."
+            "text": "Rapid disruption of fake social profiles, look-alike domains, and fraudulent infrastructure that could be used to damage your reputation or defraud your contacts. We don't just detect impersonation—we act to remove it, working with platforms and registrars to take down malicious content. Response time matters; the faster we act, the less damage an impersonator can do. We maintain relationships with platform trust and safety teams to expedite takedown requests."
           },
           {
             "type": "titled",
             "title": "Targeting Intent",
-            "text": "Indicators of hostile research."
+            "text": "Tracking doxxing indicators, reconnaissance activity, and other signals that suggest someone is researching you with malicious intent. When someone is building a target package on you, there are often observable indicators—searches for your address, queries about your family members, or discussions in forums where attacks are planned. We monitor for these signals to provide warning before an attack materializes. This intelligence enables proactive security adjustments rather than reactive incident response."
           }
         ],
         "images": ["DP11.png"]
@@ -466,26 +466,26 @@
         "index": 10,
         "eyebrow": "EXTENDED PROTECTION",
         "title": "THE WHOLE-MAN CONCEPT: FAMILY COVERAGE",
-        "purpose": "Adversaries target the softest entry point: the family.",
+        "purpose": "Adversaries target the softest entry point: the family. We extend protection with strong but livable safeguards that work in real life, not just on paper.",
         "content": [
           {
             "type": "paragraph",
-            "text": "We extend protection to the entire household."
+            "text": "Your family members are often targeted as a path to you—spouses, children, and elderly parents present opportunities for social engineering, fraud, and compromise that sophisticated attackers will exploit. We extend our protection architecture to the entire household with safeguards that are strong enough to matter but practical enough to be maintained. Security that family members won't follow is security that doesn't exist. Our approach balances protection with the realities of daily life."
           },
           {
             "type": "titled",
             "title": "Compartmentation",
-            "text": "Family compromise cannot pivot to executive access."
+            "text": "Ensuring family compromise cannot pivot to executive access through strict separation of credentials, accounts, and network access. If your teenager's gaming account is compromised, it should never provide a pathway to your financial systems. Shared family accounts are minimized, and where sharing is necessary, permissions are carefully controlled. Each family member's devices operate in appropriate security zones based on their risk profile and needs."
           },
           {
             "type": "titled",
             "title": "Anti-Fraud Protocols",
-            "text": "Livable verification procedures."
+            "text": "Practical verification protocols for family-facing fraud and social engineering that family members will actually follow. Simple code words for phone verification, clear escalation procedures for suspicious requests, and regular reinforcement of safe practices. We focus on the most common attack vectors—grandparent scams, fake kidnapping calls, and impersonation of trusted contacts. Training is conversational and scenario-based, not technical or intimidating."
           },
           {
             "type": "titled",
             "title": "Separation",
-            "text": "Isolation by role and risk."
+            "text": "Separation of networks and identities to contain risk—if one family member's account is compromised, it doesn't cascade to everyone else. Family members have their own credential vaults, their own recovery paths, and their own security configurations appropriate to their age and technical sophistication. Shared resources like home network access are provided through controlled mechanisms that maintain isolation. Regular audits ensure that separation is maintained as family circumstances change."
           }
         ],
         "images": ["DP12.png"]
@@ -496,26 +496,26 @@
         "index": 11,
         "eyebrow": "VALIDATION",
         "title": "PENETRATION TESTING & VALIDATION",
-        "purpose": "Protection without validation is hope.",
+        "purpose": "Protection without validation is just hope. We run targeted tests against your accounts, home boundaries, and recovery paths to prove the defense actually works.",
         "content": [
           {
             "type": "paragraph",
-            "text": "We test the system the way real attackers would."
+            "text": "We don't assume our controls work—we test them using the same techniques that real attackers would employ. Targeted penetration testing validates that the architecture performs as designed under realistic attack conditions. This isn't a checkbox compliance exercise; it's a genuine attempt to breach your defenses that reveals weaknesses before adversaries find them. Testing is conducted with appropriate scope and rules of engagement, but within those bounds, we try to win."
           },
           {
             "type": "titled",
             "title": "Real Attack Paths",
-            "text": "Prove segmentation and containment."
+            "text": "Testing whether a compromised IoT device can reach sensitive systems, whether network segmentation holds under active exploitation, and whether lateral movement is truly contained. Can we pivot from guest network to admin? Can we escalate from a compromised media player to your financial systems? These tests reveal whether theoretical protections provide practical security. Results are documented with specific remediation recommendations."
           },
           {
             "type": "titled",
             "title": "Identity Resilience",
-            "text": "Test social engineering resistance."
+            "text": "Testing whether phishing can bypass account access, whether reset paths can be abused, and whether social engineering can defeat verification procedures. We test the human elements of security as well as the technical ones—can we convince your bank to make changes to your account? Can we get password resets sent to attacker-controlled addresses? These tests validate that the entire security system works, not just the technology components."
           },
           {
             "type": "titled",
             "title": "Outcome",
-            "text": "Measured resilience, not theory."
+            "text": "We identify where real attacks would succeed and close those gaps before adversaries find them. Testing produces a prioritized remediation list with clear ownership and timelines. Follow-up testing validates that fixes were effective. You get proof that your investment in security has produced measurable protection—not just promises and documentation, but demonstrated resilience against realistic attack scenarios."
           }
         ],
         "images": ["DP13.png"]
@@ -526,25 +526,26 @@
         "index": 12,
         "eyebrow": "RESPONSE",
         "title": "24/7 RESPONSE & GOVERNANCE",
-        "purpose": "Digital attacks don’t follow business hours.",
+        "purpose": "Digital attacks don't follow business hours. We provide rapid triage, containment, and remediation whenever something feels wrong—day or night.",
         "content": [
           {
             "type": "paragraph",
-            "text": "Immediate human response, day or night."
+            "text": "When something feels wrong—phishing attempts, takeover notifications, suspicious logins, unknown devices on your network—you need to reach a human immediately who can assess the situation and take action. We provide 24/7 response capability that triages incidents, contains damage, and remediates quickly and quietly with clear next steps. Our response team understands your environment, your risk profile, and your communication preferences. We don't just detect problems; we solve them."
           },
           {
-            "type": "paragraph",
-            "text": "Detect → Verify → Contain → Remediate → Document"
+            "type": "titled",
+            "title": "Response Flow: Detect → Verify → Contain → Remediate → Document",
+            "text": "This disciplined response methodology ensures that every incident is handled consistently and completely. Detection may come from monitoring systems, user reports, or external notification. Verification confirms that the threat is real and assesses scope. Containment stops the bleeding—isolating compromised accounts, rotating credentials, and blocking attacker access. Remediation restores normal operations and closes the vulnerability that enabled the incident. Documentation captures what happened and what was learned."
           },
           {
             "type": "titled",
             "title": "Governance",
-            "text": "Documented baselines and drift control."
+            "text": "Documented posture baselines and change discipline ensure the environment doesn't become 'who last touched it' with undocumented modifications and configuration drift. Every change is tracked, every access is logged, and every deviation from baseline is investigated. This governance framework persists through staff changes and ensures that security doesn't degrade over time. Regular reviews verify that the documented configuration matches reality."
           },
           {
             "type": "titled",
             "title": "Support",
-            "text": "Just-in-time access with auditability."
+            "text": "Support access is revocable and controlled; sensitive systems are not left exposed for convenience. We maintain access only when needed, with clear audit trails showing who accessed what and when. Access is granted through just-in-time provisioning and revoked when work is complete. You can verify at any time what access exists and revoke it if circumstances change. This controlled support model protects you from insider risk while ensuring help is available when needed."
           }
         ],
         "images": ["DP14.png"]
@@ -555,8 +556,7 @@
         "eyebrow": "THE APPROACH",
         "title": "OPERATIONAL ARCHITECTURE, NOT JUST TOOLS",
         "body": [
-          "We deliver a doctrine-first digital protection program—not a stack of products hoping to work together.",
-          "Every component is selected, configured, and validated as part of a coherent system."
+          "We deliver a doctrine-first digital protection program for executives and their families—not a collection of security products hoping to work together. We reduce targetability, harden endpoints, secure connectivity, and run continuous monitoring as an integrated system. This is not IT support; this is a bespoke security environment built around your life and maintained with the rigor of a professional security operation. Every component is selected, configured, and validated to work together as a coherent architecture that adapts to your evolving threat landscape."
         ],
         "images": ["DP2.png"]
       }
@@ -834,9 +834,9 @@
         "eyebrow": "THE DOCTRINE",
         "title": "WHAT “ESTATE ARCHITECTURE” MEANS IN GREENJAY DOCTRINE",
         "body": [
-          "We start with the threat, not the product catalog. We treat the estate like terrain: how people approach it, how they move through it, where blind spots exist, and what failure costs.",
-          "Architecture means the unglamorous work is done right—network segmentation, secure remote access, power protection, redundancy, credential governance, commissioning, acceptance testing, and ongoing validation.",
-          "If you want a system that looks refined and performs under real-world pressure, this is what we do."
+          "We start with the threat, not the product catalog. We treat the estate like terrain: how people approach it, how they move through it, where the blind spots are, what the service routes expose, and what failure costs. Then we design a layered system that does three things consistently: detect early, verify fast, and drive controlled response",
+          "Architecture also means the boring things are done right—network segmentation, secure remote access, power protection, redundancy, credential governance, commissioning, acceptance testing, and ongoing validation. That's what separates a nice install from an estate that's actually hardened.",
+          "If you want a system that looks clean in a luxury environment and performs like it was built for real-world incidents, this is what we do."
         ]
       },
 
@@ -846,7 +846,7 @@
         "title": "DOCTRINE-FIRST SECURITY ARCHITECTURE FOR UHNW ESTATES",
         "body": [
           "We don’t sell a stack. We deliver an operating picture—engineered, validated, and sustained.",
-          "GreenJay starts with threat and builds a bespoke security operating system around your property, lifestyle, staffing model, and consequence profile."
+          "GreenJay doesn't start with equipment. We start with threat—then we build a bespoke security operating system around your property, lifestyle, staffing model, and consequence profile. This roadmap is how we take an estate from installed components to an architecture your team can run under pressure: clear detection, fast verification, controlled escalation, and documented outcomes."
         ]
       },
 
@@ -857,9 +857,21 @@
         "title": "INTELLIGENCE & THREAT DESIGN",
         "purpose": "Define the adversary, map the terrain, and establish the rules of engagement.",
         "content": [
-          { "type": "titled", "title": "Threat Assessment", "text": "Baseline adversary intent, capability, and vectors to define posture and consequence." },
-          { "type": "titled", "title": "Site Threat Analysis", "text": "Map approach routes, concealment, service corridors, and workflows into an operational plan." },
-          { "type": "titled", "title": "Security Hardening Plan", "text": "Integrate physical, electronic, and procedural layers into a single executable architecture." }
+          {
+            "type": "titled",
+            "title": "Threat Assessment (Executive + Estate Risk Profile)",
+            "text": "We baseline adversary intent, capability, and likely vectors, then translate that into what matters operationally: what must be prevented, what must be detected early, what must be verified fast, and what must trigger immediate action. This assessment defines consequence and sets posture—how strict access governance is, how aggressive alerting becomes, and what acceptable risk actually means for the principal and family."
+          },
+          {
+            "type": "titled",
+            "title": "Site Threat Analysis (Walkthrough + Attack Surface Mapping)",
+            "text": "We walk the estate as a system, not as a collection of rooms. Approach routes, standoff, concealment, lines of sight, rooftops, service corridors, basement pathways, staff entry patterns, vendor workflows, and digital exposure are mapped into a usable plan. The goal is simple: remove guesswork."
+          },
+          {
+            "type": "titled",
+            "title": "Security Hardening Plan (Layered Deterrence + Delay + Response)",
+            "text": "This is where the architecture becomes executable. We produce a hardening playbook that integrates physical measures, electronic systems, operational procedures, and response roles into one cohesive plan. The design is layered: deter early, detect fast, verify immediately, delay/deny where required, and trigger a controlled response with clear escalation and accountability."
+          }
         ],
         "images": ["phase0.png"]
       },
@@ -869,11 +881,23 @@
         "index": 1,
         "eyebrow": "PHASE 1",
         "title": "ARCHITECTURE & HARDENING",
-        "purpose": "Engineer and harden the stack so it cannot be casually bypassed or mismanaged.",
+        "purpose": "Engineer the stack and harden the infrastructure so it can't be casually bypassed, compromised, or mismanaged.",
         "content": [
-          { "type": "titled", "title": "Bespoke System Architecture", "text": "Surveillance, access, intrusion, life safety, and workflows designed as one system." },
-          { "type": "titled", "title": "Network Segmentation", "text": "Military-grade VLAN architecture with least-privilege and PACE alignment." },
-          { "type": "titled", "title": "Penetration Testing & Validation", "text": "Adversary-style testing of physical and cyber paths until the system performs." }
+          {
+            "type": "titled",
+            "title": "Bespoke System Architecture (Designed, Not Assembled)",
+            "text": "We design the full security stack—surveillance, access, intrusion, life safety integration, communications, and command-center workflows—tailored to the estate and the principal. This is where zones get defined, coverage is engineered, workflows are built, and the system is shaped around how the property actually operates day to day."
+          },
+          {
+            "type": "titled",
+            "title": "Network Segmentation \"Military-Grade\" (P.A.C.E.-Aligned)",
+            "text": "Security systems live on a hardened network, not on a consumer Wi-Fi project. We implement segmented VLAN architecture, least-privilege access, controlled remote entry, and a protected management plane—built like an operational network. We align continuity to PACE principles: Primary, Alternate, Contingency, and Emergency paths for critical functions."
+          },
+          {
+            "type": "titled",
+            "title": "Penetration Testing + Validation (Physical + Cyber)",
+            "text": "We test the architecture like an adversary would. That includes access control bypass attempts, camera tamper scenarios, credential governance checks, and network exposure validation. The objective isn't a report—it's performance. We find what breaks, we fix it, and we validate again until the system behaves the way it was designed to behave."
+          }
         ],
         "images": ["phase1.png"]
       },
@@ -883,12 +907,28 @@
         "index": 2,
         "eyebrow": "PHASE 2",
         "title": "CORE SECURITY SYSTEMS",
-        "purpose": "Build detection, verification, and control into one operating picture.",
+        "purpose": "Build the systems that control entry, detect intrusion, and verify events—tied together into one operating picture.",
         "content": [
-          { "type": "titled", "title": "Video Surveillance", "text": "Coverage engineered for identification and verification, not just motion." },
-          { "type": "titled", "title": "Alarm Systems", "text": "Intrusion and life safety tuned for signal over noise." },
-          { "type": "titled", "title": "Access Control", "text": "Credentialed movement with governance and video context." },
-          { "type": "titled", "title": "Secure Mode", "text": "Posture shift enabling rapid lockdown and controlled escalation." }
+          {
+            "type": "titled",
+            "title": "Video Surveillance (Fixed + PTZ + VMS)",
+            "text": "We design surveillance for identification and verification, not just motion. Fixed and PTZ placement is engineered for real coverage, lensing and lighting conditions, and operational use. VMS/NVR architecture, retention, analytics configuration, and monitoring workflows are built so alerts are verifiable and incidents are immediately reviewable."
+          },
+          {
+            "type": "titled",
+            "title": "Alarm Systems (Intrusion + Environmental + Fire)",
+            "text": "We engineer alarms for signal over noise. Intrusion, environmental monitoring, and life safety integration are built to trigger verification and escalation—not nuisance. When the system fires, it should mean something, and it should push the right context to the right people fast."
+          },
+          {
+            "type": "titled",
+            "title": "Access Control (Doors + Gates + Zones)",
+            "text": "We implement credentialed access across doors, gates, and restricted zones with real governance: who can go where, when, and under what conditions. Visitor and vendor workflows are built for accountability. Access events tie back to video and alarm context."
+          },
+          {
+            "type": "titled",
+            "title": "Lockdown / Secure Mode",
+            "text": "Secure Mode is a posture shift, not theater. We design the capability to lock specific zones, restrict movement, push verification feeds, and initiate the response plan quickly with controlled authorization."
+          }
         ],
         "images": ["phase2.png"]
       },
@@ -898,12 +938,28 @@
         "index": 3,
         "eyebrow": "PHASE 3",
         "title": "AI-ENABLED MONITORING & OPERATING PICTURE",
-        "purpose": "Reduce noise, accelerate decisions, and operationalize response.",
+        "purpose": "Reduce noise, accelerate decisions, and operationalize response—so the system is actually runnable.",
         "content": [
-          { "type": "titled", "title": "AI Monitoring", "text": "Behavioral cues and anomaly detection tuned for your environment." },
-          { "type": "titled", "title": "Command Center", "text": "Workflow-driven operating picture: detect → verify → respond." },
-          { "type": "titled", "title": "SOPs & Training", "text": "Systems built to be run under stress at 2AM." },
-          { "type": "titled", "title": "Remote Monitoring", "text": "24/7 visibility and proactive resolution." }
+          {
+            "type": "titled",
+            "title": "AI-Enabled Monitoring (Alert Quality + Triage)",
+            "text": "AI is applied where it produces operational value: better alert quality, fewer false positives, faster triage. We tune detection to your environment—behavior cues, perimeter anomalies, loitering, object left/removed, and rule-based escalation—so alarms and analytics become actionable signals, not constant distractions."
+          },
+          {
+            "type": "titled",
+            "title": "Command Center (Operating Picture, Not Screens)",
+            "text": "A command center isn't a display wall. It's a workflow: detect → verify → escalate → respond → document. We build the operating picture so operators can make fast decisions with clarity. Dashboards, alerts, camera call-ups, and escalation routing are structured around how incidents unfold."
+          },
+          {
+            "type": "titled",
+            "title": "Procedures + SOPs + Training (Run It Like a Program)",
+            "text": "If the team can't run it at 2AM, it isn't complete. We deliver SOPs, escalation rules, and practical operator training so response is consistent. The system is designed to be operated under stress with predictable outcomes."
+          },
+          {
+            "type": "titled",
+            "title": "Remote Monitoring + Support (24/7 Visibility + Rapid Resolution)",
+            "text": "A high-end estate system can't rely on \"call someone when it breaks.\" We build remote monitoring and support into the architecture so the stack stays healthy and issues get handled before they become failures."
+          }
         ],
         "images": ["phase3.png"]
       },
@@ -913,11 +969,23 @@
         "index": 4,
         "eyebrow": "PHASE 4",
         "title": "RESILIENCE, REDUNDANCY & POWER",
-        "purpose": "Keep the system alive through outages and attack.",
+        "purpose": "Keep the system alive through outages, tampering, failures, and degraded infrastructure.",
         "content": [
-          { "type": "titled", "title": "Redundancy", "text": "Eliminate single points of failure." },
-          { "type": "titled", "title": "UPS & Runtime", "text": "Threat-model-driven backup power." },
-          { "type": "titled", "title": "PACE Communications", "text": "Primary, Alternate, Contingency, Emergency pathways." }
+          {
+            "type": "titled",
+            "title": "Redundancy (No Single Point of Failure)",
+            "text": "We eliminate single points of failure where consequence demands it: redundant uplinks, resilient switching at critical nodes, protected recording paths, and failover strategies that preserve detection, verification, and response even when components fail."
+          },
+          {
+            "type": "titled",
+            "title": "UPS Power + Protected Runtime",
+            "text": "We design UPS-backed runtime for the security core—network, recording, access control controllers, and essential monitoring—with clean shutdown logic and recovery procedures. Runtime targets are set based on threat model and operational requirements, not generic battery sizing."
+          },
+          {
+            "type": "titled",
+            "title": "PACE Communications Integration",
+            "text": "We implement a Primary/Alternate/Contingency/Emergency communications plan so operations continue when primary systems fail. That includes how alerts propagate under degraded conditions, who communicates with whom, and how the command center continues to coordinate."
+          }
         ],
         "images": ["phase4.png"]
       },
@@ -927,10 +995,18 @@
         "index": 5,
         "eyebrow": "PHASE 5",
         "title": "CONTINUOUS ASSURANCE",
-        "purpose": "Prove performance and keep the system sharp.",
+        "purpose": "Prove performance, document outcomes, and keep the system sharp over time.",
         "content": [
-          { "type": "titled", "title": "Acceptance Testing", "text": "Every zone and escalation path validated." },
-          { "type": "titled", "title": "Audits & Iteration", "text": "Quarterly tuning and governance checks." }
+          {
+            "type": "titled",
+            "title": "Acceptance Testing (Commissioning + Proof of Performance)",
+            "text": "Every zone, every sensor, every alert route, and every escalation path is tested and documented. No \"looks good\" sign-offs. We validate that the system performs the way it was designed—under realistic conditions, not ideal ones."
+          },
+          {
+            "type": "titled",
+            "title": "Maintenance + Audits + Iteration (Keep It Sharp)",
+            "text": "Security isn't static. We perform quarterly validation, log review, rule tuning, and credential governance checks. We plan refresh cycles so the system stays effective as staffing changes, the property evolves, and threat conditions shift. This is how the architecture stays operational—disciplined, accountable, and ready."
+          }
         ],
         "images": ["phase5.png"]
       }
@@ -959,9 +1035,9 @@
         "eyebrow": "THE DISTINCTION",
         "title": "WHY THIS IS ADVANCED",
         "body": [
-          "Most firms protect the body. Advanced Executive Protection protects the entire life—physical and digital. GreenJay runs EP as a multi-domain program: protective intelligence, digital footprint reduction, electronic exposure control, and real-world movement security under one operating standard.",
-          "What makes this advanced is the rare combination of dignitary protection discipline, Special Forces counter-surveillance tradecraft, and engineering-level technical protection. We don’t outsource the technical layer—because in modern EP, that separation is the gap attackers exploit.",
-          "Traditional EP manages proximity. Advanced EP manages your entire threat signature."
+          "Most firms protect the body. Advanced Executive Protection protects the person's entire life—the physical domain and the digital domain that now drives targeting. Greenjay runs EP as a multi-domain program: protective intelligence, digital footprint reduction, electronic exposure control, and real-world movement security, all connected under one operating standard. That means we can reduce risk where threats actually start today: social media visibility, data leakage, compromised accounts, location tracking, hostile Wi-Fi, and unmanaged devices—before those signals turn into a physical approach.",
+          "What makes this advanced is the rare combination most teams don't have in one place: law enforcement protective-detail experience and dignitary discipline, Special Forces counter-surveillance tradecraft, and engineering-level expertise in electronics, networking, and secure communications. We don't outsource the 'technical layer' and we don't treat it as a separate service—because in modern EP, that separation is the gap attackers exploit. Add to that a real command-and-control structure—live monitoring, check-ins, and escalation routing—so the moving element is never operating alone. The result is protection that is quiet, coordinated, technically hardened, and built to defeat both digital targeting and physical proximity threats.",
+          "In plain terms: traditional EP manages proximity. Advanced EP manages your entire threat signature."
         ]
       },
 
@@ -1007,20 +1083,28 @@
         "type": "phase",
         "index": 1,
         "eyebrow": "FOUNDATION",
-        "title": "THREAT PROFILE",
+        "title": "THREAT PROFILE (PHYSICAL + DIGITAL)",
         "purpose": "Define posture, boundaries, and escalation thresholds.",
-        "content": [{ "type": "paragraph", "text": "We begin with a structured threat profile: lifestyle patterns, exposure, travel routines, residence considerations, and digital footprint." }],
-        "images": ["sitesurvey.png"]
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We begin with a structured threat profile: lifestyle patterns, public exposure, known risk drivers, travel routines, residence considerations, and digital footprint. This defines the protection posture, boundaries, and escalation thresholds—so coverage is tailored, not templated."
+          }
+        ],
+        "images": ["serv5.png"]
       },
 
       {
         "type": "phase",
         "index": 2,
         "eyebrow": "ADVANCE",
-        "title": "ADVANCE OPERATIONS",
+        "title": "ADVANCE OPERATIONS (RECON + VALIDATION)",
         "purpose": "Shape the environment before arrival.",
         "content": [
-          { "type": "paragraph", "text": "We deploy ahead to validate venues, hotels, and routes—controlling entry, choke points, and staff exposure." },
+          {
+            "type": "paragraph",
+            "text": "We deploy ahead of the movement to validate venues, hotels, and routes. This includes entry/exit control, choke-point analysis, staff exposure review, and surveillance risk awareness. The outcome is simple: the client arrives into an environment that has already been shaped for privacy and control."
+          },
           { "type": "titled", "title": "Deliverables", "text": "Advance packet, route plans, timing windows, and safe-haven logic." }
         ],
         "images": ["sitesurvey.png"]
@@ -1030,9 +1114,19 @@
         "type": "phase",
         "index": 3,
         "eyebrow": "MOVEMENT",
-        "title": "CONTROLLED MOVEMENT",
+        "title": "CONTROLLED MOVEMENT (DISCIPLINED, DISCREET)",
         "purpose": "Disciplined, discreet transitions.",
-        "content": [{ "type": "paragraph", "text": "Predictability is reduced through timing discipline and route engineering with low-visibility posture." }],
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "We reduce predictability through timing discipline and route engineering, and we maintain calm control through spacing, positioning, and overwatch logic. Special Forces cues show up quietly: sector awareness, disciplined spacing, and clear roles—not for appearance, but for prevention."
+          },
+          {
+            "type": "titled",
+            "title": "Deliverables",
+            "text": "Controlled transitions (curb → lobby → elevator → room), Defined lanes and spacing (inner/outer ring without spectacle), Low-visibility posture that doesn't draw attention."
+          }
+        ],
         "images": ["ep_arrival.png"]
       },
 
@@ -1040,9 +1134,20 @@
         "type": "phase",
         "index": 4,
         "eyebrow": "TECHNICAL",
-        "title": "TECHNICAL PROTECTION",
+        "title": "TECHNICAL PROTECTION (COMMS + ELECTRONIC EXPOSURE)",
         "purpose": "Reduce electronic exposure.",
-        "content": [{ "type": "paragraph", "text": "We secure comms posture in hostile networks and reduce device and operational exposure." }],
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Modern EP fails through the electronic layer: hotel Wi-Fi, device tracking, unmanaged Bluetooth, compromised accounts, and uncontrolled vendor connectivity. We integrate technical expertise to reduce exposure during travel and daily operations—because digital compromise can become physical risk fast."
+          },
+
+          {
+            "type": "titled",
+            "title": "Deliverables",
+            "text": "Secure comms posture for hostile networks (hotels/venues), Exposure reduction on devices and operational communications,Coordination with digital-domain and estate systems when applicable"
+          }
+        ],
         "images": ["command_control.png"]
       },
 
@@ -1052,7 +1157,17 @@
         "eyebrow": "C2",
         "title": "COMMAND & CONTROL",
         "purpose": "Continuity under change.",
-        "content": [{ "type": "paragraph", "text": "Live situational awareness with checkpoints, updates, and escalation routing." }],
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Our teams don't operate alone. Movements run through a command-and-control structure that maintains live situational awareness: locations, checkpoints, status updates, and escalation routing. This provides continuity when conditions shift—schedule changes, venue changes, traffic anomalies, unexpected crowds."
+          },
+          {
+            "type": "titled",
+            "title": "Deliverables",
+            "text": "Live location/status monitoring of the moving element, Real-time updates and decision support, Escalation triggers + documented procedures"
+          }
+        ],
         "images": ["commandandcontrol.png"]
       },
 
@@ -1060,9 +1175,20 @@
         "type": "phase",
         "index": 6,
         "eyebrow": "FAMILY",
-        "title": "FAMILY & GENDER-SENSITIVE COVERAGE",
+        "title": "FAMILY, SPOUSE & GENDER-SENSITIVE COVERAGE",
         "purpose": "Secure and comfortable protection.",
-        "content": [{ "type": "paragraph", "text": "Female protection professionals and privacy-first routines for spouses and children." }],
+        "content": [
+          {
+            "type": "paragraph",
+            "text": "Protection must be secure and comfortable—especially with spouses and children. We provide female protection professionals for inner coverage when required for privacy, cultural preference, religious sensitivity, or family comfort. This enables trusted close-proximity protection without violating boundaries or creating friction."
+          },
+
+          {
+            "type": "titled",
+            "title": "Deliverables",
+            "text": "Female inner coverage for spouse/children when required, Discreet routines protection (schools, travel transitions, private events), Privacy-first posture in sensitive environments"
+          }
+        ],
         "images": ["family_ep.png"]
       }
     ],

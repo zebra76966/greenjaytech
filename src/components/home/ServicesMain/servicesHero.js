@@ -66,7 +66,8 @@ export default function ServicesHero() {
               </motion.h1>
 
               <motion.p className="services-hero-description mb-5 text-secondary-color  text-center mx-auto" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
-                Lorem ipsum is simply dummy text of the printing and typesetting industry. Lorem ipsum has been the industry's standard dummy text ever since the 1500s.
+                We don't sell "security products." We run a doctrine-driven program that hardens your lifestyle—physical, technical, and digital—under one accountable lead. Every engagement begins
+                with a threat profile assessment.
               </motion.p>
 
               <motion.div className="services-hero-actions d-flex justify-content-center   pt-5 " variants={fadeUp} initial="hidden" animate="visible" custom={3}>
@@ -78,7 +79,7 @@ export default function ServicesHero() {
                     </span>
 
                     {/* TEXT */}
-                    <span className="btn-label fw-bold">REQUEST BREIFING</span>
+                    <span className="btn-label fw-bold">REQUEST BRIEFING</span>
                   </button>
                 </div>
               </motion.div>
