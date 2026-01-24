@@ -307,3 +307,12 @@
   justify-content: center;
   align-items: flex-start;
 }
+
+@media screen and (max-width: 1024px) {
+  .doctrines-main {
+    padding: 20px 10px;
+  }
+  .doctrines-detail-left {
+    width: 99dvw;
+  }
+}

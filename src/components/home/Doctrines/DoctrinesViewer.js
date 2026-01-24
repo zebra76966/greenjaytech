@@ -84,7 +84,7 @@ export default function DoctrinesViewer() {
         className="position-relative"
         style={{ overflow: "hidden" }}
       >
-        <motion.section className="doctrines-wrapper">
+        <motion.section className="doctrines-wrapper d-xl-grid d-block">
           {/* LEFT */}
 
           <div className="doctrines-main doctrines-detail-left">
@@ -162,7 +162,7 @@ export default function DoctrinesViewer() {
           </div>
 
           {/* RIGHT */}
-          <div className="doctrines-sidebar">
+          <div className="doctrines-sidebar d-xl-flex d-none">
             <button className="nav-btn top" onClick={goUp}>
               <FiChevronUp />
             </button>
