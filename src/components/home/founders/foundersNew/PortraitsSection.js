@@ -89,7 +89,7 @@ export default function PortraitsSection() {
               </div>
 
               <div className="portrait-thumbnails d-flex justify-content-center gap-3 mb-4">
-                {["/founders/jennifer2.png", "/founders/jennifer.jpg"].map((img) => (
+                {["/founders/jennifer2.png", "/founders/jennifer3.png", "/founders/jennifer.jpg"].map((img) => (
                   <motion.div
                     key={img}
                     className={`portrait-thumb ${jenImage === img ? "active" : ""}`}

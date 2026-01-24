@@ -12,6 +12,7 @@ export default function GallerySection() {
     { src: "/founders/dark.jpg", label: "EXECUTIVE ADVISORY", size: "sm" },
     { src: "/founders/suit2.png", label: "BUSINESS DEVELOPMENT", size: "md" },
     { src: "/founders/jennifer2.png", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
+    { src: "/founders/jennifer3.png", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
   ];
 
   // duplicate for seamless loop
