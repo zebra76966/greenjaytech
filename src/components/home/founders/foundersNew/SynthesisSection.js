@@ -71,7 +71,9 @@ export default function SynthesisSection() {
               className="synthesis-center text-primary-color"
             >
               <motion.div animate={{ scale: [1, 1.06, 1] }} transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }} className="synthesis-emblem">
-                <FiShield size={84} />
+                {/* <FiShield size={84} /> */}
+
+                <img src="/assets/logoOnly.png" height={120} />
               </motion.div>
             </motion.div>
           </Col>

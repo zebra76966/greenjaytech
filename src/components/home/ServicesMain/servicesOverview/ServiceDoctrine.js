@@ -200,7 +200,73 @@ export default function ServiceDoctrine({ data }) {
         <h6 className="services-eyebrow position-sticky top-0 start-0 text-center pFont fs-5  py-4" style={{ zIndex: "999" }}>
           THE PHASES.
         </h6>
-        <div className="services-grid  pe-0 w-100 ps-lg-4">
+
+        {phases.map((sec, i) => (
+          <motion.section
+            key={sec.index}
+            ref={(el) => (cardRefs.current[i] = el)}
+            initial={{ opacity: 0, y: 100 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
+            class="phase-section"
+          >
+            <div class="phase-header">
+              <span class="phase-number text-secondary-color">{sec.index < 10 ? `0` + sec.index : sec.index}</span>
+              <div class="phase-title-group">
+                <span class="phase-label text-secondary-color">{sec.eyebrow}</span>
+                <h2 class="phase-title hFont text-primary-color ">{sec.title}</h2>
+              </div>
+            </div>
+            <motion.div
+              className="overviewdet-service-description-hightlight p-3 small text-secondary-color fw-light mb-3"
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ delay: 0.35 }}
+            >
+              <p className="my-0">
+                <em> {sec.purpose}</em>
+              </p>
+            </motion.div>
+
+            <div class="phase-content">
+              <div className="phase-text">
+                {sec.content?.map((c, k) =>
+                  c.type === "titled" ? (
+                    <div key={k} className="phase-block w-100">
+                      <h4 className="pFont">{c.title}</h4>
+                      <p className="w-100 text-secondary-color" style={{ maxWidth: "100%" }}>
+                        {c.text}
+                      </p>
+                    </div>
+                  ) : (
+                    <p key={k} className="w-100 text-secondary-color" style={{ maxWidth: "100%" }}>
+                      {c.text}
+                    </p>
+                  ),
+                )}
+              </div>
+              <div className="row ">
+                {sec.images?.map((image) => {
+                  return (
+                    <div className={`col-lg-${sec.images?.length > 1 ? "6" : "11"} h-100 pe-5`}>
+                      <motion.img
+                        className=" position-relative w-100 rounded-3 h-100"
+                        src={`${imgPath(image)}`}
+                        animate={{
+                          scale: active === sec.index ? 1.05 : 1,
+                        }}
+                        transition={{ duration: 1.2, ease: "easeOut" }}
+                        style={{ minHeight: "35dvh", maxHeight: "500px", objectFit: "contain", zIndex: 999999, opacity: 1 }}
+                      />
+                    </div>
+                  );
+                })}{" "}
+              </div>
+            </div>
+          </motion.section>
+        ))}
+
+        <div className="services-grid  pe-0 w-100 ps-lg-4 d-none">
           {/* LEFT NUMBERS */}
           <aside className={`services-nav ${phases.length > 5 ? "is-scrollable" : ""}`}>
             {phases.map((p, i) => (
@@ -243,7 +309,7 @@ export default function ServiceDoctrine({ data }) {
                 )}
 
                 <Row>
-                  <Col md={9}>
+                  <Col md={11}>
                     <motion.div className="card-content" initial={{ opacity: 0, y: 20 }} animate={{ opacity: active === sec.index ? 1 : 0.7, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
                       <span className="phase-eyebrow text-secondary-color">{sec.eyebrow}</span>
                       <h3 className="display-6">{sec.title}</h3>
@@ -265,27 +331,8 @@ export default function ServiceDoctrine({ data }) {
                           ),
                         )}
                       </div>
-                    </motion.div>
 
-                    {sec.images?.[0] && (
-                      <div className="w-100 p-4 pe-5">
-                        <motion.img
-                          className=" position-relative w-100 rounded-3"
-                          src={`${imgPath(sec.images[0])}`}
-                          animate={{
-                            scale: active === sec.index ? 1.05 : 1,
-                          }}
-                          transition={{ duration: 1.2, ease: "easeOut" }}
-                          style={{ maxHeight: "500px", objectFit: "contain", zIndex: 999999, opacity: 1 }}
-                        />
-                      </div>
-                    )}
-                  </Col>
-                  <Col md={3} className="text-start " style={{ zIndex: 99 }}>
-                    <div className="d-flex flex-column gap-5 align-items-start h-100 pe-4">
-                      <h2 className="card-index pFont d-lg-block d-none">{String(sec.index).padStart(2, "0")}</h2>
-
-                      <div className="mt-auto">
+                      <div className="mt-auto ms-auto">
                         {/* <p className="text-secondary-color fs-6 mt-lg-5 mt-2">includes personal security detail (psd) operations</p> */}
                         <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-lg-5 my-1" />
                         <button className="btn-enquire-advanced text-primary-color mt-lg-0 mt-2" onClick={openContact}>
@@ -298,9 +345,32 @@ export default function ServiceDoctrine({ data }) {
                           <span className="btn-text">LEARN MORE</span>
                         </button>
                       </div>
-                    </div>
+                    </motion.div>
                   </Col>
+                  {/* <Col md={3} className="text-start " style={{ zIndex: 99 }}>
+                    <div className="d-flex flex-column gap-5 align-items-start h-100 pe-4">
+                      <h2 className="card-index pFont d-lg-block d-none">{String(sec.index).padStart(2, "0")}</h2>
+                    </div>
+                  </Col> */}
                 </Row>
+
+                <div className="row ">
+                  {sec.images?.map((image) => {
+                    return (
+                      <div className={`col-lg-${sec.images?.length > 1 ? "6" : "11"} h-100 pe-5`}>
+                        <motion.img
+                          className=" position-relative w-100 rounded-3 h-100"
+                          src={`${imgPath(image)}`}
+                          animate={{
+                            scale: active === sec.index ? 1.05 : 1,
+                          }}
+                          transition={{ duration: 1.2, ease: "easeOut" }}
+                          style={{ minHeight: "35dvh", maxHeight: "500px", objectFit: "contain", zIndex: 999999, opacity: 1 }}
+                        />
+                      </div>
+                    );
+                  })}{" "}
+                </div>
               </motion.article>
             ))}
           </div>

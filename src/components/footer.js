@@ -2,8 +2,12 @@ import { motion } from "framer-motion";
 import { FiInstagram, FiTwitter, FiLinkedin, FiMail } from "react-icons/fi";
 import FluidBackground from "./home/animtion2";
 import "./footer.css";
+import services from "../components/home/ServicesMain/servicesData.json";
+import { useNavigate } from "react-router-dom";
 
 export default function Footer() {
+  const navigate = useNavigate();
+
   return (
     <footer className="footer-section">
       {/* Topographic SVG background */}
@@ -30,10 +34,10 @@ export default function Footer() {
         <div className="footer-links">
           <div className="footer-col">
             <h4 className="fs-5">QUICK LINKS</h4>
-            <ul>
-              <li>Home</li>
-              <li>About</li>
-              <li>Services</li>
+            <ul className="text-uppercase">
+              <li onClick={() => navigate(`/`)}>Home</li>
+              <li onClick={() => navigate(`/founders`)}>About</li>
+              <li onClick={() => navigate(`/services`)}>Services</li>
               <li>Privacy Policy</li>
               <li>Terms & Conditions</li>
             </ul>
@@ -42,11 +46,11 @@ export default function Footer() {
           <div className="footer-col">
             <h4 className="fs-5">SERVICES</h4>
             <ul>
-              <li>Security Consulting</li>
-              <li>Video Surveillance</li>
-              <li>Robotics & Autonomous Systems</li>
-              <li>Tactical Training</li>
-              <li>Implementation</li>
+              {services.map((service, index) => (
+                <li className="text-capitalize" key={service.id} onClick={() => navigate(`/service/${service.id}`)}>
+                  {service.title}
+                </li>
+              ))}
             </ul>
           </div>
         </div>

@@ -62,6 +62,9 @@ export default function HeroSection() {
             <motion.p className="hero-description small fw-light  mb-0 text-secondary-color   " style={{ fontSize: "0.7em" }} variants={fadeUp} initial="hidden" animate="visible" custom={2}>
               <em> U.S. Army Special Forces (Green Beret) doctrine • Dignitary protection experience • Compartmented execution</em>
             </motion.p>
+            <motion.p className="hero-description  text-primary-color  fw-light small" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
+              Traditional security makes you a target. We make threats irrelevant.
+            </motion.p>
 
             <motion.p className="hero-description  text-secondary-color  fw-light small" variants={fadeUp} initial="hidden" animate="visible" custom={2}>
               Greenjay runs executive protection and estate security as one accountable program—advanced EP, AI-enabled surveillance and monitoring, access control, secure infrastructure
@@ -87,14 +90,14 @@ export default function HeroSection() {
               </button>
 
               {/* HIRE US BUTTON */}
-              <button className="btn-hire-pattern px-4 " onClick={() => navigate("/founders")}>
+              <button className="btn-hire-pattern  " onClick={() => navigate("/founders")}>
                 {/* SVG BACKGROUND */}
                 <span className="btn-pattern-bg">
                   <FluidBackground />
                 </span>
 
                 {/* TEXT */}
-                <span className="btn-label fw-bold fs-6">MEET THE FOUNDERS</span>
+                <span className="btn-label fw-bold ">MEET THE FOUNDERS</span>
               </button>
             </motion.div>
 
@@ -102,7 +105,7 @@ export default function HeroSection() {
               {people.map((p, i) => (
                 <div className="w-100" key={i}>
                   <MotionCard
-                    className="team-card h-100"
+                    className="team-card h-100 mb-lg-0 mb-2"
                     initial={{ opacity: 0, y: 12 }}
                     animate={{ opacity: 1, y: 0 }}
                     transition={{ duration: 0.4, delay: i * 0.1 }}
@@ -125,6 +128,8 @@ export default function HeroSection() {
                 </div>
               ))}
             </div>
+
+            <p className="mt-2 mb-0 hero-description small text-secondary">Discreet engagements • NDA available • Integration + Validation</p>
           </Col>
 
           {/* RIGHT VISUAL */}

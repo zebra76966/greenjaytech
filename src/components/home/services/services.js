@@ -94,7 +94,7 @@ export default function ServicesSection() {
     >
       <div className=" d-flex gap-5 justify-content-center align-items-center threat-profile-box-wrapper mb-5">
         <MotionCard className="threat-box" initial={{ opacity: 0, y: 16 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.5, ease: "easeOut" }} whileHover={{ y: -6 }}>
-          <span className="kicker text-secondary-color">MANDATORY FIRST STEP</span>
+          {/* <span className="kicker text-secondary-color">MANDATORY FIRST STEP</span> */}
 
           <h3 className="title text-primary-color">THREAT PROFILE ASSESSMENT</h3>
           <h6 className="subtitle pFont">(PHYSICAL + DIGITAL)</h6>
@@ -126,7 +126,7 @@ export default function ServicesSection() {
             <button key={s.id} ref={(el) => (navRefs.current[i] = el)} className={`service-index ${active === s.id ? "active" : ""}`} onClick={() => scrollToCard(s.id, i)}>
               <span className="index-number">{String(s.id).padStart(2, "0")}</span>
               <span className="index-label ps-2" style={{ maxWidth: "90%" }}>
-                {s.subtitle}
+                {s.title}
               </span>
             </button>
           ))}
@@ -167,7 +167,7 @@ export default function ServicesSection() {
                 <Col xl={9}>
                   <motion.div className="card-content" initial={{ opacity: 0, y: 20 }} animate={{ opacity: active === s.id ? 1 : 0.7, y: 0 }} transition={{ duration: 0.6, delay: 0.2 }}>
                     <h3 className="display-3">{s.title}</h3>
-                    <p>{s.description}</p>
+                    <p>{s.altDesc}</p>
 
                     <button className="card-cta" onClick={openContact}>
                       <span>ENQUIRE NOW</span>
@@ -187,12 +187,12 @@ export default function ServicesSection() {
                     <h2 className="card-index pFont d-xl-block d-none">{String(s.id).padStart(2, "0")}</h2>
                     {s.image && (
                       <div className="p-2 d-xl-none d-inline w-100">
-                        <img className=" position-relative  rounded-3 w-100 cimg " src={s.image} style={{ objectFit: "contain", zIndex: 999999, opacity: 1 }} />
+                        <img className=" position-relative  rounded-3 w-100 cimg " src={s.image} style={{ objectFit: "cover", zIndex: 999999, opacity: 1 }} />
                       </div>
                     )}
                     <div className="mt-md-auto p-xl-0 p-2">
                       <p className="text-secondary-color fs-6 mt-md-5 mt-0 infoText">
-                        includes :<span className="small d-block">{s.includes}</span>
+                        includes :<span className="d-block">{s.includes}</span>
                       </p>
                       <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-md-5" />
                       <button className="btn-enquire-advanced text-primary-color " onClick={openContact}>

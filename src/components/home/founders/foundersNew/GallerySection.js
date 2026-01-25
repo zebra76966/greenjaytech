@@ -7,12 +7,18 @@ import FluidBackground from "../../animtion2";
 export default function GallerySection() {
   const items = [
     { src: "/founders/tux.png", label: "ROBINSON PANIAGUA • FOUNDER", size: "lg" },
-    { src: "/founders/military2.png", label: "U.S. ARMY SPECIAL FORCES", size: "sm" },
-    { src: "/founders/tempFileForShare_20251226-144427.jpg", label: "COMBAT OPERATIONS", size: "md" },
-    { src: "/founders/dark.jpg", label: "EXECUTIVE ADVISORY", size: "sm" },
     { src: "/founders/suit2.png", label: "BUSINESS DEVELOPMENT", size: "md" },
+    { src: "/founders/military2.png", label: "U.S. ARMY SPECIAL FORCES", size: "sm" },
+
+    { src: "/founders/dark.jpg", label: "EXECUTIVE ADVISORY", size: "lg" },
+
+    { src: "/founders/tempFileForShare_20251226-144427.jpg", label: "COMBAT OPERATIONS", size: "lg" },
+
     { src: "/founders/jennifer2.png", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
-    { src: "/founders/jennifer3.png", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
+    { src: "/founders/jen_street.jpg", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
+    { src: "/founders/jen3.jpg", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
+    { src: "/founders/jen5.jpg", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "md" },
+    { src: "/founders/jen6.jpg", label: "JENNIFER PANIAGUA • CO-FOUNDER", size: "lg" },
   ];
 
   // duplicate for seamless loop

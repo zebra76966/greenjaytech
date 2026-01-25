@@ -18,7 +18,7 @@ const cardVariants = {
 export default function FoundersSection() {
   return (
     <section className="founders-section ch-100 d-flex align-items-center py-5 bg-color-dark position-relative overflow-hidden" id="founders">
-      <Container className="py-5">
+      <Container fluid className="py-5">
         <div className="founders-header text-center mb-5">
           <span className="section-label text-secondary-color d-block mb-2">LEADERSHIP</span>
           <h2 className="section-title text-primary-color">THE ARCHITECTS OF INTEGRATED PROTECTION</h2>

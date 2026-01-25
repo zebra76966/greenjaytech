@@ -34,10 +34,10 @@ const pillar = (x = 0) => ({
 
 export default function MissionSection() {
   return (
-    <section className="mission-section ch-100  align-items-center d-flex position-relative overflow-hidden" id="mission">
+    <section className="mission-section ch-100  align-items-center d-flex position-relative overflow-hidden px-lg-5 px-2" id="mission">
       {/* ambient depth */}
 
-      <Container className="position-relative bg-glass p-4 rounded-4" style={{ zIndex: 99 }}>
+      <Container fluid className="position-relative bg-glass p-4 rounded-4 " style={{ zIndex: 99 }}>
         <Row className="mission-grid align-items-start">
           {/* Left Content */}
           <Col lg={6} className="mission-left mb-5 mb-lg-0">

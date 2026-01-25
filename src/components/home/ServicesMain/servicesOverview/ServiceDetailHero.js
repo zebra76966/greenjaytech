@@ -57,7 +57,7 @@ export default function ServiceDetailHero() {
             </span>
           </motion.button>
 
-          <motion.h1 className="overviewdet-service-title services-hero-title" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
+          <motion.h1 className="overviewdet-service-title services-hero-title mt-5 pt-xl-4" initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 0.2 }}>
             {activeServ?.title}
             {activeServ?.subhead && <small className="text-secondary-color pb-4 pt-2 opacity-75">{activeServ?.subhead}</small>}
           </motion.h1>
@@ -88,7 +88,7 @@ export default function ServiceDetailHero() {
           </motion.div>
 
           <motion.div
-            className="hero-actions d-flex gap-5 pt-5 servDet"
+            className="hero-actions d-flex gap-5 mt-3 servDet"
             initial={{ opacity: 0, y: 20, scale: 0.5, originX: 0 }}
             animate={{ opacity: 1, y: 0, scale: 0.9, originX: 0 }}
             transition={{ delay: 0.55 }}
@@ -120,9 +120,18 @@ export default function ServiceDetailHero() {
         {/* RIGHT IMAGE */}
         <div className="overviewdet-service-detail-bg-wrapper">
           <motion.div className="overviewdet-service-detail-bg" initial={{ scale: 1.05 }} animate={{ scale: 1 }} transition={{ duration: 1.2, ease: "easeOut" }}>
-            <img src={activeServ?.image} alt={activeServ?.title} />
+            <img src={activeServ?.detailHero || activeServ?.image} alt={activeServ?.title} />
           </motion.div>
         </div>
+
+        <motion.img
+          src="/assets/logoOnly.png"
+          style={{ height: "10vh", width: "auto", zIndex: 999 }}
+          className="position-absolute top-0 end-0 m-3"
+          initial={{ scale: 1.05 }}
+          animate={{ scale: 1 }}
+          transition={{ duration: 1.2, ease: "easeOut" }}
+        />
       </motion.section>
 
       <ServiceDoctrine data={activeDoctrine} />
