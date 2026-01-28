@@ -127,27 +127,31 @@
   background-color: var(--primary-color); /* darker on hover */
 }
 
+.cfs-6 {
+  font-size: 1rem !important;
+}
+
 @media screen and (min-width: 1920px) {
   /* Base text */
   body,
-  p {
-    font-size: clamp(15px, 0.95vw, 18px) !important;
+  p:not(.hero-description, .doctrine-text) {
+    font-size: clamp(15px, 0.95vw, 28px) !important;
     line-height: 1.6;
   }
 
   /* Headings */
-  h1 {
+  h1:not(.services-hero-title, .hero-title) {
     font-size: clamp(2rem, 3.2vw, 3.2rem) !important;
     line-height: 1.2;
   }
 
-  h2 {
+  h2:not(.card-index) {
     font-size: clamp(1.75rem, 2.6vw, 2.6rem) !important;
     line-height: 1.25;
   }
 
   h3 {
-    font-size: clamp(1.5rem, 2.1vw, 2.1rem) !important;
+    font-size: clamp(1.5rem, 2.1vw, 4.1rem) !important;
     line-height: 1.3;
   }
 
@@ -167,18 +171,70 @@
   }
 
   /* Small text */
-  small,
-  .small,
+  small:not(.hero-description, .fouderMini),
+  .small:not(.hero-description, .fouderMini),
   .section-label,
   .founder-badge,
   .credential-tag,
-  .expertise-item {
-    font-size: clamp(0.8rem, 0.8vw, 0.95rem) !important;
+  .expertise-item,
+  .fs-6,
+  .index-label,
+  .badge,
+  .overviewdet-service-tags span,
+  .doctrine-number {
+    font-size: clamp(0.8rem, 1.5vw, 1.4rem) !important;
   }
 
   /* Optional: Bootstrap's .lead */
-  .lead {
-    font-size: clamp(1.05rem, 1.2vw, 1.25rem) !important;
+  .lead,
+  .cfs-6 {
+    font-size: clamp(1.05rem, 1.2vw, 1.5rem) !important;
     line-height: 1.7;
+  }
+  .cimg {
+    width: 70% !important;
+  }
+  .image-row img {
+    width: 70% !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .services-hero-eyebrow {
+    line-height: 5em;
+  }
+  .overview-service-image-wrapper {
+    height: 451px !important;
+  }
+  .overview-service-tags3 {
+    margin-top: 2em !important;
+  }
+  .overview-service-content h3 {
+    margin-top: 0.5em !important;
+    margin-bottom: 1em;
+  }
+  .btn-enquire-advanced {
+    font-size: inherit;
+  }
+  .btn-hire-pattern {
+    padding: 0.2rem 4rem;
+
+    font-size: 1.5rem;
+  }
+  .pImg {
+    min-height: 48dvh !important;
+    max-height: 500px;
+
+    width: 100% !important;
+  }
+  .gallery-label {
+    font-size: 1rem !important;
+  }
+  .hero-icon-btn {
+    height: 80px;
+    width: 80px;
+    font-size: 2em !important;
+  }
+  .hero-icon-btn > .fs-5 {
+    font-size: 0.5em !important;
   }
 }

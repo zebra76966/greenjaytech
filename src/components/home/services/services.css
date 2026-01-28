@@ -22,6 +22,10 @@
   align-self: start;
 }
 
+.cimg {
+  width: 100%;
+}
+
 .services-eyebrow {
   letter-spacing: 0.8em;
   background-color: var(--dark-color);

@@ -120,7 +120,7 @@ export default function HeroSection() {
 
                       <div className="content">
                         <h5 className="text-primary-color fs-6 pFont">{p.name}</h5>
-                        <p className="small">{p.role}</p>
+                        <p className="small fouderMini">{p.role}</p>
                         <span className="read-bio">Read bio →</span>
                       </div>
                     </div>

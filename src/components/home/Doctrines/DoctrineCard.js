@@ -34,7 +34,7 @@ export default function DoctrineCard({ title, description, icon, src }) {
           <div>
             <h3>{title}</h3>
             <hr className="bg-primary-color w-100 opacity-100" />
-            <p className="fs-6 pt-4">{description || "Lorem ipsum is simply dummy text of the printing and typesetting industry."}</p>
+            <p className="cfs-6 pt-4">{description || "Lorem ipsum is simply dummy text of the printing and typesetting industry."}</p>
           </div>
 
           {/* FOOTER */}

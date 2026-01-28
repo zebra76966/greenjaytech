@@ -178,7 +178,7 @@ export default function ServicesSection() {
 
                   {s.image && (
                     <div className="p-2 d-xl-block d-none">
-                      <img className=" position-relative  rounded-3 w-100 cimg " src={s.image} style={{ objectFit: "contain", zIndex: 999999, opacity: 1 }} />
+                      <img className=" position-relative  rounded-3  cimg " src={s.image} style={{ objectFit: "contain", zIndex: 999999, opacity: 1 }} />
                     </div>
                   )}
                 </Col>
@@ -191,7 +191,7 @@ export default function ServicesSection() {
                       </div>
                     )}
                     <div className="mt-md-auto p-xl-0 p-2">
-                      <p className="text-secondary-color fs-6 mt-md-5 mt-0 infoText">
+                      <p className="text-secondary-color  mt-md-5 mt-0 infoText">
                         includes :<span className="d-block">{s.includes}</span>
                       </p>
                       <hr className="bg-primary-color w-100 border-primary-color border-1 opacity-100 rounded-5 my-md-5" />

@@ -250,7 +250,7 @@ export default function ServiceDoctrine({ data }) {
                   return (
                     <div className={`col-lg-${sec.images?.length > 1 ? "6" : "11"} h-100 pe-5`}>
                       <motion.img
-                        className=" position-relative w-100 rounded-3 h-100"
+                        className=" position-relative  rounded-3 h-100 pImg"
                         src={`${imgPath(image)}`}
                         animate={{
                           scale: active === sec.index ? 1.05 : 1,

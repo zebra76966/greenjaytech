@@ -22,7 +22,7 @@ export default function CommitmentSection() {
 
   return (
     <section className="commitment-section ch-100 bg-color-dark d-flex align-items-center">
-      <Container>
+      <Container fluid className="p-xxl-5">
         <div className="commitment-header text-center mb-5">
           <span className="section-label text-secondary-color d-block mb-2">OUR COMMITMENT</span>
           <h2 className="section-title text-primary-color">THE GREENJAY STANDARD</h2>

@@ -49,7 +49,7 @@ function AppInner() {
 
   // Loader
   useEffect(() => {
-    const timer = setTimeout(() => setLoading(false), 9000);
+    const timer = setTimeout(() => setLoading(false), 4500);
     return () => clearTimeout(timer);
   }, []);
 
